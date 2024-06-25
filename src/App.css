@@ -79,26 +79,26 @@
 } */
 
 .slick-slide .first-image{
-  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/structure.webp);
+  background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/structure.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   
 }
 .slick-slide .second-image{
-  background: linear-gradient(to bottom right, #11121365 ,#0b0b0c54), url(/images/highway.webp);
+  background: linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54), url(/images/highway.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .third-image{
-  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/geosciences.webp);
+  background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/geosciences.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .fourth-image{
-  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/non-destructive.webp);
+  background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/non-destructive.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -111,13 +111,18 @@
 .navbar ul li::after{
   content: ' ';
   position: absolute;
-  bottom: -1rem;
+  bottom: -2rem;
   left: 0;
   width: 0;
   height: 5px;
   background: #f0f0f0;
   transition: all 0.3s ease;
   transform-origin: left;
+}
+
+.navbar ul li::after a.active{
+  width: 100%;
+  transform-origin: right;
 }
 
 .navbar ul li:hover::after{
