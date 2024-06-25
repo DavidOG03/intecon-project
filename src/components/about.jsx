@@ -1,6 +1,7 @@
 import React from "react";
 import Director from "./director";
 import Clients from "./clients";
+import Quote from "./quote";
 
 const About = () => {
   return (
@@ -125,7 +126,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="directors py-[120px]">
+      <section className="directors py-[120px] border-b border-b-[#292828]">
         <h3 className=" font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[72px] text-center font-semibold mb-12">
           Meet Our Directors
         </h3>
@@ -174,9 +175,7 @@ const About = () => {
       <Clients 
       position="relative"/>
       </section>
-      <section className="contact-component bg-getToWork py-[120px]">
-        <h3 className="font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[72px] text-left font-semibold mb-12"></h3>
-      </section>
+     <Quote/>
     </main>
   );
 };

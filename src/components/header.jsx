@@ -17,9 +17,10 @@ const Header = () => {
             <li className='inline-block mx-4 font-jakarta text-[14px] tracking-[0.6px]'><Link to="/projects">projects</Link></li>
           </ul>
         </nav>
-        <div className="contact-info absolute top-2 right-6">
+        <div className="contact-info absolute flex flex-row justify-end items-center gap-6 top-2 right-6">
           <a href='mailto:intecon@intecon.com.ng' target='blank' className="email flex flex-row gap-2 text-[#f0f0f0] font-inter">
             <img src="/images/envelope.svg" alt="envelope.svg" className='w-6' /> intecon@intecon.com.ng</a>
+            <a href="tel:+2348033242026" className="email flex flex-row gap-2 text-[#f0f0f0] font-inter" ><img src="/images/phone-too.svg" alt="contact icon" className='inline-block w-6' /> Call +234 803 324 2026  <a href="tel:+2348033283101">+234 803 328 3101</a></a>
         </div>
       </header>
     </>

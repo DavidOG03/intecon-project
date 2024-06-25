@@ -146,6 +146,20 @@
   text-align: center;
 }
 
-.client{
-  padding-inline: 2rem;
+.client img{
+  padding-inline: 1rem;
+  width: 200px;
+}
+
+.quote{
+  background:linear-gradient(to bottom right, #1112136b ,#0b0b0c56), url(/images/get-to-work.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 80%;
+  padding: 200px 0;
+}
+
+.quote-btn:hover svg {
+  fill: #f0f0f0;
+  rotate: 45deg;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 
-const Clients = (position) => {
+const Clients = ({position}) => {
   return (
     
           <div className={`marquee-container ${position} pt-[88px] pb-[124px]`}>
@@ -13,31 +13,31 @@ const Clients = (position) => {
                 />
               </span>
               <span className="client">
-                <img src="/images/exxon.png" alt="ExxonMobil logo png" />
+                <img src="/images/exxon.webp" alt="ExxonMobil logo webp" />
               </span>
               <span className="client">
-                <img src="/images/p-and-g.png" alt="Procter and gamble logo " />
+                <img src="/images/p-and-g.webp" alt="Procter and gamble logo " />
               </span>
               <span className="client">
                 <img
-                  src="/images/excellence-and-godliness.png"
+                  src="/images/excellence-and-godliness.webp"
                   alt="Excellence and godliness logo"
                 />
               </span>
               <span className="client">
                 <img
-                  src="/images/ui-logo.png"
+                  src="/images/ui-logo.webp"
                   alt="University of Ibadan logo"
                 />
               </span>
               <span className="client">
                 <img
-                  src="/images/oodua.png"
+                  src="/images/oodua.webp"
                   alt="O'dua Investment company Limited"
                 />
               </span>
               <span className="client">
-                <img src="/images/updc.png" alt="updc logo" />
+                <img src="/images/updc.webp" alt="updc logo" />
               </span>
               <span className="client">
                 <img
@@ -46,10 +46,10 @@ const Clients = (position) => {
                 />
               </span>
               <span className="client">
-                <img src="/images/faan.png" alt="FAAN Logo" />
+                <img src="/images/faan.webp" alt="FAAN Logo" />
               </span>
               <span className="client">
-                <img src="/images/unilever.png" alt="Unilever Logo" />
+                <img src="/images/unilever.webp" alt="Unilever Logo" />
               </span>
             </Marquee>
           </div>
