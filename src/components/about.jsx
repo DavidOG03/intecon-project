@@ -95,37 +95,37 @@ const About = () => {
       </section>
       <section className="directors py-[120px]">
         <h3 className=" font-jakarta capitalize text-[#f0f0f0] text-[72px] text-center font-semibold mb-12">Meet Our Directors</h3>
-        <div className="team flex flex-row flex-wrap justify-center items-stretch gap-6 px-6">
+        <div className="team flex flex-row flex-wrap justify-center items-stretch gap-8 px-6">
           <Director
-          img="/images/engr-ajibola.png"
+          img="/images/engr-ajibola-profile.webp"
           name="Engr. O. Alade Ajibola"
           role="chairman/CEO"
           office="Intecon Partnership Group Ltd"
           degree="FNSE,FAEng"
           />
           <Director
-          img="/images/engr-wale.png"
+          img="/images/engr-wale.webp"
           name="Engr. Wale Lagunju"
           role="Group Executive Director"
           office="Intecon Partnership Group Ltd"
           degree="b.sc,m.sc,mba,fnse, mni"
           />
           <Director
-          img="/images/engr-kehinde.png"
+          img="/images/engr-kehinde.webp"
           name="Engr. Kehinde Aremu"
           role="Managing Director"
           office="Interworks Engineering Ltd"
           degree="b.sc, m.sc, mba, mnse"
           />
           <Director
-          img="/images/engr-jimmy.png"
+          img="/images/engr-jimmy.webp"
           name="Engr. Jimmy Ajibola"
           role="Managing Director"
           office="Automated Geotechnical Ltd"
           degree="b.sc, m.sc, dic,mnse"
           />
           <Director
-          img="/images/engr-tunde.png"
+          img="/images/engr-tunde.webp"
           name="Engr. Tunde Adefolaju"
           role="Director"
           office=" "
