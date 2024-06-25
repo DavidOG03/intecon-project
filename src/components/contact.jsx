@@ -130,7 +130,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="font-inter text-base py-4 px-8 rounded-[32px] border border-transparent transition ease-in bg-[#f0f0f0] hover:bg-transparent hover:border hover:border-[#f0f0f0] hover:text-[#f0f0f0]"
+            className="font-inter font-semibold text-base py-6 px-8 rounded-[32px] border border-transparent transition ease-in bg-[#f0f0f0] hover:bg-transparent hover:border hover:border-[#f0f0f0] hover:text-[#f0f0f0]"
           >
             Send Message
           </button>

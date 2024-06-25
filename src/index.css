@@ -29,6 +29,6 @@ input,textarea{
   color: #ffffff8a;
 }
 
-input::placeholder{
+textarea::placeholder,input::placeholder{
   color: #ffffff8a;
 }
