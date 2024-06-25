@@ -79,7 +79,7 @@
 } */
 
 .slick-slide .first-image{
-  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/structure.png);
+  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/structure.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -92,13 +92,13 @@
   background-position: center;
 }
 .slick-slide .third-image{
-  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/geosciences.png);
+  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/geosciences.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .fourth-image{
-  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/non-destructive.png);
+  background:linear-gradient(to bottom right, #11121365 ,#0b0b0c54),  url(/images/non-destructive.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -144,4 +144,8 @@
 
 .heading{
   text-align: center;
+}
+
+.client{
+  padding-inline: 2rem;
 }

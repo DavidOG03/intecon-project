@@ -11,10 +11,11 @@ export default {
 
       },
       backgroundImage:{
-        "heroImageOne":'url("/images/structural-engr.png")',
-        "heroImageTwo":'url("/images/staircase.png")',
-        "heroImageThree":'url("/images/geosciences.png")',
-        "heroImageFour":'url("/images/non-destructive.png")',
+        "heroImageOne":'url("/images/structural-engr.webp")',
+        "heroImageTwo":'url("/images/staircase.webp")',
+        "heroImageThree":'url("/images/geosciences.webp")',
+        "heroImageFour":'url("/images/non-destructive.webp")',
+        "getToWork":'url("/images/get-to-work.webp")'
       },
       fontFamily:{
         "jakarta":'"Plus Jakarta Sans", sans-serif',

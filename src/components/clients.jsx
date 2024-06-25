@@ -1,13 +1,10 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 
-const Clients = () => {
+const Clients = (position) => {
   return (
-    <section className="clients py-[69px]">
-          <h3 className="text-[40px] tracking-[14.8px] font-bold font-inter uppercase text-center">
-            Our Clients
-          </h3>
-          <div className="marquee-container relative -z-[1] pt-[88px] pb-[124px]">
+    
+          <div className={`marquee-container ${position} pt-[88px] pb-[124px]`}>
             <Marquee speed={250}>
               <span className="client">
                 <img
@@ -56,7 +53,7 @@ const Clients = () => {
               </span>
             </Marquee>
           </div>
-        </section>
+        
   )
 }
 
