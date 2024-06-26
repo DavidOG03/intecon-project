@@ -4,13 +4,13 @@ export default function Contact() {
   return (
     <main className="contact-page py-[120px] bg-[#110F0E] ">
       {/* <div className="contact-header">
-        <h1 className="heading font-electrolize font-medium text-[#f0f0f0] text-[48px]">
+        <h1 className="heading font-electrolize font-semibold text-[#f0f0f0] text-[48px]">
           Contact Us
         </h1>
       </div> */}
       <section className="contact-body px-6 grid grid-cols-2 gap-12 py-12">
         <div className="contact-text">
-          <h3 className="heading font-jakarta font-medium tracking-tighter text-[#f0f0f0] text-[90px] text-left leading-tight mb-6">
+          <h3 className="heading font-jakarta font-semibold tracking-tighter text-[#f0f0f0] text-[90px] text-left leading-tight mb-6">
             Let's work together
           </h3>
           <p className="text-base text-[#f0f0f0] font-inter max-w-[520px]">

@@ -5,7 +5,7 @@ import Quote from './quote'
 const Services = () => {
   return (
     <main className='services py-[120px]'>
-      <h3 className="text-[90px] text-[#f0f0f0] col-start-1 col-end-4 font-jakarta tracking-tight font-normal pl-8">Our Services</h3>
+      <h3 className="text-[90px] text-[#f0f0f0] col-start-1 col-end-4 font-jakarta tracking-tight font-semibold pl-8">Our Services</h3>
       <div className="services-box grid grid-cols-3 items-stretch gap-4 px-8 mb-[120px]">
       <ServiceCard
       name="Engineering Design"
