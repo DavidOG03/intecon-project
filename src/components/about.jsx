@@ -6,36 +6,52 @@ import Quote from "./quote";
 const About = () => {
   return (
     <main className="about w-full bg-[#110F0E] py-[120px]">
-      <section className="mission px-6 relative py-[60px]">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[90px]">Our Mission</h3>
-        <p className="text-base font-inter max-w-[45%] text-[#f0f0f0] relative z-10 leading-relaxed">
-        Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment.
-        </p>
-        <div className="image-box absolute top-[100px] right-6 -z-1 w-[50%]">
+      <section className="mission px-6 relative py-[60px] lg:py-[120px] lg:flex lg:flex-row-reverse justify-center items-start rev gap-12 w-full">
+      <div className="image-box w-full ">
           <img
             src="/images/mission.jpg"
             alt="consulting engineering"
-            className="brightness-[1] w-full"
+            className=" w-full object-cover"
           />
         </div>
+        <div className="text basis-[50%]">
+        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Our Mission</h3>
+        <p className="text-base font-inter text-[#f0f0f0] relative z-10 leading-relaxed">
+        Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment.
+        </p>
+        </div>
+        
+        
       </section>
 
-      <section className="vision flex flex-col justify-end items-end mt-[120px] relative px-6 py-[120px]">
-        <div className="image-box absolute top-[30px] left-6 -z-1 w-[50%]">
+      <section className="vision lg:flex lg:flex-row justify-center items-start gap-12 mt-[120px] relative px-6 py-[60px] lg:py-[120px]">
+        <div className="image-box w-full">
           <img
             src="/images/vision.jpg"
             alt="consulting engineering"
-            className="brightness-[0.65] w-full"
+            className=" w-full"
           />
         </div>
-        <p className="text-base text-[#f0f0f0] font-inter max-w-[45%] mb-6 relative z-10 mt-[100px]">
+        <div className="text ">
+        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Our Vision</h3>
+        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
         Our vision is to be one of the best consulting engineering firms in Africa and beyond, in the delivery of world class engineering services.
         </p>
+        </div>
+        
       </section>
 
-      <section className="overview px-6 relative py-[120px]">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[90px]">Who We Are</h3>
-        <p className="text-base font-inter max-w-[45%] text-[#f0f0f0] relative z-10 leading-relaxed">
+      <section className="overview px-6 relative py-[60px] lg:py-[120px] lg:flex lg:flex-row-reverse justify-center items-start rev gap-12 w-full">
+      <div className="image-box w-full">
+          <img
+            src="/images/structural-engr.png"
+            alt="consulting engineering"
+            className=" w-full"
+          />
+        </div>
+        <div className="text basis-[50%]">
+        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Who We Are</h3>
+        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10 leading-relaxed">
           Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
           Engineers specializing in areas of heavy industrial and large scale
           civil engineering works such as high-rise buildings, factories,
@@ -50,31 +66,26 @@ const About = () => {
             INTECON is an ISO 9001 :2015 Certiﬁed Company
           </span>
         </p>
-        <div className="image-box absolute top-[100px] right-6 -z-1 w-[50%]">
-          <img
-            src="/images/structural-engr.png"
-            alt="consulting engineering"
-            className="brightness-[1] w-full"
-          />
         </div>
       </section>
 
-      <section className="division flex flex-col justify-end items-end mt-[10px] relative px-6 py-[0px]">
-        <div className="image-box absolute top-[30px] left-6 -z-1 w-[50%]">
+      <section className="division lg:flex lg:flex-row justify-center items-start gap-12 relative px-6 py-[60px] lg:py-[120px]">
+        <div className="image-box w-full">
           <img
             src="/images/geosciences.webp"
             alt="consulting engineering"
-            className="brightness-[0.65] w-full"
+            className=" w-full "
           />
         </div>
-        <p className="text-base text-[#f0f0f0] font-inter max-w-[45%] mb-6 relative z-10 mt-[100px]">
+        <div className="text basis-[50%]">
+        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10 mt-[100px]">
           {" "}
           Apart from its extensive consulting engineering capabilities, Intecon
           Partnership Ltd is the parent company of two other specialist
           companies viz: Automated Geotechnics Ltd and Interworks Engineering
           Ltd.
         </p>
-        <p className="text-base text-[#f0f0f0] font-inter max-w-[45%] mb-6 relative z-10">
+        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
           <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
           1997 in response to the dearth of competent local Geotechnical
           Engineering Companies equipped with modern facilities at the time.
@@ -90,6 +101,8 @@ const About = () => {
           Gas Industry, Multinational Clients as well as Academic and Government
           Institutions across the country.
         </p>
+        </div>
+        
       </section>
       <section className="institutions py-[120px] mt-[120px] px-6 border-b border-t border-b-[#292828] border-t-[#292828]">
         <h3 className="font-jakarta capitalize text-[#f0f0f0] text-[72px] text-center mb-12">

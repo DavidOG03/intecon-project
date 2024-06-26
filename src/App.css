@@ -71,12 +71,7 @@
   
 }
 
-/* .slick-dots li.slick-active button::before{
-  content: '';
-  width: 2rem;
-  height: 8px;
-  background: white;
-} */
+
 
 .slick-slide .first-image{
   background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/structure.webp);
@@ -104,33 +99,95 @@
   background-position: center;
 }
 
-.navbar ul li{
+.navbar ul li a{
   position: relative;
+  height: 100%;
 }
 
-.navbar ul li::after{
+.navbar ul li a::after{
   content: ' ';
   position: absolute;
-  bottom: -2rem;
+  bottom: -1rem;
   left: 0;
   width: 0;
-  height: 5px;
+  height: 2px;
   background: #f0f0f0;
   transition: all 0.3s ease;
   transform-origin: left;
 }
 
-.navbar ul li::after a.active{
+.navbar ul li a.active::after{
   width: 100%;
   transform-origin: right;
 }
 
-.navbar ul li:hover::after{
+.navbar ul li a:hover::after{
   width: 100%;
   transform-origin: right;
 }
 
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding-block: 1rem;
+}
 
+.dropdown .nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 1rem 20px;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: -24px;
+  background-color: #110F0E;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 250px;
+  display: none;
+  border: 1px solid #413F3E;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown li .project::after{
+  content: ' ';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #f0f0f0;
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+
+.dropdown li .project:hover::after{
+  width: 100%;
+  transform-origin: right;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: #f0f0f0;
+  display: block;
+}
+
+/* .dropdown-item a:hover {
+  background-color: #f1f1f1;
+} */
+
+
+/* 
 .about-header{
   background:linear-gradient(to bottom right, #11121341 ,#0b0b0c46), url(/images/consulting-engineering.jpeg);
   background-repeat: no-repeat;
@@ -145,11 +202,11 @@
   background-size: cover;
   background-position: 50% 30%;
   padding: 120px 0;
-}
+} */
 
-.heading{
+/* .heading{
   text-align: center;
-}
+} */
 
 .client img{
   padding-inline: 1rem;
@@ -167,4 +224,22 @@
 .quote-btn:hover svg {
   fill: #f0f0f0;
   rotate: 45deg;
+}
+
+@media screen and (max-width:768px) {
+  .slick-dots li{
+    margin-inline: 0.4rem;
+  }
+  .slick-dots li button::before{
+    content: ' ';
+    width: 1.5rem;
+    height: 8px;
+    background: white;
+    
+  }
+
+  .client img{
+    padding-inline: 1rem;
+    width: 100px;
+  }
 }
