@@ -15,7 +15,7 @@ const About = () => {
           />
         </div>
         <div className="text pt-6 md:pt-0 basis-[70%]">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Our Mission</h3>
+        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Our Mission</h3>
         <p className="text-base font-inter text-[#f0f0f0] relative z-10 leading-relaxed">
         Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment.
         </p>
@@ -33,7 +33,7 @@ const About = () => {
           />
         </div>
         <div className="text pt-6 md:pt-0 ">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Our Vision</h3>
+        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Our Vision</h3>
         <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
         Our vision is to be one of the best consulting engineering firms in Africa and beyond, in the delivery of world class engineering services.
         </p>
@@ -50,7 +50,7 @@ const About = () => {
           />
         </div>
         <div className="text pt-6 md:pt-0 basis-[70%]">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Who We Are</h3>
+        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Who We Are</h3>
         <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10 leading-relaxed">
           Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
           Engineers specializing in areas of heavy industrial and large scale
@@ -76,11 +76,11 @@ const About = () => {
             alt="consulting engineering"
             className=" w-full "
           />
-          <img
+          {/* <img
             src="/images/geosciences.png"
             alt="consulting engineering"
             className=" w-full "
-          />
+          /> */}
         </div>
         <div className="text pt-6 md:pt-0 basis-[70%]">
         <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
@@ -110,10 +110,10 @@ const About = () => {
         
       </section>
       <section className="institutions py-[60px] px-6 border-b border-t border-b-[#292828] border-t-[#292828]">
-        <h3 className="font-jakarta capitalize text-[#f0f0f0] font-semibold text-[54px] md:text-[90px] text-center mb-12">
+        <h3 className="font-jakarta capitalize text-[#f0f0f0]  text-[54px] md:text-[90px] text-center mb-12">
           Statutory Institutions Registration
         </h3>
-        <div className="flex flex-row flex-wrap justify-center items-stretch gap-12 md:gap-6">
+        <div className="flex flex-row flex-wrap md:flex-nowrap justify-center items-stretch gap-12 md:gap-6">
           <div className=" cac flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[120px]"
@@ -167,7 +167,7 @@ const About = () => {
         </div>
       </section>
       <section className="directors py-[120px] border-b border-b-[#292828]">
-        <h3 className=" font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[54px] md:text-[90px] text-center font-semibold leading-tight mb-12">
+        <h3 className=" font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[54px] md:text-[90px] text-center  leading-tight mb-12">
           Meet Our Directors
         </h3>
         <div className="team flex flex-row flex-wrap justify-center items-stretch gap-8 px-6">
@@ -209,7 +209,7 @@ const About = () => {
         </div>
       </section>
       <section className="clients py-[69px]">
-          <h3 className="text-[54px] md:text-[90px] tracking-tight  font-semibold mb-12 text-[#f0f0f0] font-jakarta capitalize text-center">
+          <h3 className="text-[54px] md:text-[90px] tracking-tight mb-12 text-[#f0f0f0] font-jakarta capitalize text-center">
             Our Clients
           </h3>
       <Clients 
