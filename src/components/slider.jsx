@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { motion } from "framer-motion";;
+import { motion } from "framer-motion";
 
 const HeroSlider = () => {
   var settings = {
@@ -19,7 +19,7 @@ const HeroSlider = () => {
   const fadeup = {
     hidden: {
       y: 20,
-      opacity: 0.5
+      opacity: 0.5,
     },
     visible: {
       opacity: 1,
@@ -41,9 +41,11 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-[#fff] text-[24px] md:text-[42px] lg:text-[64px] ml-4 md:ml-8 absolute top-[40%] left-[0%] -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[750px] "
+            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-6 absolute top-[40%] left-[0%] -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] "
           >
-            <span className="block text-[#fff] text-[42px]  md:text-[68px] lg:text-[90px]">Intecon Patnership Ltd</span>
+            <span className="block text-[#fff] text-[42px] md:text-[68px] lg:text-[90px]">
+              Intecon Patnership Ltd
+            </span>
             Consulting Engineers
           </motion.h3>
         </div>
@@ -53,9 +55,11 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-8 absolute top-[40%] left-[0%]  -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[750px]  "
+            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-6 absolute top-[40%] left-[0%] -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px]  "
           >
-            <span className="block text-[#fff] text-[42px]  md:text-[68px] lg:text-[90px]">Intecon Patnership Ltd</span>
+            <span className="block text-[#fff] text-[42px] md:text-[68px] lg:text-[90px]">
+              Intecon Patnership Ltd
+            </span>
             Project Managers
           </motion.h3>
         </div>
@@ -65,10 +69,12 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-8 absolute top-[40%] left-[0%]  -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[750px] "
+            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-6 absolute top-[40%] left-[0%]  -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] "
           >
-            <span className="block text-[#fff] text-[42px]  md:text-[68px] lg:text-[90px]">Intecon Patnership Ltd</span>
-            Expert Engineering Solutions
+            <span className="block text-[#fff] text-[42px] md:text-[68px] lg:text-[90px]">
+              Intecon Patnership Ltd
+            </span>
+            Expert Solutions
           </motion.h3>
         </div>
         <div className="hero-image fourth-image bg-heroImageFour w-full h-auto flex-grow">
@@ -77,10 +83,12 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-6 absolute top-[40%] left-[0%]  -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[750px]  "
+            className="font-medium text-[#fff] text-[24px] md:text-[48px] lg:text-[64px] ml-4 md:ml-6 absolute top-[40%] left-[0%] -translate-y-[60%] font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px]"
           >
-            <span className="block text-[#fff] text-[42px]  md:text-[68px] lg:text-[90px]">Intecon Patnership Ltd</span>
-            Innovative Contruction and design
+            <span className="block text-[#fff] text-[42px]  md:text-[68px] lg:text-[90px]">
+              Intecon Patnership Ltd
+            </span>
+            Innovative Design
           </motion.h3>
         </div>
       </Slider>

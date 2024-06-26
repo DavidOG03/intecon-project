@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 const Clients = ({position}) => {
   return (
     
-          <div className={`marquee-container ${position} pt-[88px] pb-[200px]`}>
-            <Marquee speed={250}>
+          <div className={`marquee-container ${position} py-[33px] md:py-[44px]  bg-[#fff]`}>
+            <Marquee speed={100}>
               <span className="client">
                 <img
                   src="/images/coat-of-arms.png"

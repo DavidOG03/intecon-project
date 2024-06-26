@@ -5,8 +5,8 @@ import Quote from "./quote";
 
 const About = () => {
   return (
-    <main className="about w-full bg-[#110F0E] py-[120px]">
-      <section className="mission px-6 relative py-[60px] lg:py-[120px] lg:flex lg:flex-row-reverse justify-center items-start rev gap-12 w-full">
+    <main className="about w-full bg-[#110F0E] pt-[120px]">
+      <section className="mission px-6 relative py-[60px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
       <div className="image-box w-full ">
           <img
             src="/images/mission.jpg"
@@ -14,7 +14,7 @@ const About = () => {
             className=" w-full object-cover"
           />
         </div>
-        <div className="text basis-[50%]">
+        <div className="text pt-6 md:pt-0 basis-[70%]">
         <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Our Mission</h3>
         <p className="text-base font-inter text-[#f0f0f0] relative z-10 leading-relaxed">
         Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment.
@@ -24,7 +24,7 @@ const About = () => {
         
       </section>
 
-      <section className="vision lg:flex lg:flex-row justify-center items-start gap-12 mt-[120px] relative px-6 py-[60px] lg:py-[120px]">
+      <section className="vision lg:flex lg:flex-row justify-center items-center gap-12 relative px-6 py-[60px] md:flex md:flex-row">
         <div className="image-box w-full">
           <img
             src="/images/vision.jpg"
@@ -32,7 +32,7 @@ const About = () => {
             className=" w-full"
           />
         </div>
-        <div className="text ">
+        <div className="text pt-6 md:pt-0 ">
         <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Our Vision</h3>
         <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
         Our vision is to be one of the best consulting engineering firms in Africa and beyond, in the delivery of world class engineering services.
@@ -41,7 +41,7 @@ const About = () => {
         
       </section>
 
-      <section className="overview px-6 relative py-[60px] lg:py-[120px] lg:flex lg:flex-row-reverse justify-center items-start rev gap-12 w-full">
+      <section className="overview px-6 relative py-[60px] md:flex md:flex-row-reverse items-center rev gap-4 w-full">
       <div className="image-box w-full">
           <img
             src="/images/structural-engr.png"
@@ -49,7 +49,7 @@ const About = () => {
             className=" w-full"
           />
         </div>
-        <div className="text basis-[50%]">
+        <div className="text pt-6 md:pt-0 basis-[70%]">
         <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:[68px] lg:[90px] relative z-10">Who We Are</h3>
         <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10 leading-relaxed">
           Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
@@ -69,16 +69,21 @@ const About = () => {
         </div>
       </section>
 
-      <section className="division lg:flex lg:flex-row justify-center items-start gap-12 relative px-6 py-[60px] lg:py-[120px]">
-        <div className="image-box w-full">
+      <section className="division md:flex md:flex-row justify-between items-center gap-12 relative px-6 py-[60px] lg:py-[80px]">
+        <div className="image-box w-full flex flex-col gap-4">
           <img
             src="/images/geosciences.webp"
             alt="consulting engineering"
             className=" w-full "
           />
+          <img
+            src="/images/geosciences.png"
+            alt="consulting engineering"
+            className=" w-full "
+          />
         </div>
-        <div className="text basis-[50%]">
-        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10 mt-[100px]">
+        <div className="text pt-6 md:pt-0 basis-[70%]">
+        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
           {" "}
           Apart from its extensive consulting engineering capabilities, Intecon
           Partnership Ltd is the parent company of two other specialist
@@ -104,12 +109,12 @@ const About = () => {
         </div>
         
       </section>
-      <section className="institutions py-[120px] mt-[120px] px-6 border-b border-t border-b-[#292828] border-t-[#292828]">
-        <h3 className="font-jakarta capitalize text-[#f0f0f0] text-[72px] text-center mb-12">
+      <section className="institutions py-[60px] px-6 border-b border-t border-b-[#292828] border-t-[#292828]">
+        <h3 className="font-jakarta capitalize text-[#f0f0f0] font-semibold text-[54px] md:text-[90px] text-center mb-12">
           Statutory Institutions Registration
         </h3>
-        <div className="flex flex-row justify-center items-stretch gap-6">
-          <div className=" cac flex flex-col justify-between items-center gap-4 h-[200px]">
+        <div className="flex flex-row flex-wrap justify-center items-stretch gap-12 md:gap-6">
+          <div className=" cac flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[120px]"
               src="/images/cac.png"
@@ -119,7 +124,7 @@ const About = () => {
               Corporate Affairs Commission
             </p>
           </div>
-          <div className=" coren flex flex-col justify-between items-center gap-4 h-[200px]">
+          <div className=" coren flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[200px]"
               src="/images/coren.jpg"
@@ -129,7 +134,7 @@ const About = () => {
               Council for the Regulation of Engineering in Nigeria
             </p>
           </div>
-          <div className=" acen flex flex-col justify-between items-center gap-4 h-[200px]">
+          <div className=" acen flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[120px]"
               src="/images/acen.jpg"
@@ -139,7 +144,7 @@ const About = () => {
               Association for Consulting Engineering Nigeria
             </p>
           </div>
-          <div className=" dpr flex flex-col justify-between items-center gap-4 h-[200px]">
+          <div className=" dpr flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[200px]"
               src="/images/dpr.jpg"
@@ -149,7 +154,7 @@ const About = () => {
               Department of Petroleum Resources
             </p>
           </div>
-          <div className=" nnpc flex flex-col justify-between items-center gap-4 h-[200px]">
+          <div className=" nnpc flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[120px]"
               src="/images/nnpc.webp"
@@ -162,7 +167,7 @@ const About = () => {
         </div>
       </section>
       <section className="directors py-[120px] border-b border-b-[#292828]">
-        <h3 className=" font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[72px] text-center font-semibold mb-12">
+        <h3 className=" font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[54px] md:text-[90px] text-center font-semibold leading-tight mb-12">
           Meet Our Directors
         </h3>
         <div className="team flex flex-row flex-wrap justify-center items-stretch gap-8 px-6">
@@ -204,7 +209,7 @@ const About = () => {
         </div>
       </section>
       <section className="clients py-[69px]">
-          <h3 className="text-[72px] tracking-tight  font-semibold mb-12 text-[#f0f0f0] font-jakarta capitalize text-center">
+          <h3 className="text-[54px] md:text-[90px] tracking-tight  font-semibold mb-12 text-[#f0f0f0] font-jakarta capitalize text-center">
             Our Clients
           </h3>
       <Clients 

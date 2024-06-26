@@ -66,7 +66,7 @@ const Header = () => {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  isActive ? "nav-link active text-[#f0f0f0]  font-jakarta text-[14px] tracking-[0.6px]" : "nav-link text-[#f0f0f0]  font-jakarta text-[14px] tracking-[0.6px]"
+                  isActive ? "nav-link active text-[#f0f0f0] font-jakarta text-[14px] tracking-[0.6px]" : "nav-link text-[#f0f0f0]  font-jakarta text-[14px] tracking-[0.6px]"
                 }
               >
                 Home
