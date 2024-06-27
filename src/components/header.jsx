@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-end w-[95%] absolute top-0 left-[50%] -translate-x-[50%] pt-8 pb-4 z-[100] border-b-[0.5px] border-b-[#413F3E] ">
+      <header className="flex flex-row justify-between items-end w-full absolute top-0 left-[50%] -translate-x-[50%] pt-8 pb-4 px-6 z-[100] bg-[#1c1c1c]">
         <Link to="/" className="logo">
           <img src="/images/intecon-logo.png" alt="intecon's logo" />
         </Link>
@@ -107,7 +107,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="contact-info absolute  flex-row justify-end items-center gap-6 top-2 right-6 hidden md:flex">
+        <div className="contact-info absolute  flex-row justify-end items-center gap-6 top-2 right-10 hidden md:flex">
           <a
             href="mailto:intecon@intecon.com.ng"
             target="blank"

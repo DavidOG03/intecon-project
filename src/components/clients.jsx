@@ -1,10 +1,10 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 
-const Clients = ({position}) => {
+const Clients = () => {
   return (
     
-          <div className={`marquee-container ${position} py-[66px] md:py-[88px] mb-[120px] bg-[#fff]`}>
+          <div className='marquee-container  py-[66px] md:py-[88px] bg-[#fff]'>
             <Marquee speed={100}>
               <span className="client">
                 <img

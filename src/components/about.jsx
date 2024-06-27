@@ -5,7 +5,7 @@ import Quote from "./quote";
 
 const About = () => {
   return (
-    <main className="about w-full bg-[#110F0E] pt-[120px]">
+    <main className="about w-full bg-[#fff] pt-[120px]">
       <section className="mission px-6 relative py-[60px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
       <div className="image-box w-full ">
           <img
@@ -15,8 +15,8 @@ const About = () => {
           />
         </div>
         <div className="text pt-6 md:pt-0 basis-[70%]">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Our Mission</h3>
-        <p className="text-base font-inter text-[#f0f0f0] relative z-10 leading-relaxed">
+        <h3 className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Our Mission</h3>
+        <p className="text-base font-inter text-[#1c1c1c] relative z-10 leading-relaxed">
         Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment.
         </p>
         </div>
@@ -33,8 +33,8 @@ const About = () => {
           />
         </div>
         <div className="text pt-6 md:pt-0 ">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Our Vision</h3>
-        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
+        <h3 className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Our Vision</h3>
+        <p className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10">
         Our vision is to be one of the best consulting engineering firms in Africa and beyond, in the delivery of world class engineering services.
         </p>
         </div>
@@ -50,8 +50,8 @@ const About = () => {
           />
         </div>
         <div className="text pt-6 md:pt-0 basis-[70%]">
-        <h3 className="text-[#f0f0f0] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Who We Are</h3>
-        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10 leading-relaxed">
+        <h3 className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] lg:text-[90px] relative z-10">Who We Are</h3>
+        <p className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10 leading-relaxed">
           Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
           Engineers specializing in areas of heavy industrial and large scale
           civil engineering works such as high-rise buildings, factories,
@@ -83,14 +83,14 @@ const About = () => {
           /> */}
         </div>
         <div className="text pt-6 md:pt-0 basis-[70%]">
-        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
+        <p className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10">
           {" "}
           Apart from its extensive consulting engineering capabilities, Intecon
           Partnership Ltd is the parent company of two other specialist
           companies viz: Automated Geotechnics Ltd and Interworks Engineering
           Ltd.
         </p>
-        <p className="text-base text-[#f0f0f0] font-inter mb-6 relative z-10">
+        <p className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10">
           <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
           1997 in response to the dearth of competent local Geotechnical
           Engineering Companies equipped with modern facilities at the time.
@@ -109,8 +109,8 @@ const About = () => {
         </div>
         
       </section>
-      <section className="institutions py-[60px] px-6 border-b border-t border-b-[#292828] border-t-[#292828]">
-        <h3 className="font-jakarta capitalize text-[#f0f0f0]  text-[54px] md:text-[90px] text-center mb-12">
+      <section className="institutions py-[60px] px-6 border-b border-t border-b-[#c9c7c7] border-t-[#c9c7c7]">
+        <h3 className="font-jakarta capitalize text-[#1c1c1c]  text-[54px] md:text-[90px] text-center mb-12">
           Statutory Institutions Registration
         </h3>
         <div className="flex flex-row flex-wrap md:flex-nowrap justify-center items-stretch gap-12 md:gap-6">
@@ -120,7 +120,7 @@ const About = () => {
               src="/images/cac.png"
               alt="corporate Affairs Commission logo"
             />
-            <p className="text-center text-[1rem] text-[#f0f0f0]">
+            <p className="text-center text-[1rem] text-[#1c1c1c]">
               Corporate Affairs Commission
             </p>
           </div>
@@ -130,7 +130,7 @@ const About = () => {
               src="/images/coren.jpg"
               alt="Council for the Regulation of Engineering in Nigeria logo"
             />
-            <p className="text-center text-[1rem] text-[#f0f0f0]">
+            <p className="text-center text-[1rem] text-[#1c1c1c]">
               Council for the Regulation of Engineering in Nigeria
             </p>
           </div>
@@ -140,7 +140,7 @@ const About = () => {
               src="/images/acen.jpg"
               alt="Association for Consulting Engineering Nigeria logo"
             />
-            <p className="text-center text-[1rem] text-[#f0f0f0]">
+            <p className="text-center text-[1rem] text-[#1c1c1c]">
               Association for Consulting Engineering Nigeria
             </p>
           </div>
@@ -150,7 +150,7 @@ const About = () => {
               src="/images/dpr.jpg"
               alt="Department of Petroleum Resources logo"
             />
-            <p className="text-center text-[1rem] text-[#f0f0f0]">
+            <p className="text-center text-[1rem] text-[#1c1c1c]">
               Department of Petroleum Resources
             </p>
           </div>
@@ -160,17 +160,17 @@ const About = () => {
               src="/images/nnpc.webp"
               alt="Nigerian National Petroleum Corporation"
             />
-            <p className="text-center text-[1rem] text-[#f0f0f0]">
+            <p className="text-center text-[1rem] text-[#1c1c1c]">
               Nigerian National Petroleum Corporation
             </p>
           </div>
         </div>
       </section>
-      <section className="directors py-[120px] border-b border-b-[#292828]">
-        <h3 className=" font-jakarta capitalize text-[#f0f0f0] tracking-tight text-[54px] md:text-[90px] text-center  leading-tight mb-12">
+      <section className="directors py-[120px] border-b border-b-[#c9c7c7]">
+        <h3 className=" font-jakarta capitalize text-[#1c1c1c] tracking-tight text-[54px] md:text-[90px] text-center  leading-tight mb-12">
           Meet Our Directors
         </h3>
-        <div className="team flex flex-row flex-wrap justify-center items-stretch gap-8 px-6">
+        <div className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
           <Director
             img="/images/engr-ajibola-profile.webp"
             name="Engr. O. Alade Ajibola"
@@ -209,7 +209,7 @@ const About = () => {
         </div>
       </section>
       <section className="clients py-[69px]">
-          <h3 className="text-[54px] md:text-[90px] tracking-tight mb-12 text-[#f0f0f0] font-jakarta capitalize text-center">
+          <h3 className="text-[54px] md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta capitalize text-center">
             Our Clients
           </h3>
       <Clients 
