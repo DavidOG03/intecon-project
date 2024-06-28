@@ -6,7 +6,7 @@ export default function Contact() {
   const companyName = "Intecon Partnershipt Limited";
   return (
     <main className="contact-page py-[120px] bg-[#fff] ">
-      <section className="contact-body px-6 grid grid-cols-2 gap-12 py-12">
+      <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 py-12">
         <div className="contact-text">
           <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[90px] text-left leading-tight mb-6">
             Let's work together
