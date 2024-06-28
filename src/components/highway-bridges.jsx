@@ -3,9 +3,13 @@ import React from "react";
 const HighwayBridges = () => {
   return (
     <main className="highway-design bg-white pt-[120px]">
-      <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center lg:gap-12 pt-6 pb-[60px]">
+      <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center lg:gap-12 pt-6 pb-[120px]">
         <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
-          <img src="/images/olive-court.jpg" alt="olive court" className="object-fill w-full"/>
+          <img
+            src="/images/road.png"
+            alt="olive court"
+            className="object-fill w-full"
+          />
         </div>
         <div className="text">
           <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] xl:text-[90px] text-left leading-tight mb-6 max-w-[768px]">
@@ -30,14 +34,19 @@ const HighwayBridges = () => {
           </p>
         </div>
       </section>
-      <section className="gallery px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <img src="/images/road.png" alt="road-work" className="w-full"/>
-        <img src="/images/road2.png" alt="road-work" className="w-full"/>
-        <img src="/images/road3.png" alt="road-work" className="w-full"/>
-        <img src="/images/road4.png" alt="road-work" className="w-full"/>
-        <img src="/images/road5.png" alt="road-work" className="w-full"/>
-        <img src="/images/road6.png" alt="road-work" className="w-full"/>
-        <img src="/images/road7.png" alt="road-work" className="w-full"/>
+      <section className="gallery px-6">
+        <h3 className="text capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]">
+          Highway and bridges projects pictures
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <img src="/images/road.png" alt="road-work" className="w-full" />
+          <img src="/images/road2.png" alt="road-work" className="w-full" />
+          <img src="/images/road3.png" alt="road-work" className="w-full" />
+          <img src="/images/road4.png" alt="road-work" className="w-full" />
+          <img src="/images/road5.png" alt="road-work" className="w-full" />
+          <img src="/images/road6.png" alt="road-work" className="w-full" />
+          <img src="/images/road7.png" alt="road-work" className="w-full" />
+        </div>
       </section>
     </main>
   );

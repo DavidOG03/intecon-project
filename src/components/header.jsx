@@ -6,16 +6,16 @@ import { Cross as Hamburger } from "hamburger-react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  // const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsDropdownVisible(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsDropdownVisible(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsDropdownVisible(false);
+  // const handleMouseLeave = () => {
+  //   setIsDropdownVisible(false);
 
-  };
+  // };
 
   const navbarRef = useRef(null);
 
@@ -25,12 +25,12 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener('mousedown', handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // }, []);
 
 
 
@@ -97,7 +97,7 @@ const Header = () => {
         </nav>
 
         <nav
-          className={`navbar-mobile absolute bg-[#1c1c1c] transition-all ease-in-out duration-500 md:hidden top-0 -right-[100%] h-[100vh] w-[60%] border-l border-l-[#413F3E] ${
+          className={`navbar-mobile absolute bg-[#1c1c1c] transition-all ease-in-out duration-500 md:hidden top-0 -right-[100%] h-[100vh] w-[50%] border-l border-l-[#413F3E] ${
             isOpen === true ? "active" : ""
           }`}
           ref={navbarRef}
@@ -109,44 +109,44 @@ const Header = () => {
                 end
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff] font-jakarta text-[14px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff] font-jakarta text-[12px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
               >
                 Home
               </NavLink>
             </li>
-            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[14px] tracking-[0.6px]">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[12px] tracking-[0.6px]">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
               >
                 About US
               </NavLink>
             </li>
-            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[14px] tracking-[0.6px]">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[12px] tracking-[0.6px]">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
               >
                 Contact Us
               </NavLink>
             </li>
-            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[14px] tracking-[0.6px]">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[12px] tracking-[0.6px]">
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
               >
                 services

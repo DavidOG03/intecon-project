@@ -13,7 +13,7 @@ const Dropdown = () => {
   };
   return (
     <div
-      className="nav-item "
+      className="nav-item max-w-[160px]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -22,18 +22,18 @@ const Dropdown = () => {
       </p>
       {isDropdownVisible && (
         <ul className="dropdown ">
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] md:text-[14px] tracking-[0.6px]">
             <NavLink to="/highway-bridges-design" className="project">
               Highway and Bridges Design
             </NavLink>
           </li>
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] md:text-[14px] tracking-[0.6px]">
             <NavLink to="/structural-design" className="project">Structural Design</NavLink>
           </li>
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] md:text-[14px] tracking-[0.6px]">
             <NavLink to="/geosciences" className="project">Geosciences</NavLink>
           </li>
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] md:text-[14px] tracking-[0.6px]">
             <NavLink to="/non-destructive-testing" className="project">
               Non-Destructive Testing
             </NavLink>
