@@ -21,7 +21,7 @@ const Dropdown = () => {
         Projects
       </p>
       {isDropdownVisible && (
-        <ul className="dropdown">
+        <ul className="dropdown ">
           <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
             <NavLink to="/highway-bridges-design" className="project">
               Highway and Bridges Design

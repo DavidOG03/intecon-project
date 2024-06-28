@@ -6,7 +6,7 @@ import Clients from './clients'
 const Home = () => {
   return (
     <>
-      <main className='hero relative z-5 w-full h-full'>
+      <main className='hero w-full h-full'>
           <HeroSlider/>
           {/* <Clients/> */}
       </main>

@@ -15,7 +15,9 @@ export default {
         "heroImageTwo":'url("/images/staircase.webp")',
         "heroImageThree":'url("/images/geosciences.webp")',
         "heroImageFour":'url("/images/non-destructive.webp")',
-        "getToWork":'url("/images/get-to-work.webp")'
+        "getToWork":'url("/images/get-to-work.webp")',
+        "court":'url("/images/get-to-work.webp")'
+        // "court":'url("/images/olive-court.jpg")',
       },
       fontFamily:{
         "jakarta":'"Plus Jakarta Sans", sans-serif',

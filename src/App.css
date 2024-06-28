@@ -246,11 +246,25 @@
     width: 100px;
   }
 
- 
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    /* translate: -50% 0; */
+    background-color: #1c1c1c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+    width: full;
+    display: none;
+    border: 1px solid #413F3E;
+  }
+
+  
 }
 
 @media screen and (min-width:769px) {
   .hamburger-react{
     display: none;
   }
+  
 }

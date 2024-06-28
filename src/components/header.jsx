@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Dropdown from "./dropdown";
 import { Cross as Hamburger } from "hamburger-react";
@@ -14,11 +14,29 @@ const Header = () => {
 
   const handleMouseLeave = () => {
     setIsDropdownVisible(false);
+
   };
+
+  const navbarRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+
 
   return (
     <>
-      <header className="flex flex-row justify-between items-end w-full absolute top-0 left-[50%] -translate-x-[50%] pt-8 pb-4 px-6 z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E]">
+      <header className="flex flex-row justify-between items-end w-full absolute top-0 left-[50%] -translate-x-[50%] pt:0 md:pt-8 pb-4 px-6 z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E]">
         <Link to="/" className="logo">
           <img src="/images/intecon-logo.png" alt="intecon's logo" />
         </Link>
@@ -30,7 +48,7 @@ const Header = () => {
                 end
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[14px] md:text-[12px] tracking-[0.6px]"
                     : "nav-link text-[#fff]  font-jakarta text-[14px] tracking-[0.6px]"
                 }
               >
@@ -82,8 +100,9 @@ const Header = () => {
           className={`navbar-mobile absolute bg-[#1c1c1c] transition-all ease-in-out duration-500 md:hidden top-0 -right-[100%] h-[100vh] w-[60%] border-l border-l-[#413F3E] ${
             isOpen === true ? "active" : ""
           }`}
+          ref={navbarRef}
         >
-          <ul className="uppercase text-[#fff] flex flex-col justify-center items-center h-full">
+          <ul className="uppercase text-[#fff] flex flex-col justify-center items-start h-full">
             <li className="inline-block mx-4 my-3 hover:cursor-pointer">
               <NavLink
                 to="/"
@@ -133,7 +152,8 @@ const Header = () => {
                 services
               </NavLink>
             </li>
-            <li
+            <Dropdown/>
+            {/* <li
               className="inline-block mx-4 my-3 hover:cursor-pointer"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -165,21 +185,21 @@ const Header = () => {
                   </li>
                 </ul>
               )}
-            </li>
+            </li> */}
           </ul>
         </nav>
 
         <div className="contact-info absolute  flex-row justify-end items-center gap-6 top-2 right-10 hidden md:flex">
-          <div className="email flex flex-row gap-2">
+          <div className="email flex flex-row items-center gap-2">
             <img
               src="/images/envelope.svg"
               alt="envelope.svg"
-              className="w-6"
+              className="inline-block w-4"
             />
             <a
               href="mailto:intecon@intecon.com.ng"
               target="blank"
-              className=" text-[#fff] font-inter"
+              className=" text-[#fff] font-inter text-[12px]"
             >
               intecon@intecon.com.ng
             </a>
@@ -188,12 +208,12 @@ const Header = () => {
             <img
               src="/images/phone-too.svg"
               alt="contact icon"
-              className="inline-block w-6"
+              className="inline-block w-4"
             />{" "}
-            <a href="tel:+2348033242026" className=" text-[#fff] font-inter">
+            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[12px]">
               Call +234 803 324 2026
             </a>
-            <a href="tel:+2348033283101" className=" text-[#fff] font-inter">
+            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[12px]">
               +234 803 328 3101
             </a>
           </div>
@@ -203,7 +223,6 @@ const Header = () => {
           toggled={isOpen}
           toggle={setOpen}
           color="#ffffff"
-          className="md:hidden"
         />
       </header>
     </>
