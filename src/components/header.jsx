@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Dropdown from "./dropdown";
+import { Cross as Hamburger } from "hamburger-react";
 
 const Header = () => {
-  const [isNavBar, setIsNavBar] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownVisible(false);
+  };
 
   return (
     <>
-      <header className="flex flex-row justify-between items-end w-full absolute top-0 left-[50%] -translate-x-[50%] pt-8 pb-4 px-6 z-[100] bg-[#035891]">
+      <header className="flex flex-row justify-between items-end w-full absolute top-0 left-[50%] -translate-x-[50%] pt-8 pb-4 px-6 z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E]">
         <Link to="/" className="logo">
           <img src="/images/intecon-logo.png" alt="intecon's logo" />
         </Link>
@@ -68,12 +79,12 @@ const Header = () => {
         </nav>
 
         <nav
-          className={`navbar mobile absolute bg-[#110F0E] hidden md:hidden top-0 -right-6 h-[100vh] w-[60%] border-l border-l-[#413F3E] ${
-            isNavBar === true ? "active" : ""
+          className={`navbar-mobile absolute bg-[#1c1c1c] transition-all ease-in-out duration-500 md:hidden top-0 -right-[100%] h-[100vh] w-[60%] border-l border-l-[#413F3E] ${
+            isOpen === true ? "active" : ""
           }`}
         >
           <ul className="uppercase text-[#fff] flex flex-col justify-center items-center h-full">
-            <li className="inline-block mx-4 my-6">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer">
               <NavLink
                 to="/"
                 end
@@ -86,7 +97,7 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
-            <li className="inline-block mx-4 my-6 font-jakarta text-[14px] tracking-[0.6px]">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[14px] tracking-[0.6px]">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -98,7 +109,7 @@ const Header = () => {
                 About US
               </NavLink>
             </li>
-            <li className="inline-block mx-4 my-6 font-jakarta text-[14px] tracking-[0.6px]">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[14px] tracking-[0.6px]">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -110,7 +121,7 @@ const Header = () => {
                 Contact Us
               </NavLink>
             </li>
-            <li className="inline-block mx-4 my-6 font-jakarta text-[14px] tracking-[0.6px]">
+            <li className="inline-block mx-4 my-3 hover:cursor-pointer font-jakarta text-[14px] tracking-[0.6px]">
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
@@ -122,8 +133,39 @@ const Header = () => {
                 services
               </NavLink>
             </li>
-            {/* <li className='inline-block mx-4 font-jakarta text-[14px] tracking-[0.6px]'><NavLink to="/projects">projects</NavLink></li> */}
-            <Dropdown />
+            <li
+              className="inline-block mx-4 my-3 hover:cursor-pointer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <p className="font-jakarta text-[14px] tracking-[0.6px]">
+                projects
+              </p>
+              {isDropdownVisible && (
+                <ul className="dropdown">
+                  <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+                    <NavLink to="/highway-bridges-design" className="project">
+                      Highway and Bridges Design
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+                    <NavLink to="/structural-design" className="project">
+                      Structural Design
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+                    <NavLink to="/geosciences" className="project">
+                      Geosciences
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[14px] tracking-[0.6px]">
+                    <NavLink to="/non-destructive-testing" className="project">
+                      Non-Destructive Testing
+                    </NavLink>
+                  </li>
+                </ul>
+              )}
+            </li>
           </ul>
         </nav>
 
@@ -156,6 +198,13 @@ const Header = () => {
             </a>
           </div>
         </div>
+        <Hamburger
+          size={34}
+          toggled={isOpen}
+          toggle={setOpen}
+          color="#ffffff"
+          className="md:hidden"
+        />
       </header>
     </>
   );

@@ -134,7 +134,6 @@
 
 .dropdown .nav-link {
   text-decoration: none;
-  color: black;
   padding: 1rem 20px;
   display: inline-block;
 }
@@ -180,6 +179,10 @@
   text-decoration: none;
   color: #fff;
   display: block;
+}
+
+.navbar-mobile.active{
+  right: 0;
 }
 
 /* .dropdown-item a:hover {
@@ -241,5 +244,13 @@
   .client img{
     padding-inline: 1rem;
     width: 100px;
+  }
+
+ 
+}
+
+@media screen and (min-width:769px) {
+  .hamburger-react{
+    display: none;
   }
 }
