@@ -4,8 +4,8 @@ import Quote from './quote'
 
 const Services = () => {
   return (
-    <main className='services pt-[120px]'>
-      <h3 className="text-[54px] md:text-[90px] text-[#f0f0f0] col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</h3>
+    <main className='services pt-[120px] bg-[#fff]'>
+      <h3 className="text-[54px] md:text-[90px] text-[#1c1c1c] col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</h3>
       <div className="services-box grid grid-cols-1 md:grid-cols-3 items-stretch gap-4 px-4 md:px-8 mb-[120px]">
       <ServiceCard
       name="Engineering Design"

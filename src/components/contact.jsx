@@ -1,19 +1,17 @@
 import React from "react";
+import MapComponent from "./map";
 
 export default function Contact() {
+  const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
+  const companyName = "Intecon Partnershipt Limited";
   return (
-    <main className="contact-page py-[120px] bg-[#110F0E] ">
-      {/* <div className="contact-header">
-        <h1 className="heading font-electrolize font-semibold text-[#f0f0f0] text-[48px]">
-          Contact Us
-        </h1>
-      </div> */}
+    <main className="contact-page py-[120px] bg-[#fff] ">
       <section className="contact-body px-6 grid grid-cols-2 gap-12 py-12">
         <div className="contact-text">
-          <h3 className="heading font-jakarta font-semibold tracking-tighter text-[#f0f0f0] text-[90px] text-left leading-tight mb-6">
+          <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[90px] text-left leading-tight mb-6">
             Let's work together
           </h3>
-          <p className="text-base text-[#f0f0f0] font-inter max-w-[520px]">
+          <p className="text-base text-[#1c1c1c] font-inter max-w-[520px]">
             Feel free to talk to our Business Department at any time you please
             using our Live Chat system on our website or one of the below
             instant messaging programs. Please be patient while waiting for
@@ -23,7 +21,7 @@ export default function Contact() {
               Phone General Inquiries: +234 803 671 8778
             </strong>
           </p>
-          <div className="address text-[#f0f0f0] mt-6 font-inter">
+          <div className="address text-[#1c1c1c] mt-6 font-inter">
             <h3 className="text-base pb-4">Company Address</h3>
             <p className="text-[14px] pb-2">
               16 Aperin Street, off Awolowo Road, Old Bodija Ibadan.
@@ -41,7 +39,7 @@ export default function Contact() {
               </a>
             </p>
           </div>
-          <div className="address-two mt-6 text-[#f0f0f0] font-inter">
+          <div className="address-two mt-6 text-[#1c1c1c] font-inter">
             <h3 className="text-base pb-4">Company Address Two</h3>
             <p className="text-[14px] pb-2">
               Tecon House, Ikeja, Lagos Nigeria
@@ -64,15 +62,15 @@ export default function Contact() {
           action=""
           className="contact-form grid grid-cols-2 justify-start items-start font-inter mt-4"
         >
-          {/* <h3 className="heading text-left text-[32px] font-electrolize uppercase text-[#f0f0f0] auto-rows-auto">
+          {/* <h3 className="heading text-left text-[32px] font-electrolize uppercase text-[#1c1c1c] auto-rows-auto">
             Contact Form
           </h3> */}
           <div className="input-group mb-6 flex flex-col justify-start items-start row">
-            <label className="text-[#f0f0f0] block mb-2" htmlFor="name">
+            <label className="text-[#1c1c1c] block mb-2" htmlFor="name">
               Full Name
             </label>
             <input
-              className="bg-transparent border-b border-b-[#413F3E] hover:border-b-[#ffffffaf] focus:border-b-[#fff] pb-6"
+              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-6"
               type="text"
               placeholder="Enter your full name"
               id="name"
@@ -80,11 +78,11 @@ export default function Contact() {
             />
           </div>
           <div className="input-group mb-6 flex flex-col justify-start items-start row">
-            <label className="text-[#f0f0f0] block mb-2" htmlFor="email">
+            <label className="text-[#1c1c1c] block mb-2" htmlFor="email">
               Email Address
             </label>
             <input
-              className="bg-transparent border-b border-b-[#413F3E]  pb-6 hover:border-b-[#ffffffaf] focus:border-b-[#fff]"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               type="email"
               placeholder="Enter your Email Address"
               id="email"
@@ -92,11 +90,11 @@ export default function Contact() {
             />
           </div>
           <div className="input-group mb-6 flex flex-col justify-start items-start row">
-            <label className="text-[#f0f0f0] block mb-2" htmlFor="company">
+            <label className="text-[#1c1c1c] block mb-2" htmlFor="company">
               Company
             </label>
             <input
-              className="bg-transparent border-b border-b-[#413F3E]  pb-6 hover:border-b-[#ffffffaf] focus:border-b-[#fff]"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               type="text"
               placeholder="Enter your Company Name"
               id="company"
@@ -104,11 +102,11 @@ export default function Contact() {
             />
           </div>
           <div className="input-group mb-6 flex flex-col justify-start items-start row">
-            <label className="text-[#f0f0f0] block mb-2" htmlFor="telephone">
+            <label className="text-[#1c1c1c] block mb-2" htmlFor="telephone">
               Telephone
             </label>
             <input
-              className="bg-transparent border-b border-b-[#413F3E] pb-6 hover:border-b-[#ffffffaf] focus:border-b-[#fff]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               type="phone"
               placeholder="Enter your Telephone Number"
               id="telephone"
@@ -116,11 +114,11 @@ export default function Contact() {
             />
           </div>
           <div className="input-group mb-6 flex flex-col justify-start items-start col-start-1 col-end-3">
-            <label className="text-[#f0f0f0] block mb-2" htmlFor="message">
+            <label className="text-[#1c1c1c] block mb-2" htmlFor="message">
               Message
             </label>
             <textarea
-              className="bg-transparent border-b border-b-[#413F3E] w-full hover:border-b-[#ffffffaf] focus:border-b-[#fff]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               name="message"
               id="message"
               cols="30"
@@ -130,12 +128,14 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="font-inter font-semibold text-base py-6 px-8 rounded-[48px] border border-transparent transition ease-in bg-[#f0f0f0] hover:bg-transparent hover:border hover:border-[#f0f0f0] hover:text-[#f0f0f0]"
+            className="font-inter font-semibold text-base py-6 px-8 rounded-[48px] border border-transparent transition ease-in text-[#fff] bg-[#1c1c1c] hover:bg-transparent hover:border hover:border-[#1c1c1c] hover:text-[#1c1c1c]"
           >
             Send Message
           </button>
         </form>
       </section>
+      {/* <MapComponent lat={companyCoordinates.lat} lng={companyCoordinates.lng} companyName={companyName}/> */}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4161.548606124598!2d3.9079503997520906!3d7.416167548707161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103992abe5918b3b%3A0xd7e210c9d7f6bbdc!2sIntecon%20Partnership%20Limited!5e0!3m2!1sen!2sng!4v1719492042675!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </main>
   );
 }
