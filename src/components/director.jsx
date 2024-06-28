@@ -2,7 +2,7 @@ import React from 'react'
 
 const Director = ({img,name,role,office,degree}) => {
   return (
-    <div className="director flex flex-col min-w-[400px] justify-center items-start mt-6">
+    <div className="director flex flex-col flex-grow min-w-[300px] max-w-[400px] justify-center items-start mt-6">
             <div className="image-box w-full bg-[#f1f1f1]">
               {img && <img src={img} alt={name} className='w-full h-full object-cover' />}
             </div>

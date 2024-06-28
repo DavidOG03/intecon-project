@@ -6,9 +6,9 @@ export default function Contact() {
   const companyName = "Intecon Partnershipt Limited";
   return (
     <main className="contact-page py-[120px] bg-[#fff] ">
-      <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 py-12">
+      <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-6 pb-[60px]">
         <div className="contact-text">
-          <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[90px] text-left leading-tight mb-6">
+          <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] lg:text-[90px] text-left leading-tight mb-6">
             Let's work together
           </h3>
           <p className="text-base text-[#1c1c1c] font-inter max-w-[520px]">
@@ -22,7 +22,7 @@ export default function Contact() {
             </strong>
           </p>
           <div className="address text-[#1c1c1c] mt-6 font-inter">
-            <h3 className="text-base pb-4">Company Address</h3>
+            <h3 className="text-base pb-4 font-bold">Company Address</h3>
             <p className="text-[14px] pb-2">
               16 Aperin Street, off Awolowo Road, Old Bodija Ibadan.
             </p>
@@ -40,7 +40,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="address-two mt-6 text-[#1c1c1c] font-inter">
-            <h3 className="text-base pb-4">Company Address Two</h3>
+            <h3 className="text-base pb- font-bold">Company Address Two</h3>
             <p className="text-[14px] pb-2">
               Tecon House, Ikeja, Lagos Nigeria
             </p>
@@ -60,17 +60,15 @@ export default function Contact() {
         </div>
         <form
           action=""
-          className="contact-form grid grid-cols-2 justify-start items-start font-inter mt-4"
+          className="contact-form grid grid-cols-1 md:grid-cols-2 gap-3 justify-start items-start font-inter mt-4"
         >
-          {/* <h3 className="heading text-left text-[32px] font-electrolize uppercase text-[#1c1c1c] auto-rows-auto">
-            Contact Form
-          </h3> */}
+          
           <div className="input-group mb-6 flex flex-col justify-start items-start row">
             <label className="text-[#1c1c1c] block mb-2" htmlFor="name">
               Full Name
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-6"
+              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-2 md:pb-6"
               type="text"
               placeholder="Enter your full name"
               id="name"
@@ -82,7 +80,7 @@ export default function Contact() {
               Email Address
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               type="email"
               placeholder="Enter your Email Address"
               id="email"
@@ -94,7 +92,7 @@ export default function Contact() {
               Company
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               type="text"
               placeholder="Enter your Company Name"
               id="company"
@@ -106,19 +104,19 @@ export default function Contact() {
               Telephone
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83] pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               type="phone"
               placeholder="Enter your Telephone Number"
               id="telephone"
               required
             />
           </div>
-          <div className="input-group mb-6 flex flex-col justify-start items-start col-start-1 col-end-3">
+          <div className="input-group mb-6 flex flex-col justify-start items-start md:col-start-1 md:col-end-3">
             <label className="text-[#1c1c1c] block mb-2" htmlFor="message">
               Message
             </label>
             <textarea
-              className="bg-transparent border-b border-b-[#1f1f1f83] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] text-[#1c1c1c] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               name="message"
               id="message"
               cols="30"
@@ -128,7 +126,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="font-inter font-semibold text-base py-6 px-8 rounded-[48px] border border-transparent transition ease-in text-[#fff] bg-[#1c1c1c] hover:bg-transparent hover:border hover:border-[#1c1c1c] hover:text-[#1c1c1c]"
+            className="font-inter font-semibold text-base py-3 px-6 md:py-6 md:px-8 rounded-[48px] border border-transparent w-full  transition ease-in text-[#fff] bg-[#1c1c1c] hover:bg-transparent hover:border hover:border-[#1c1c1c] hover:text-[#1c1c1c]"
           >
             Send Message
           </button>

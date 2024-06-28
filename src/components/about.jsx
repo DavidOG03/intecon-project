@@ -110,7 +110,7 @@ const About = () => {
         
       </section>
       <section className="institutions py-[60px] px-6 border-b border-t border-b-[#c9c7c7] border-t-[#c9c7c7]">
-        <h3 className="font-jakarta capitalize text-[#1c1c1c]  text-[54px] md:text-[90px] text-center mb-12">
+        <h3 className="font-jakarta capitalize text-[#1c1c1c]  text-[42px] md:text-[68px] lg:text-[90px] text-center mb-12">
           Statutory Institutions Registration
         </h3>
         <div className="flex flex-row flex-wrap md:flex-nowrap justify-center items-stretch gap-12 md:gap-6">
@@ -167,7 +167,7 @@ const About = () => {
         </div>
       </section>
       <section className="directors py-[120px] border-b border-b-[#c9c7c7]">
-        <h3 className=" font-jakarta capitalize text-[#1c1c1c] tracking-tight text-[54px] md:text-[90px] text-center  leading-tight mb-12">
+        <h3 className=" font-jakarta capitalize text-[#1c1c1c] tracking-tight text-[42px] md:text-[68px] lg:text-[90px] text-center  leading-tight mb-12">
           Meet Our Directors
         </h3>
         <div className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
