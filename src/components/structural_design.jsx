@@ -6,7 +6,7 @@ const StructuralDesign = () => {
       <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center lg:gap-12 pt-6 pb-[120px]">
         <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
           <img
-            src="/images/olive-court.jpg"
+            src="/images/olive-court.webp"
             alt="olive court"
             className="object-fill w-full"
           />

@@ -10,7 +10,7 @@ const Services = () => {
       <ServiceCard
       name="Engineering Design"
       desc="Intecon, a leader in project development and engineering design, consistently exceeds client expectations. With extensive experience, we deliver successful projects in industrial, commercial, marine, and aviation facilities, highways, bridges, and infrastructure, including estates, terminals, warehouses, offices, and recreational facilities."
-      img="/images/service-one.jpg"
+      img="/images/service-one.webp"
       alt="Engineering Design"/>
 
       <ServiceCard
@@ -22,7 +22,7 @@ const Services = () => {
       <ServiceCard
       name="Project Management"
       desc="Our highly skilled team manages projects of all complexities, offering cost-effective, sound approaches to achieve objectives. With diverse experience and up-to-date training, we ensure quality, timely, and cost-effective construction supervision. Our strategy involves working closely with contractors and providing comprehensive reports as needed."
-      img="/images/project-management.jpg"
+      img="/images/project-management.webp"
       alt="Project Management"/>
 
       <ServiceCard

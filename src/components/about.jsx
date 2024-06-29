@@ -9,7 +9,7 @@ const About = () => {
       <section className="mission px-6 relative py-[60px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
       <div className="image-box w-full ">
           <img
-            src="/images/mission.jpg"
+            src="/images/mission.webp"
             alt="consulting engineering"
             className=" w-full object-cover"
           />
@@ -27,7 +27,7 @@ const About = () => {
       <section className="vision lg:flex lg:flex-row justify-center items-center gap-12 relative px-6 py-[60px] md:flex md:flex-row">
         <div className="image-box w-full">
           <img
-            src="/images/vision.jpg"
+            src="/images/vision.webp"
             alt="consulting engineering"
             className=" w-full"
           />
@@ -127,7 +127,7 @@ const About = () => {
           <div className=" coren flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[200px]"
-              src="/images/coren.jpg"
+              src="/images/coren.webp"
               alt="Council for the Regulation of Engineering in Nigeria logo"
             />
             <p className="text-center text-[1rem] text-[#1c1c1c]">
@@ -137,7 +137,7 @@ const About = () => {
           <div className=" acen flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[120px]"
-              src="/images/acen.jpg"
+              src="/images/acen.webp"
               alt="Association for Consulting Engineering Nigeria logo"
             />
             <p className="text-center text-[1rem] text-[#1c1c1c]">
@@ -147,7 +147,7 @@ const About = () => {
           <div className=" dpr flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
             <img
               className="w-[200px]"
-              src="/images/dpr.jpg"
+              src="/images/dpr.webp"
               alt="Department of Petroleum Resources logo"
             />
             <p className="text-center text-[1rem] text-[#1c1c1c]">
