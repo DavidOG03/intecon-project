@@ -68,7 +68,7 @@ export default function Contact() {
               Full Name
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-2 md:pb-6 text-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-2 md:pb-6 text-[#1c1c1c] w-full"
               type="text"
               placeholder="Enter your full name"
               id="name"
@@ -80,7 +80,7 @@ export default function Contact() {
               Email Address
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
               type="email"
               placeholder="Enter your Email Address"
               id="email"
@@ -92,7 +92,7 @@ export default function Contact() {
               Company
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
               type="text"
               placeholder="Enter your Company Name"
               id="company"
@@ -104,7 +104,7 @@ export default function Contact() {
               Telephone
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83] pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
               type="phone"
               placeholder="Enter your Telephone Number"
               id="telephone"
@@ -116,7 +116,7 @@ export default function Contact() {
               Message
             </label>
             <textarea
-              className="bg-transparent border-b border-b-[#1f1f1f83] text-[#1c1c1c] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
+              className="bg-transparent border-b border-b-[#1f1f1f83] text-[#1c1c1c] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] w-full"
               name="message"
               id="message"
               cols="30"

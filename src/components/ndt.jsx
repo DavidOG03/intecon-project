@@ -7,7 +7,7 @@ const Ndt = () => {
         <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
           <img
             src="/images/testing.webp"
-            alt="olive court"
+            alt="testing"
             className="object-fill w-full"
           />
         </div>

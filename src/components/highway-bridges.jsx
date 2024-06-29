@@ -7,7 +7,7 @@ const HighwayBridges = () => {
         <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
           <img
             src="/images/road.png"
-            alt="olive court"
+            alt="highway road"
             className="object-fill w-full"
           />
         </div>

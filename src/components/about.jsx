@@ -209,7 +209,7 @@ const About = () => {
         </div>
       </section>
       <section className="clients py-[69px]">
-          <h3 className="text-[54px] md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta capitalize text-center">
+          <h3 className="text-[54px] mb-6 md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta capitalize text-center">
             Our Clients
           </h3>
       <Clients 
