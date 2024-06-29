@@ -3,7 +3,7 @@ import React from "react";
 const HighwayBridges = () => {
   return (
     <main className="highway-design bg-white pt-[120px]">
-      <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center lg:gap-12 pt-6 pb-[120px]">
+      <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center items-stretch lg:gap-12 pt-6 pb-[120px]">
         <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
           <img
             src="/images/road.png"
@@ -12,7 +12,7 @@ const HighwayBridges = () => {
           />
         </div>
         <div className="text">
-          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] xl:text-[90px] text-left leading-tight mb-6 max-w-[768px]">
+          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] xl:text-[72px] text-left leading-[1.2] mb-6 max-w-[768px]">
             Highways and bridges design
           </h3>
           <p className="text-base md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
