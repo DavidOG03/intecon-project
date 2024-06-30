@@ -17,7 +17,7 @@ const Dropdown = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <p className="nav-link inline-block mx-4 text-[#f0f0f0] font-jakarta text-[14px] tracking-[0.6px] hover:cursor-pointer">
+      <p className="nav-link inline-block mx-4 text-[#f0f0f0] font-jakarta text-[12px] md:text-[14px] tracking-[0.6px] hover:cursor-pointer">
         Projects
       </p>
       {isDropdownVisible && (

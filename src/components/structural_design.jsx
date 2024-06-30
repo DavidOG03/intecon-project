@@ -13,7 +13,7 @@ const StructuralDesign = () => {
         </div>
         <div className="text">
           <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
-            Strctural Engineering design
+            Structural Engineering design
           </h3>
           <p className="text-base md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
             INTECON has gained experience in design of many structural
