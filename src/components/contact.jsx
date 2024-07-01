@@ -1,5 +1,6 @@
 import React from "react";
 import MapComponent from "./map";
+import AnimatedText from "./animatedText";
 
 export default function Contact() {
   const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
@@ -11,6 +12,13 @@ export default function Contact() {
           <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] lg:text-[90px] text-left leading-tight mb-6">
             Let's work together
           </h3>
+          {/* <AnimatedText
+            text="Let's work together"
+            height={300}
+            margin={6}
+            from={150}
+            style="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px]"
+          /> */}
           <p className="text-base text-[#1c1c1c] font-inter max-w-[520px]">
             Feel free to talk to our Business Department at any time you please
             using our Live Chat system on our website or one of the below
@@ -116,7 +124,7 @@ export default function Contact() {
               Message
             </label>
             <textarea
-              className="bg-transparent border-b border-b-[#1f1f1f83] text-[#1c1c1c] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] w-full"
+              className="bg-transparent border-b border-b-[#1f1f1f83] text-[#1c1c1c] w-full hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c]"
               name="message"
               id="message"
               cols="30"

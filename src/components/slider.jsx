@@ -27,7 +27,7 @@ const HeroSlider = () => {
       transition: {
         type: "tween",
         duration: 0.8,
-        delay: 1,
+        delay: 0.5,
       },
     },
   };

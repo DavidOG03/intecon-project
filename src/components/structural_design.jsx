@@ -3,19 +3,19 @@ import React from "react";
 const StructuralDesign = () => {
   return (
     <main className="structural-design bg-white pt-[120px]">
-      <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center lg:gap-12 pt-6 pb-[120px]">
-        <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
+      <section className="intro px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
+        <div className="image-box w-full h-full max-h-[320px] md:max-h-[450px] xl:max-h-none overflow-hidden ">
           <img
             src="/images/olive-court.webp"
             alt="olive court"
             className="object-fill w-full"
           />
         </div>
-        <div className="text">
-          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
+        <div className="text ">
+          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
             Structural Engineering design
           </h3>
-          <p className="text-base md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
+          <p className="text-[12px] md:text-[14px] text-[#1c1c1c] font-inter max-w-[768px] ">
             INTECON has gained experience in design of many structural
             engineering projects including high rise buildings, factories,
             warehouses etc. and also developed technical capabilities in
@@ -24,7 +24,7 @@ const StructuralDesign = () => {
             such as STAAD PRO, CADRC and AUTOCAD, using standard procedures and
             quality production of drawing
           </p>
-          <p className="mt-4 text-[14px] md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
+          <p className="mt-4 text-[12px] md:text-[14px] text-[#1c1c1c] font-inter max-w-[768px]">
             INTECON is well known as a top civil/structural engineering
             consulting firm providing sound technical solutions to engineering
             needs in the society. Our extensive structural engineering services
