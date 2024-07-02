@@ -3,7 +3,7 @@ import React from "react";
 const Geosciences = () => {
   return (
     <main className="geosciences-page bg-white pt-[120px]">
-      <section className="intro px-6 grid grid-cols-1 xl:grid-cols-2 gap-6 place-content-center lg:gap-12 pt-6 pb-[120px]">
+      <section className="intro px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
         <div className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden">
           <img
             src="/images/geosciences.png"
@@ -12,17 +12,17 @@ const Geosciences = () => {
           />
         </div>
         <div className="text">
-          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
+          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
             Geosciences
           </h3>
-          <p className="text-base md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
+          <p className="text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]">
             INTECON is very proud of its achievement in providing this
             specialized service in the construction industry over the years.
             INTECON boasts of sophisticated equipments and highly skilled
             manpower, with international exposure and experience in offshore
             geotechnical work, analysis and foundation design.
           </p>
-          <p className="mt-4 text-[14px] md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
+          <p className="mt-4 text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]">
             INTECON has led others in providing geotechnical services on sites
             for high rise buildings and bridges in sand fill areas, power lines
             through thick forest and swampy terrain, Independent Power Projects,
@@ -31,7 +31,7 @@ const Geosciences = () => {
             great advantage.ent and software that comply with international
             standards.
           </p>
-          <p className="mt-4 text-[14px] md:text-[18px] text-[#1c1c1c] font-inter max-w-[768px]">
+          <p className="mt-4 text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]">
             Our laboratory facility in Lagos is equipped with modern laboratory
             equipment for geotechnical/ civil/ structural testing services. Our
             personnel are well trained and experienced in the latest procedures

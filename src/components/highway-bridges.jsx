@@ -12,10 +12,10 @@ const HighwayBridges = () => {
           />
         </div>
         <div className="text">
-          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[48px] md:text-[60px] xl:text-[72px] text-left leading-[1.2] mb-6 max-w-[768px]">
+          <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[60px] xl:text-[72px] text-left leading-[1.2] mb-6 max-w-[768px]">
             Highways and bridges design
           </h3>
-          <p className="text-[12px] md:text-[14px] text-[#1c1c1c] font-inter max-w-[768px]">
+          <p className="text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]">
             INTECON has been involved in many highway and bridge projects for
             state, federal governments and multinationals across the length and
             breadth of Nigeria through different terrain raging from swampy in

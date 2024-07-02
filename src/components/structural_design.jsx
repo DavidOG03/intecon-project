@@ -15,7 +15,7 @@ const StructuralDesign = () => {
           <h3 className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
             Structural Engineering design
           </h3>
-          <p className="text-[12px] md:text-[14px] text-[#1c1c1c] font-inter max-w-[768px] ">
+          <p className="text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px] ">
             INTECON has gained experience in design of many structural
             engineering projects including high rise buildings, factories,
             warehouses etc. and also developed technical capabilities in

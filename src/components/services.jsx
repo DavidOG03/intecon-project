@@ -1,12 +1,47 @@
 import React from 'react'
 import ServiceCard from './service-card'
 import Quote from './quote'
+import {motion} from 'framer-motion'
 
 const Services = () => {
+  const fadeup = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.75,
+        ease: "easeInOut",
+        type: "tween",
+        delay: 0.2,
+      },
+    },
+  };
+
+
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5, // Delay of 0.1 seconds between each child's animation
+      },
+    },
+  };
+
   return (
     <main className='services pt-[120px] bg-[#fff]'>
-      <h3 className="text-[54px] md:text-[90px] text-[#1c1c1c] col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</h3>
-      <div className="services-box grid grid-cols-1 md:grid-cols-3 items-stretch gap-4 px-4 md:px-8 mb-[120px]">
+      <motion.h3 
+          variants={fadeup}
+          initial="hidden"
+          whileInView = "visible"
+          viewport= {{once:true}}className="text-[54px] md:text-[90px] text-[#1c1c1c] col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</motion.h3>
+      <motion.div 
+      variants={container}
+      initial="hidden"
+      whileInView = "visible"
+      viewport= {{once:true}}
+      className="services-box grid grid-cols-1 md:grid-cols-3 items-stretch gap-4 px-4 md:px-8 mb-[120px]">
       <ServiceCard
       name="Engineering Design"
       desc="Intecon, a leader in project development and engineering design, consistently exceeds client expectations. With extensive experience, we deliver successful projects in industrial, commercial, marine, and aviation facilities, highways, bridges, and infrastructure, including estates, terminals, warehouses, offices, and recreational facilities."
@@ -42,7 +77,7 @@ const Services = () => {
       desc="Intecon utilizes state-of-the-art non-destructive testing equipment and a highly trained inspection team to conduct detailed inspections meeting international standards. We specialize in inspecting diverse engineering infrastructures such as bridges, high-rise buildings, foundation structures, and steel facilities. Our commitment is to continuously enhance our non-destructive testing services to align with global trends and best practices."
       img="/images/testing.webp"
       alt="Non destructive testing"/>
-      </div>
+      </motion.div>
       <Quote/>
     </main>
   )
