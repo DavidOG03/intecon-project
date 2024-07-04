@@ -189,7 +189,7 @@ const Header = () => {
           size={20}
           toggled={isOpen}
           toggle={setOpen}
-          color="#ffffff"
+          color="#0499CF"
         />
       </header>
     </>

@@ -11,9 +11,9 @@
 }
 
 .slick-prev{
-  top: 80%;
+  top: 90%;
   left: 1rem;
-  translate: 0 -20%;
+  translate: 0 -10%;
   z-index: 5;
   padding: 1.5rem;
   border-radius: 50%;
@@ -29,9 +29,9 @@
 }
 
 .slick-next{
-  top: 80%;
+  top: 90%;
   right: 1rem;
-  translate: 0 -20%;
+  translate: 0 -10%;
   padding: 1.5rem;
   border-radius: 50%;
   background-color: #0b0b0c46;
@@ -74,29 +74,29 @@
 
 
 .slick-slide .first-image{
-  background:linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54),  url(/images/homepage-3.webp);
+  background:linear-gradient(to bottom, #111213c0,#1112139c ,#0b0b0c54),  url(/images/homepage-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   
 }
 .slick-slide .second-image{
-  background: linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54), url(/images/homepage-2.webp);
+  background: linear-gradient(to bottom, #111213c0,#1112139c ,#0b0b0c54), url(/images/homepage-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .third-image{
-  background:linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54),  url(/images/homepage-1.webp);
+  background:linear-gradient(to bottom, #111213c0,#1112139c ,#0b0b0c54),  url(/images/homepage-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left bottom;
 }
 .slick-slide .fourth-image{
-  background:linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54),  url(/images/homepage-4.webp);
+  background:linear-gradient(to bottom, #111213c0,#1112139c ,#0b0b0c54),  url(/images/homepage-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: 30% top ;
 }
 
 .navbar ul li a,.navbar-mobile ul li a{
