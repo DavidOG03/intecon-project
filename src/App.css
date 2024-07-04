@@ -87,10 +87,10 @@
   background-position: center;
 }
 .slick-slide .third-image{
-  background:linear-gradient(to bottom, #1112136b,#1112139c ,#0b0b0c54),  url(/images/homepage-1.webp);
+  background:linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d),  url(/images/homepage-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left bottom;
+  background-position: 25% 60%;
 }
 .slick-slide .fourth-image{
   background:linear-gradient(to bottom, #1112136b,#1112139c ,#0b0b0c54),  url(/images/homepage-4.webp);
