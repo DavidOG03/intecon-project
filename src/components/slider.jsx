@@ -35,14 +35,14 @@ const HeroSlider = () => {
   return (
     <>
       <Slider {...settings}>
-        <div className="hero-image first-image bg-gradient-to-br from-[#5161bb] to-[#7683ca] bg-cover bg-no-repeat bg-center w-full h-auto flex justify-start items-center flex-grow">
+        <div className="hero-image first-image bg-cover bg-no-repeat bg-top w-full h-auto flex justify-start items-center flex-grow">
           
           <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-4 md:ml-6  font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-8 -translate-y-[65%]"
+            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-3 md:ml-0  font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-0 lg:left-8 -translate-y-[65%]"
           >
             <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
               Intecon Patnership Ltd
@@ -59,7 +59,7 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={true}
-            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-4 md:ml-6 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-8 -translate-y-[65%]   "
+            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-0 lg:left-8 -translate-y-[65%]   "
           >
             <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
               Intecon Patnership Ltd
@@ -75,7 +75,7 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{once:true}}
-            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-4 md:ml-6 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-8 -translate-y-[65%]  "
+            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-0 lg:left-8 -translate-y-[65%]  "
           >
             <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
               Intecon Patnership Ltd
@@ -91,7 +91,7 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={true}
-            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-4 md:ml-6 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-8 -translate-y-[65%] "
+            className="font-medium text-[#fff] text-[24px] md:text-[45px] lg:text-[64px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[35%] left-0 lg:left-8 -translate-y-[65%] "
           >
             <span className="block text-[#fff] text-[45px]  md:text-[68px] lg:text-[90px]">
               Intecon Patnership Ltd

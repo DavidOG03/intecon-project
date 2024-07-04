@@ -36,68 +36,68 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-8">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8">
         <Link to="/" className="logo h-[24px] lg:h-[34px] object-cover">
-          <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full ml-6" />
+          <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
-        <nav className="navbar desktop hidden md:block ">
+        <nav className="navbar desktop hidden lg:block ">
           <ul className="uppercase text-[#fff] pt-2 pb-2 px-6">
-            <li className="inline-block mx-4 my-2">
+            <li className="inline-block mx-2 xl:mx-4 ">
               <NavLink
                 to="/"
                 end
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] md:text-[12px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text[10px] tracking-[0.6px]"
                 }
               >
                 Home
               </NavLink>
             </li>
-            <li className="inline-block mx-4 ">
+            <li className="inline-block mx-2 xl:mx-4 ">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
                 }
               >
                 About US
               </NavLink>
             </li>
-            <li className="inline-block mx-4">
+            <li className="inline-block mx-2 xl:mx-4">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
                 }
               >
                 Contact Us
               </NavLink>
             </li>
-            <li className="inline-block mx-4 ">
+            <li className="inline-block mx-2 xl:mx-4 ">
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
                 }
               >
                 services
               </NavLink>
             </li>
-            {/* <li className='inline-block mx-4 font-jakarta text-[12px] tracking-[0.6px]'><NavLink to="/projects">projects</NavLink></li> */}
+            {/* <li className='inline-block mx-2 xl:mx-4 font-jakarta text-[12px] tracking-[0.6px]'><NavLink to="/projects">projects</NavLink></li> */}
             <Dropdown />
           </ul>
         </nav>
 
         <nav
-          className={`navbar-mobile fixed bg-[#1c1c1c] transition-all ease-in-out duration-500 md:hidden top-0 -right-[100%] h-[100vh] w-[50%] border-l border-l-[#413F3E] ${
+          className={`navbar-mobile fixed bg-[#1c1c1c] transition-all ease-in-out duration-500 lg:hidden top-0 -right-[100%] h-[100vh] w-[50%] border-l border-l-[#413F3E] ${
             isOpen === true ? "active" : ""
           }`}
           ref={navbarRef}
@@ -156,17 +156,17 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="contact-info border-l border-l-[#413F3E] flex-row justify-end items-stretch gap-6 hidden md:flex px-6 h-full">
+        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#413F3E] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 hidden md:flex px-6 h-full">
           <div className="email flex flex-row items-center gap-2">
             <img
               src="/images/envelope.svg"
               alt="envelope.svg"
-              className="inline-block w-4"
+              className="inline-block w-3"
             />
             <a
               href="mailto:intecon@intecon.com.ng"
               target="blank"
-              className=" text-[#fff] font-inter text-[12px]"
+              className=" text-[#fff] font-inter text-[10px] xl:text-[12px]"
             >
               intecon@intecon.com.ng
             </a>
@@ -175,12 +175,12 @@ const Header = () => {
             <img
               src="/images/phone-too.svg"
               alt="contact icon"
-              className="inline-block w-4"
+              className="inline-block w-3"
             />{" "}
-            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[12px]">
+            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[10px] xl:text-[12px]">
               Call +234 803 324 2026
             </a>
-            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[12px]">
+            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[10px] xl:text-[12px]">
               +234 803 328 3101
             </a>
           </div>

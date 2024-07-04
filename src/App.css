@@ -74,44 +74,44 @@
 
 
 .slick-slide .first-image{
-  background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/structure.webp);
+  background:linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54),  url(/images/homepage-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   
 }
 .slick-slide .second-image{
-  background: linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54), url(/images/highway.webp);
+  background: linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54), url(/images/homepage-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .third-image{
-  background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/geosciences.webp);
+  background:linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54),  url(/images/homepage-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .fourth-image{
-  background:linear-gradient(to bottom, #111213d0,#11121369 ,#0b0b0c54),  url(/images/non-destructive.webp);
+  background:linear-gradient(to bottom, #111213e8,#1112139c ,#0b0b0c54),  url(/images/homepage-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
-.navbar ul li a{
+.navbar ul li a,.navbar-mobile ul li a{
   position: relative;
   height: 100%;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover,.navbar-mobile ul li a:hover{
   color: #FFFFFF89;
 }
-.navbar ul li a.active{
+.navbar ul li a.active, .navbar-mobile ul li a.active{
   color: #0499CF;
 }
 
-.navbar ul li a::after{
+.navbar ul li a::after {
   content: ' ';
   position: absolute;
   bottom: -1.7rem;
@@ -123,13 +123,25 @@
   transform-origin: left;
 }
 
-.navbar ul li a.active::after{
+.navbar-mobile ul li a::after{
+  content: ' ';
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+
+.navbar ul li a.active::after, .navbar-mobile ul li a.active::after{
   width: 100%;
   transform-origin: right;
   background: #0499CF;
 }
 
-.navbar ul li a:hover::after{
+.navbar ul li a:hover::after, .navbar-mobile ul li a:hover::after{
   width: 100%;
   transform-origin: right;
   background: #FFFFFF89;
@@ -251,7 +263,7 @@
   
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
   .hamburger-react{
     display: none;
   }

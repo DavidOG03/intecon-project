@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Geosciences = () => {
   const fadeup = {
-    hidden: { opacity: 0, y: -30 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
       y: 0,
@@ -17,7 +17,7 @@ const Geosciences = () => {
   };
 
   const fadein = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
       y: 0,
@@ -31,14 +31,14 @@ const Geosciences = () => {
   };
 
   return (
-    <main className="geosciences-page bg-white pt-[120px]">
-      <section className="intro px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
+    <main className="geosciences-page bg-white pt-[60px]">
+      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden"
+          className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px]"
         >
           <img
             src="/images/geosciences.png"

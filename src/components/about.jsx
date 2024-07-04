@@ -6,7 +6,7 @@ import AnimatedText from "./animatedText";
 import { motion } from "framer-motion";
 
 const fadeup = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 10 },
   visible: {
     opacity: 1,
     y: 0,
@@ -20,7 +20,7 @@ const fadeup = {
 };
 
 const fadein = {
-  hidden: { opacity: 0, y: -50 },
+  hidden: { opacity: 0, y: 10 },
   visible: {
     opacity: 1,
     y: 0,
@@ -36,21 +36,21 @@ const fadein = {
 const About = () => {
   return (
     <main className="about w-full bg-[#fff] pt-[60px] lg:pt-[120px]">
-      <section className="mission px-6 relative py-[30px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
+      <section className="mission px-3 lg:px-8 relative py-[30px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] bg-[url('/images/mission.webp')]"
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
         >
-          <img
+          {/* <img
             src="/images/mission.webp"
             alt="consulting engineering"
             className=" w-full object-cover"
-          />
+          /> */}
         </motion.div>
-        <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden">
+        <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -96,13 +96,13 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%]"
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px] shadow-xl "
         >
-          <img
+          {/* <img
             src="/images/vision.webp"
             alt="consulting engineering"
             className=" w-full"
-          />
+          /> */}
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -134,13 +134,13 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%]"
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/structural-engr.png')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
         >
-          <img
+          {/* <img
             src="/images/structural-engr.png"
             alt="consulting engineering"
             className=" w-full"
-          />
+          /> */}
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -183,13 +183,13 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] flex flex-col gap-4"
+          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] lg:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px] shadow-xl "
         >
-          <img
+          {/* <img
             src="/images/geosciences.webp"
             alt="consulting engineering"
             className=" w-full "
-          />
+          /> */}
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.p

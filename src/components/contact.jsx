@@ -6,26 +6,18 @@ export default function Contact() {
   const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
   const companyName = "Intecon Partnershipt Limited";
   return (
-    <main className="contact-page py-[120px] bg-[#fff] ">
+    <main className="contact-page py-[60px] bg-[#fff] ">
       <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-6 pb-[60px]">
         <div className="contact-text">
           <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] lg:text-[90px] text-left leading-tight mb-6">
             Let's work together
           </h3>
-          {/* <AnimatedText
-            text="Let's work together"
-            height={300}
-            margin={6}
-            from={150}
-            style="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px]"
-          /> */}
           <p className="text-base text-[#1c1c1c] font-inter max-w-[520px]">
             Feel free to talk to our Business Department at any time you please
             using our Live Chat system on our website or one of the below
             instant messaging programs. Please be patient while waiting for
             response.
             <strong className="block mt-6">
-              {" "}
               Phone General Inquiries: +234 803 671 8778
             </strong>
           </p>
