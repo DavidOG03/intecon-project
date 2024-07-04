@@ -74,14 +74,14 @@
 
 
 .slick-slide .first-image{
-  background:linear-gradient(to bottom, #1112136b,#1112139c ,#0b0b0c54),  url(/images/homepage-3.webp);
+  background:linear-gradient(to bottom, #11121349,#11121349 ,#0b0b0c2d),  url(/images/homepage-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   
 }
 .slick-slide .second-image{
-  background: linear-gradient(to bottom, #1112136b,#1112139c ,#0b0b0c54), url(/images/homepage-2.webp);
+  background: linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d), url(/images/homepage-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -93,7 +93,7 @@
   background-position: 25% 60%;
 }
 .slick-slide .fourth-image{
-  background:linear-gradient(to bottom, #1112136b,#1112139c ,#0b0b0c54),  url(/images/homepage-4.webp);
+  background:linear-gradient(to bottom, #11121349,#1112135d ,#0b0b0c2d),  url(/images/homepage-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30% top ;
