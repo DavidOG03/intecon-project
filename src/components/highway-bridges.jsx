@@ -43,7 +43,7 @@ const HighwayBridges = () => {
           <img
             src="/images/road.png"
             alt="highway road"
-            className="object-fill w-full"
+            className="object-cover w-full"
           />
         </motion.div>
         <div className="text">

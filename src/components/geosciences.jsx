@@ -43,7 +43,7 @@ const Geosciences = () => {
           <img
             src="/images/geosciences.png"
             alt="geosciences"
-            className="object-fill w-full"
+            className="object-cover w-full"
           />
         </motion.div>
         <div className="text">

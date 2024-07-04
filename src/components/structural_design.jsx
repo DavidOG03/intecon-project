@@ -43,7 +43,7 @@ const StructuralDesign = () => {
           <img
             src="/images/olive-court.webp"
             alt="olive court"
-            className="object-fill w-full"
+            className="object-cover w-full"
           />
         </motion.div>
         <div className="text ">

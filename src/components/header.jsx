@@ -36,11 +36,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center  w-full fixed top-0 left-[50%] -translate-x-[50%] pt-1 md:pt-6 pb-1 md:pb-0 px-6 z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E]">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E]">
         <Link to="/" className="logo h-[24px] lg:h-[34px] object-cover">
-          <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full" />
+          <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full ml-6" />
         </Link>
-        <nav className="navbar desktop hidden md:block">
+        <nav className="navbar desktop hidden md:block pt-0 pb-2 md:pb-0 px-6">
           <ul className="uppercase text-[#fff]">
             <li className="inline-block mx-4">
               <NavLink
@@ -156,7 +156,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="contact-info absolute  flex-row justify-end items-center gap-6 top-2 right-10 hidden md:flex">
+        <div className="contact-info border-l border-l-[#413F3E] flex-row justify-end items-stretch gap-6 hidden md:flex px-6 h-full">
           <div className="email flex flex-row items-center gap-2">
             <img
               src="/images/envelope.svg"
