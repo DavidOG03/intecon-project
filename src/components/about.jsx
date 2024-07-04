@@ -3,7 +3,7 @@ import Director from "./director";
 import Clients from "./clients";
 import Quote from "./quote";
 import AnimatedText from "./animatedText";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 const fadeup = {
   hidden: { opacity: 0, y: 30 },
@@ -20,10 +20,10 @@ const fadeup = {
 };
 
 const fadein = {
-  hidden: { opacity: 0,y:-50, },
+  hidden: { opacity: 0, y: -50 },
   visible: {
     opacity: 1,
-    y:0,
+    y: 0,
     transition: {
       duration: 0.75,
       ease: "easeInOut",
@@ -37,12 +37,13 @@ const About = () => {
   return (
     <main className="about w-full bg-[#fff] pt-[60px] lg:pt-[120px]">
       <section className="mission px-6 relative py-[30px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
-        <motion.div 
-        variants={fadein}
-        initial="hidden"
-        whileInView = "visible"
-        viewport= {{once:true}}
-        className="image-box w-full basis-[50%] bg-[url('/images/mission.webp')]">
+        <motion.div
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="image-box w-full basis-[50%] bg-[url('/images/mission.webp')]"
+        >
           <img
             src="/images/mission.webp"
             alt="consulting engineering"
@@ -50,14 +51,15 @@ const About = () => {
           />
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden">
-          <motion.h3 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10">
-          Our Mission
-          {/* <AnimatedText
+          <motion.h3
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+          >
+            Our Mission
+            {/* <AnimatedText
             text="Our Mission"
             height={120}
             margin={6}
@@ -65,14 +67,19 @@ const About = () => {
             style="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
           /> */}
           </motion.h3>
-          <motion.p 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className="text-base font-inter text-[#1c1c1c] relative z-10 leading-relaxed">
-          Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment.
-          {/* <AnimatedText
+          <motion.p
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-base font-inter text-[#1c1c1c] relative z-10 leading-relaxed"
+          >
+            Our mission is to provide technically sound engineering services on
+            projects, to achieve the production of durable facilities and time
+            tested solutions, at optimum costs to clients, and in a timely and
+            environmentally friendly manner, utilizing highly trained manpower,
+            cutting- edge technology and equipment.
+            {/* <AnimatedText
             text="Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment."
             height={320}
             margin={3}
@@ -84,12 +91,13 @@ const About = () => {
       </section>
 
       <section className="vision lg:flex lg:flex-row justify-center items-center gap-12 relative px-6 py-[60px] md:flex md:flex-row">
-        <motion.div 
-        variants={fadein}
-        initial="hidden"
-        whileInView = "visible"
-        viewport= {{once:true}}
-        className="image-box w-full basis-[50%]">
+        <motion.div
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="image-box w-full basis-[50%]"
+        >
           <img
             src="/images/vision.webp"
             alt="consulting engineering"
@@ -97,20 +105,22 @@ const About = () => {
           />
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
-          <motion.h3 
-           variants={fadeup}
-           initial="hidden"
-           whileInView = "visible"
-           viewport= {{once:true}}
-          className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10">
+          <motion.h3
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+          >
             Our Vision
           </motion.h3>
-          <motion.p 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10">
+          <motion.p
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10"
+          >
             Our vision is to be one of the best consulting engineering firms in
             Africa and beyond, in the delivery of world class engineering
             services.
@@ -119,12 +129,13 @@ const About = () => {
       </section>
 
       <section className="overview px-6 relative py-[60px] md:flex md:flex-row-reverse items-center rev gap-4 w-full">
-        <motion.div 
-        variants={fadein}
-        initial="hidden"
-        whileInView = "visible"
-        viewport= {{once:true}}
-        className="image-box w-full basis-[50%]">
+        <motion.div
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="image-box w-full basis-[50%]"
+        >
           <img
             src="/images/structural-engr.png"
             alt="consulting engineering"
@@ -132,20 +143,22 @@ const About = () => {
           />
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
-          <motion.h3 
-           variants={fadeup}
-           initial="hidden"
-           whileInView = "visible"
-           viewport= {{once:true}}
-          className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10">
+          <motion.h3
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+          >
             Who We Are
           </motion.h3>
-          <motion.p 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10 leading-relaxed">
+          <motion.p
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10 leading-relaxed"
+          >
             Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
             Engineers specializing in areas of heavy industrial and large scale
             civil engineering works such as high-rise buildings, factories,
@@ -165,12 +178,13 @@ const About = () => {
       </section>
 
       <section className="division md:flex md:flex-row justify-between items-center gap-12 relative px-6 py-[60px] lg:py-[80px]">
-        <motion.div 
-        variants={fadein}
-        initial="hidden"
-        whileInView = "visible"
-        viewport= {{once:true}}
-        className="image-box w-full basis-[50%] flex flex-col gap-4">
+        <motion.div
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="image-box w-full basis-[50%] flex flex-col gap-4"
+        >
           <img
             src="/images/geosciences.webp"
             alt="consulting engineering"
@@ -178,23 +192,25 @@ const About = () => {
           />
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
-          <motion.p 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10">
+          <motion.p
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10"
+          >
             Apart from its extensive consulting engineering capabilities,
             Intecon Partnership Ltd is the parent company of two other
             specialist companies viz: Automated Geotechnics Ltd and Interworks
             Engineering Ltd.
           </motion.p>
-          <motion.p 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10">
+          <motion.p
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10"
+          >
             <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
             1997 in response to the dearth of competent local Geotechnical
             Engineering Companies equipped with modern facilities at the time.
@@ -213,21 +229,23 @@ const About = () => {
         </div>
       </section>
       <section className="institutions py-[60px] px-6 border-b border-t border-b-[#c9c7c7] border-t-[#c9c7c7]">
-        <motion.h3 
-         variants={fadeup}
-         initial="hidden"
-         whileInView = "visible"
-         viewport= {{once:true}}
-        className="font-jakarta capitalize text-[#1c1c1c]  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="font-jakarta capitalize text-[#1c1c1c]  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12"
+        >
           Statutory Institutions Registration
         </motion.h3>
         <div className="flex flex-row flex-wrap md:flex-nowrap justify-center items-stretch gap-12 md:gap-6">
           <motion.div
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}} 
-          className=" cac flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className=" cac flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+          >
             <img
               className="w-[120px]"
               src="/images/cac.png"
@@ -237,12 +255,13 @@ const About = () => {
               Corporate Affairs Commission
             </p>
           </motion.div>
-          <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className=" coren flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
+          <motion.div
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className=" coren flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+          >
             <img
               className="w-[200px]"
               src="/images/coren.webp"
@@ -252,12 +271,13 @@ const About = () => {
               Council for the Regulation of Engineering in Nigeria
             </p>
           </motion.div>
-          <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className=" acen flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
+          <motion.div
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className=" acen flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+          >
             <img
               className="w-[120px]"
               src="/images/acen.webp"
@@ -267,12 +287,13 @@ const About = () => {
               Association for Consulting Engineering Nigeria
             </p>
           </motion.div>
-          <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className=" dpr flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
+          <motion.div
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className=" dpr flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+          >
             <img
               className="w-[200px]"
               src="/images/dpr.webp"
@@ -282,12 +303,13 @@ const About = () => {
               Department of Petroleum Resources
             </p>
           </motion.div>
-          <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView = "visible"
-          viewport= {{once:true}}
-          className=" nnpc flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]">
+          <motion.div
+            variants={fadeup}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className=" nnpc flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+          >
             <img
               className="w-[120px]"
               src="/images/nnpc.webp"
@@ -300,12 +322,13 @@ const About = () => {
         </div>
       </section>
       <section className="directors py-[120px] border-b border-b-[#c9c7c7]">
-        <motion.h3 
-         variants={fadeup}
-         initial="hidden"
-         whileInView = "visible"
-         viewport= {{once:true}}
-        className=" font-jakarta capitalize text-[#1c1c1c] tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className=" font-jakarta capitalize text-[#1c1c1c] tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
+        >
           Meet Our Directors
         </motion.h3>
         <div className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
@@ -348,10 +371,12 @@ const About = () => {
       </section>
       <section className="clients py-[69px]">
         <motion.h3
-         variants={fadeup}
-         initial="hidden"
-         whileInView = "visible"
-         viewport= {{once:true}} className="text-[54px] mb-6 md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta capitalize text-center">
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-[54px] mb-6 md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta capitalize text-center"
+        >
           Our Clients
         </motion.h3>
         <Clients position="relative" />

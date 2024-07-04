@@ -36,13 +36,13 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E]">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-8">
         <Link to="/" className="logo h-[24px] lg:h-[34px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full ml-6" />
         </Link>
-        <nav className="navbar desktop hidden md:block pt-0 pb-2 md:pb-0 px-6">
-          <ul className="uppercase text-[#fff]">
-            <li className="inline-block mx-4">
+        <nav className="navbar desktop hidden md:block ">
+          <ul className="uppercase text-[#fff] pt-2 pb-2 px-6">
+            <li className="inline-block mx-4 my-2">
               <NavLink
                 to="/"
                 end

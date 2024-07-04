@@ -105,7 +105,7 @@
 }
 
 .navbar ul li a:hover{
-  color: #0499CF89;
+  color: #FFFFFF89;
 }
 .navbar ul li a.active{
   color: #0499CF;
@@ -114,7 +114,7 @@
 .navbar ul li a::after{
   content: ' ';
   position: absolute;
-  bottom: -1.2rem;
+  bottom: -1.7rem;
   left: 0;
   width: 0;
   height: 2px;
@@ -132,7 +132,7 @@
 .navbar ul li a:hover::after{
   width: 100%;
   transform-origin: right;
-  background: #0499CF89;
+  background: #FFFFFF89;
 }
 
 .nav-item {
