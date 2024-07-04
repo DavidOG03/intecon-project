@@ -49,7 +49,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text[10px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
                 }
               >
                 Home
