@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import MapComponent from "./map";
 import AnimatedText from "./animatedText";
 
 export default function Contact() {
+
+  const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    if (mainContentRef.current) {
+      mainContentRef.current.focus();
+    }
+  }, []);
+
   const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
   const companyName = "Intecon Partnershipt Limited";
   return (
     <main className="contact-page py-[60px] bg-[#fff] ">
       <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-6 pb-[60px]">
         <div className="contact-text">
-          <h3 className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] lg:text-[90px] text-left leading-tight mb-6">
+          <h3 ref={mainContentRef} tabIndex="-1" className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] lg:text-[90px] text-left leading-tight mb-6">
             Let's work together
           </h3>
           <p className="text-base text-[#1c1c1c] font-inter max-w-[520px]">
@@ -18,7 +27,9 @@ export default function Contact() {
             instant messaging programs. Please be patient while waiting for
             response.
             <strong className="block mt-6">
-              Phone General Inquiries: +234 803 671 8778
+              Phone General Inquiries:<a href="tel:+2348036718778">
+              +234 803 671 8778
+            </a> 
             </strong>
           </p>
           <div className="address text-[#1c1c1c] mt-6 font-inter">

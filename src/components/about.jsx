@@ -36,19 +36,15 @@ const fadein = {
 const About = () => {
   return (
     <main className="about w-full bg-[#fff] pt-[60px] lg:pt-[120px]">
-      <section className="mission px-3 lg:px-8 relative py-[30px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-12 w-full">
+      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-12 w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
         >
-          {/* <img
-            src="/images/mission.webp"
-            alt="consulting engineering"
-            className=" w-full object-cover"
-          /> */}
+         
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
@@ -59,13 +55,7 @@ const About = () => {
             className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
           >
             Our Mission
-            {/* <AnimatedText
-            text="Our Mission"
-            height={120}
-            margin={6}
-            from={100}
-            style="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
-          /> */}
+            
           </motion.h3>
           <motion.p
             variants={fadeup}
@@ -79,30 +69,20 @@ const About = () => {
             tested solutions, at optimum costs to clients, and in a timely and
             environmentally friendly manner, utilizing highly trained manpower,
             cutting- edge technology and equipment.
-            {/* <AnimatedText
-            text="Our mission is to provide technically sound engineering services on projects, to achieve the production of durable facilities and time tested solutions, at optimum costs to clients, and in a timely and environmentally friendly manner, utilizing highly trained manpower, cutting- edge technology and equipment."
-            height={320}
-            margin={3}
-            from={320}
-            style="text-base font-inter text-[#1c1c1c] relative z-10 leading-relaxed"
-          /> */}
+            
           </motion.p>
         </div>
       </section>
 
-      <section className="vision lg:flex lg:flex-row justify-center items-center gap-12 relative px-6 py-[60px] md:flex md:flex-row">
+      <section className="vision lg:flex lg:flex-row justify-center items-start gap-12 relative px-6 py-[80px] md:flex md:flex-row">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px] shadow-xl "
         >
-          {/* <img
-            src="/images/vision.webp"
-            alt="consulting engineering"
-            className=" w-full"
-          /> */}
+          
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -128,7 +108,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="overview px-6 relative py-[60px] md:flex md:flex-row-reverse items-center rev gap-4 w-full">
+      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-start rev gap-4 w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -136,11 +116,6 @@ const About = () => {
           viewport={{ once: true }}
           className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/structural-engr.png')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
         >
-          {/* <img
-            src="/images/structural-engr.png"
-            alt="consulting engineering"
-            className=" w-full"
-          /> */}
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -177,7 +152,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="division md:flex md:flex-row justify-between items-center gap-12 relative px-6 py-[60px] lg:py-[80px]">
+      <section className="division md:flex md:flex-row justify-between items-start gap-12 relative px-6 py-[60px] lg:py-[80px]">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -185,11 +160,6 @@ const About = () => {
           viewport={{ once: true }}
           className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] lg:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px] shadow-xl "
         >
-          {/* <img
-            src="/images/geosciences.webp"
-            alt="consulting engineering"
-            className=" w-full "
-          /> */}
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.p

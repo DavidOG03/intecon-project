@@ -45,7 +45,7 @@ const HeroSlider = () => {
             className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0  font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]"
           >
             <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
-              Intecon Patnership Ltd
+              Intecon Partnership Ltd
             </span>
             Consulting Engineers
           </motion.h3>
@@ -62,7 +62,7 @@ const HeroSlider = () => {
             className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]   "
           >
             <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
-              Intecon Patnership Ltd
+              Intecon Partnership Ltd
             </span>
             Project Managers
           </motion.h3></div>
@@ -78,7 +78,7 @@ const HeroSlider = () => {
             className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]  "
           >
             <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
-              Intecon Patnership Ltd
+              Intecon Partnership Ltd
             </span>
             Expert Solutions
           </motion.h3></div>
@@ -94,7 +94,7 @@ const HeroSlider = () => {
             className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%] "
           >
             <span className="block text-[#fff] text-[45px]  md:text-[68px] lg:text-[90px]">
-              Intecon Patnership Ltd
+              Intecon Partnership Ltd
             </span>
             Innovative Design
           </motion.h3></div>
@@ -104,8 +104,3 @@ const HeroSlider = () => {
 };
 
 export default HeroSlider;
-
-// variant={fadeup}
-//             initial="hidden"
-//             whileInView="visible"
-//             viewport={{ once: true }}

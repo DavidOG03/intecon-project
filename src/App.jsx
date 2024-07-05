@@ -6,13 +6,13 @@ import Home from './components/home';
 import About from './components/about';
 import Services from './components/services';
 import Contact from './components/contact';
-import './App.css'
 import Footer from './components/footer';
-
 import StructuralDesign from './components/structural_design';
 import Geosciences from './components/geosciences';
 import Ndt from './components/ndt';
 import HighwayBridges from './components/highway-bridges';
+import ScrollToTop from './components/scrollToTop';
+import './App.css'
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
     <>
 
      <Router>
+    <ScrollToTop/>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
