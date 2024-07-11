@@ -2,11 +2,10 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 // import { useInView } from "react-intersection-observer";
 
-const AnimatedText = ({ text, height, margin,from,style }) => {
-  const words = Array.from(text);
+const AnimatedText = ({ text,style }) => {
 
-  const letter = {
-    hidden: { opacity: 1, y: from },
+  const fadeup = {
+    hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
       y: 0,
@@ -14,33 +13,30 @@ const AnimatedText = ({ text, height, margin,from,style }) => {
         duration: 0.75,
         ease: "easeInOut",
         type: "tween",
-        delay: 0.5,
+        delay: 0.2,
       },
     },
   };
+  
 
   return (
     <>
       <motion.div
       className="overflow-hidden"
-      initial={{ opacity: 1}}
-      animate={{ opacity: 1}}
-        style={{ maxHeight: `${height}px` }}
+      variants={fadeup}
+      initial="hidden"
+      whileInView="animate"
+      viewport={{once:true}}
         transition={{ staggerChildren: 0.015 }}
       >
-        {words.map((word, index) => (
+        {text.split(" ").{(word, index) => (
           <motion.span
             className={style}
-            style={{ marginRight: `${margin}px`, display: "inline-block" }}
             key={index}
-            variants={letter}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
           >
             {word}
           </motion.span>
-        ))}
+        )}}
       </motion.div>
     </>
   );

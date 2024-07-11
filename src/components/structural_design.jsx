@@ -142,6 +142,8 @@ const StructuralDesign = () => {
           />
         </div>
       </section>
+      <Quote/>
+
     </main>
   );
 };

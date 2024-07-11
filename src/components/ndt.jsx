@@ -126,6 +126,7 @@ const Ndt = () => {
           />
         </div>
       </section>
+      <Quote/>
     </main>
   )
 }

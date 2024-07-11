@@ -152,6 +152,7 @@ const Geosciences = () => {
           /> */}
         </div>
       </section>
+      <Quote/>
     </main>
   );
 };
