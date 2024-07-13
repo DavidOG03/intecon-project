@@ -6,33 +6,22 @@ import { Cross as Hamburger } from "hamburger-react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
-  // const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-
-  // const handleMouseEnter = () => {
-  //   setIsDropdownVisible(true);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsDropdownVisible(false);
-
-  // };
-
   const navbarRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   const handleClickOutside = (event) => {
-    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+    if (navbarRef.current && !navbarRef.current.contains(event.target) && hamburgerRef.current &&
+    !hamburgerRef.current.contains(event.target)) {
       setOpen(false);
     }
   };
 
-  // useEffect(() => {
-  //   document.addEventListener('mousedown', handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, []);
-
-
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -88,18 +77,17 @@ const Header = () => {
                     : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
                 }
               >
-                services
+                Services
               </NavLink>
             </li>
-            {/* <li className='inline-block mx-2 xl:mx-4 font-jakarta text-[12px] tracking-[0.6px]'><NavLink to="/projects">projects</NavLink></li> */}
             <Dropdown />
           </ul>
         </nav>
 
         <nav
-          className={`navbar-mobile fixed bg-[#1c1c1c] transition-all ease-in-out duration-500 lg:hidden top-0 -right-[100%] h-[100vh] w-[50%] border-l border-l-[#413F3E] ${
-            isOpen === true ? "active" : ""
-          }`}
+          className={`navbar-mobile fixed bg-[#1c1c1c] transition-all ease-in-out duration-500 lg:hidden top-0 ${
+            isOpen ? "right-0" : "-right-full"
+          } h-[100vh] w-[50%] border-l border-l-[#413F3E]`}
           ref={navbarRef}
         >
           <ul className="uppercase text-[#fff] flex flex-col justify-center items-start h-full">
@@ -149,10 +137,10 @@ const Header = () => {
                     : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
               >
-                services
+                Services
               </NavLink>
             </li>
-            <Dropdown/>
+            <Dropdown />
           </ul>
         </nav>
 
@@ -185,12 +173,15 @@ const Header = () => {
             </a>
           </div>
         </div>
+        <div ref={hamburgerRef}>
         <Hamburger
           size={20}
           toggled={isOpen}
           toggle={setOpen}
           color="#0499CF"
         />
+        </div>
+        
       </header>
     </>
   );
