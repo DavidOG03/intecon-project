@@ -52,7 +52,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10 "
           >
             Our Mission
             
@@ -90,7 +90,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
           >
             Our Vision
           </motion.h3>
@@ -123,7 +123,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[#1c1c1c] font-jakarta text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
           >
             Who We Are
           </motion.h3>
@@ -204,7 +204,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-jakarta capitalize text-[#1c1c1c]  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12"
+          className="font-jakarta font-medium capitalize text-[#1c1c1c]  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12"
         >
           Statutory Institutions Registration
         </motion.h3>
@@ -297,7 +297,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className=" font-jakarta capitalize text-[#1c1c1c] tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
+          className=" font-jakarta font-medium capitalize text-[#1c1c1c] tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
         >
           Meet Our Directors
         </motion.h3>
@@ -345,7 +345,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-[54px] mb-6 md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta capitalize text-center"
+          className="text-[54px] mb-6 md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta font-medium capitalize text-center"
         >
           Our Clients
         </motion.h3>
