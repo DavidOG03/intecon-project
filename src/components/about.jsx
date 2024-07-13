@@ -35,7 +35,7 @@ const fadein = {
 
 const About = () => {
   return (
-    <main className="about w-full bg-[#fff] pt-[60px] lg:pt-[120px]">
+    <main className="about w-full pt-[60px] lg:pt-[120px] bg-white ">
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-12 w-full">
         <motion.div
           variants={fadein}
@@ -114,7 +114,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/structural-engr.png')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
         >
         </motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Quote from "./quote";
 
 const StructuralDesign = () => {
   const fadeup = {
@@ -52,7 +53,7 @@ const StructuralDesign = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]"
+            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-[1] font-medium mb-6 max-w-[768px]"
           >
             Structural Engineering design
           </motion.h3>
@@ -76,7 +77,7 @@ const StructuralDesign = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[12px] md:text-[14px] text-[#1c1c1c] font-inter max-w-[768px]"
+            className="mt-4 text-[14px] md:text-basetext-[#1c1c1c] font-inter max-w-[768px]"
           >
             INTECON is well known as a top civil/structural engineering
             consulting firm providing sound technical solutions to engineering
@@ -89,13 +90,13 @@ const StructuralDesign = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery px-6">
+      <section className="gallery px-6 py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
+          className="text capitalize font-jakarta tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
         >
           Structure projects pictures
         </motion.h3>

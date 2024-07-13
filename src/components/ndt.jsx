@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import Quote from './quote';
 
 const Ndt = () => {
 
@@ -52,7 +53,7 @@ const Ndt = () => {
           initial="hidden"
           whileInView = "visible"
           viewport= {{once:true}}
-          className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]">
+          className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-[1] font-medium mb-6 max-w-[768px]">
             Non-Destructive Testing
           </motion.h3>
           <motion.p 
@@ -74,20 +75,20 @@ const Ndt = () => {
           
         </div>
       </section>
-      <section className="gallery px-6">
+      <section className="gallery px-6 py-[60px]">
         <motion.h3  
         variants={fadeup}
         initial="hidden"
         whileInView = "visible"
         viewport= {{once:true}}
-        className="text capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]">
-          Geoscience projects pictures
+        className="text capitalize font-jakarta tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]">
+          Non-destructive Testing Projects Pictures
         </motion.h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <img
             src="/images/ndt1.png"
             alt="non-destructive Testingwork"
-            className="w-full max-w-[768px] "
+            className="w-full max-w-[768px]"
           />
           <img
             src="/images/ndt2.png"

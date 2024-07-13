@@ -29,14 +29,14 @@ const AnimatedText = ({ text,style }) => {
       viewport={{once:true}}
         transition={{ staggerChildren: 0.015 }}
       >
-        {text.split(" ").{(word, index) => (
+        {/* {text.split(" "){(word, index) => (
           <motion.span
             className={style}
             key={index}
           >
             {word}
           </motion.span>
-        )}}
+        )}} */}
       </motion.div>
     </>
   );

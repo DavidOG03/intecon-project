@@ -53,7 +53,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[60px] xl:text-[72px] text-left leading-[1.2] mb-6 max-w-[768px]"
+            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[60px] xl:text-[72px] text-left leading-[1] font-medium mb-6 max-w-[768px]"
           >
             Highways and bridges design
           </motion.h3>
@@ -79,7 +79,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[12px] md:text-[14px] text-[#1c1c1c] font-inter max-w-[768px]"
+            className="mt-4 text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]"
           >
             In our highway design we optimize sustainability and harmonize our
             design with the environment in form of developing design and
@@ -88,13 +88,13 @@ const HighwayBridges = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery px-6">
+      <section className="gallery px-6 py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
+          className="text capitalize font-jakarta tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
         >
           Highway and bridges projects pictures
         </motion.h3>
@@ -109,7 +109,7 @@ const HighwayBridges = () => {
         </div>
       </section>
 
-      <section className="projects p-4">
+      {/* <section className="projects px-4 py-[60px]">
         <table class="max-w-[750px] mx-auto bg-white border border-gray-300">
           <thead>
             <tr>
@@ -160,7 +160,7 @@ const HighwayBridges = () => {
             </tr>
           </tbody>
         </table>
-      </section>
+      </section> */}
       <Quote />
     </main>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Quote from "./quote";
 
 const Geosciences = () => {
   const fadeup = {
@@ -52,7 +53,7 @@ const Geosciences = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-tight mb-6 max-w-[768px]"
+            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-[1] font-medium mb-6 max-w-[768px]"
           >
             Geosciences
           </motion.h3>
@@ -89,7 +90,7 @@ const Geosciences = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]"
+            className="mt-4 text-[14px]s md:text-base text-[#1c1c1c] font-inter max-w-[768px]"
           >
             Our laboratory facility in Lagos is equipped with modern laboratory
             equipment for geotechnical/ civil/ structural testing services. Our
@@ -99,13 +100,13 @@ const Geosciences = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery px-6">
+      <section className="gallery px-6 py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
+          className="text capitalize font-jakarta tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
         >
           Geoscience projects pictures
         </motion.h3>
