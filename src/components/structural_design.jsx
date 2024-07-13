@@ -53,7 +53,7 @@ const StructuralDesign = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[24px] md:text-[48px] xl:text-[72px] text-left leading-[1] font-medium mb-6 max-w-[768px]"
+            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[72px] text-left leading-tight font-medium mb-6 max-w-[768px]"
           >
             Structural Engineering design
           </motion.h3>
