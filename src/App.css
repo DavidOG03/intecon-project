@@ -141,6 +141,12 @@
   background: #0499CF;
 }
 
+.navbar ul li a.active:hover:after, .navbar-mobile ul li a.active:hover::after{
+  width: 100%;
+  transform-origin: right;
+  background: #0499CF;
+}
+
 .navbar ul li a:hover::after, .navbar-mobile ul li a:hover::after{
   width: 100%;
   transform-origin: right;
