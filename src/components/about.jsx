@@ -11,7 +11,7 @@ const fadeup = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       ease: "easeInOut",
       type: "tween",
       delay: 0.2,

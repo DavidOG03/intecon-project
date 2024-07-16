@@ -9,7 +9,7 @@ const StructuralDesign = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.75,
+        duration: 0.5,
         ease: "easeInOut",
         type: "tween",
         delay: 0.2,
@@ -35,7 +35,7 @@ const StructuralDesign = () => {
     <main className="structural-design bg-white pt-[60px]">
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
         <motion.div
-          variants={fadein}
+          variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -101,46 +101,110 @@ const StructuralDesign = () => {
           Structure projects pictures
         </motion.h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <img
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/structure1.png"
             alt="structure-work"
             className="w-full max-w-[768px] "
           />
-          <img
-            src="/images/structural-engr.png"
-            alt="structure-work"
-            className="w-full max-w-[768px] "
-          />
-          <img
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/structure2.png"
             alt="structure-work"
             className="w-full max-w-[768px]"
           />
-          <img
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/structure3.png"
             alt="structure-work"
             className="w-full max-w-[768px]"
           />
-          <img
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/structure4.png"
             alt="structure-work"
             className="w-full max-w-[768px]"
           />
-          <img
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/staircase.png"
             alt="structure-work"
             className="w-full max-w-[768px]"
           />
-          <img
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/structure5.png"
             alt="structure-work"
             className="w-full max-w-[768px]"
           />
-          <img
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
+            src="/images/structural-engr.png"
+            alt="structure-work"
+            className="w-full max-w-[768px] "
+          />
+          </motion.div>
+        <motion.div 
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img
             src="/images/structure6.png"
             alt="structure-work"
             className="w-full max-w-[768px]"
           />
+          </motion.div>
+          
+          
+          
+          
+          
+          
+          
+          
         </div>
       </section>
       <Quote/>

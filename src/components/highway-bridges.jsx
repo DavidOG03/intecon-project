@@ -9,7 +9,7 @@ const HighwayBridges = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.75,
+        duration: 0.5,
         ease: "easeInOut",
         type: "tween",
         delay: 0.2,
@@ -35,7 +35,7 @@ const HighwayBridges = () => {
     <main className="highway-design bg-white pt-[60px]">
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
         <motion.div
-          variants={fadein}
+          variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -75,7 +75,7 @@ const HighwayBridges = () => {
             CIVILCAD, AUTOCAD, LAND DEVELOPMENT, SUPERSTRESS, STAADPRO etc.
           </motion.p>
           <motion.p
-            variants={fadein}
+            variants={fadeup}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -99,17 +99,66 @@ const HighwayBridges = () => {
           Highway and bridges projects pictures
         </motion.h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <img src="/images/road.png" alt="road-work" className="w-full" />
-          <img src="/images/road2.png" alt="road-work" className="w-full" />
-          <img src="/images/road3.png" alt="road-work" className="w-full" />
-          <img src="/images/road4.png" alt="road-work" className="w-full" />
-          <img src="/images/road5.png" alt="road-work" className="w-full" />
-          <img src="/images/road6.png" alt="road-work" className="w-full" />
-          <img src="/images/road7.png" alt="road-work" className="w-full" />
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road.png" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road2.png" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road3.png" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road4.png" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road5.png" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road6.png" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road7.png" alt="road-work" className="w-full" />
+          </motion.div>
         </div>
       </section>
 
-      {/* <section className="projects px-4 py-[60px]">
+      <section className="projects px-4 py-[60px]">
         <table class="max-w-[750px] mx-auto bg-white border border-gray-300">
           <thead>
             <tr>
@@ -160,7 +209,7 @@ const HighwayBridges = () => {
             </tr>
           </tbody>
         </table>
-      </section> */}
+      </section>
       <Quote />
     </main>
   );

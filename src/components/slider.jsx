@@ -18,16 +18,17 @@ const HeroSlider = () => {
 
   const fadeup = {
     hidden: {
-      y: 20,
+      y: 10,
       opacity: 0,
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
+        ease: "easeInOut",
         type: "tween",
-        duration: 0.8,
-        delay: 0.5,
+        duration: 0.5,
+        delay: 0.25,
       },
     },
   };

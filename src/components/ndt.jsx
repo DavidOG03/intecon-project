@@ -10,7 +10,7 @@ const Ndt = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.75,
+        duration: 0.5,
         ease: "easeInOut",
         type: "tween",
         delay: 0.2,
@@ -36,7 +36,7 @@ const Ndt = () => {
     <main className="ndt-page bg-white pt-[60px]">
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
         <motion.div 
-        variants={fadein}
+        variants={fadeup}
         initial="hidden"
         whileInView = "visible"
         viewport= {{once:true}}
@@ -65,7 +65,7 @@ const Ndt = () => {
           INTECON’S has state of the art non-destructive test equipment, and highly trained inspection team, in carried out detailed, and accurate inspection to international standard. Our team of expert has successfully investigated, engineering infrastructures of varying complexities, including, Bridges, High-rise Building, Foundation structures, Steel structural Facilities.
           </motion.p>
           <motion.p 
-          variants={fadein}
+          variants={fadeup}
           initial="hidden"
           whileInView = "visible"
           viewport= {{once:true}}
