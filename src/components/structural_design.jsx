@@ -101,114 +101,113 @@ const StructuralDesign = () => {
           Structure projects pictures
         </motion.h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structure1.png"
-            alt="structure-work"
-            className="w-full max-w-[768px] "
-          />
+              src="/images/structure1.png"
+              alt="structure-work"
+              className="w-full max-w-[768px] "
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structure2.png"
-            alt="structure-work"
-            className="w-full max-w-[768px]"
-          />
+              src="/images/structure2.png"
+              alt="structure-work"
+              className="w-full max-w-[768px]"
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structure3.png"
-            alt="structure-work"
-            className="w-full max-w-[768px]"
-          />
+              src="/images/structure3.png"
+              alt="structure-work"
+              className="w-full max-w-[768px]"
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structure4.png"
-            alt="structure-work"
-            className="w-full max-w-[768px]"
-          />
+              src="/images/structure4.png"
+              alt="structure-work"
+              className="w-full max-w-[768px]"
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/staircase.png"
-            alt="structure-work"
-            className="w-full max-w-[768px]"
-          />
+              src="/images/staircase.png"
+              alt="structure-work"
+              className="w-full max-w-[768px]"
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structure5.png"
-            alt="structure-work"
-            className="w-full max-w-[768px]"
-          />
+              src="/images/structure5.png"
+              alt="structure-work"
+              className="w-full max-w-[768px]"
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structural-engr.png"
-            alt="structure-work"
-            className="w-full max-w-[768px] "
-          />
+              src="/images/structural-engr.png"
+              alt="structure-work"
+              className="w-full max-w-[768px] "
+            />
           </motion.div>
-        <motion.div 
-          variants={fadeup}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
             <img
-            src="/images/structure6.png"
-            alt="structure-work"
-            className="w-full max-w-[768px]"
-          />
+              src="/images/structure6.png"
+              alt="structure-work"
+              className="w-full max-w-[768px]"
+            />
           </motion.div>
-          
-          
-          
-          
-          
-          
-          
-          
         </div>
       </section>
-      <Quote/>
-
+      <Quote />
     </main>
   );
 };

@@ -111,49 +111,100 @@ const Geosciences = () => {
           Geoscience projects pictures
         </motion.h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <img
-            src="/images/geosciences.png"
-            alt="geo-work"
-            className="w-full max-w-[768px] "
-          />
-          <img
-            src="/images/geo2.png"
-            alt="geo-work"
-            className="w-full max-w-[768px]"
-          />
-          <img
-            src="/images/geo3.png"
-            alt="geo-work"
-            className="w-full max-w-[768px]"
-          />
-          <img
-            src="/images/geo4.png"
-            alt="geo-work"
-            className="w-full max-w-[768px]"
-          />
-          <img
-            src="/images/geosciences.webp"
-            alt="geo-work"
-            className="w-full max-w-[768px]"
-          />
-          <img
-            src="/images/lab-test.png"
-            alt="geo-work"
-            className="w-full max-w-[768px]"
-          />
-          <img
-            src="/images/geo1.png"
-            alt="geo-work"
-            className="w-full max-w-[768px] "
-          />
-          {/* <img
-            src="/images/geo6.png"
-            alt="geo-work"
-            className="w-full max-w-[768px]"
-          /> */}
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/geosciences.png"
+              alt="geo-work"
+              className="w-full max-w-[768px] "
+            />
+          </motion.div>
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/geo2.png"
+              alt="geo-work"
+              className="w-full max-w-[768px]"
+            />
+          </motion.div>
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/geo3.png"
+              alt="geo-work"
+              className="w-full max-w-[768px]"
+            />
+          </motion.div>
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/geo3.png"
+              alt="geo-work"
+              className="w-full max-w-[768px]"
+            />
+          </motion.div>
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/geosciences.webp"
+              alt="geo-work"
+              className="w-full max-w-[768px]"
+            />
+          </motion.div>
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/lab-test.png"
+              alt="geo-work"
+              className="w-full max-w-[768px]"
+            />
+          </motion.div>
+          <motion.div
+            variants={fadein}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="project-pic"
+          >
+            <img
+              src="/images/geo1.png"
+              alt="geo-work"
+              className="w-full max-w-[768px] "
+            />
+          </motion.div>
         </div>
       </section>
-      <Quote/>
+      <Quote />
     </main>
   );
 };
