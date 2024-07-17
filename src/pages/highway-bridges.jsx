@@ -168,15 +168,15 @@ const HighwayBridges = () => {
         >
          Past Highway and Bridges Projects
         </motion.h3>
-        <div className="projects-container w-full flex flex-col justify-start items-center gap-8 lg:flex-row">
-        <div className="project-tabs basis-[20%] h-full flex flex-col justify-between items-start gap-12">
-          <button className="project-tab w-full p-12 bg-[#0499CF]">
+        <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row">
+        <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-start gap-12">
+          <button className="project-tab w-full p-12 bg-[#0499CF] text-white">
             Projects Tab 1 
           </button>
-          <button className="project-tab w-full p-12 bg-[#0499CF]">
+          <button className="project-tab w-full p-12 bg-[#0499CF] text-white">
             Projects Tab 2
           </button>
-          <button className="project-tab w-full p-12 bg-[#0499CF]">
+          <button className="project-tab w-full p-12 bg-[#0499CF] text-white">
             Projects Tab 3
           </button>
         </div>
@@ -322,7 +322,7 @@ const HighwayBridges = () => {
           </tbody>
         </table>
         {/* 3rd table */}
-        <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden ">
+        <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
           <thead>
             <tr>
               <th className=" py-2 border-b-2 border-gray-300 text-left font-jakarta pl-4">S/N</th>
