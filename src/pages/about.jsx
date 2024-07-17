@@ -1,8 +1,8 @@
 import React from "react";
-import Director from "./director";
-import Clients from "./clients";
-import Quote from "./quote";
-import AnimatedText from "./animatedText";
+import Director from "../components/director";
+import Clients from "../components/clients";
+import Quote from "../components/quote";
+import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
 
 const fadeup = {

@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroSlider from './slider'
-import Clients from './clients'
+import HeroSlider from '../components/slider'
+import Clients from '../components/clients'
 
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import ServiceCard from './service-card'
-import Quote from './quote'
+import ServiceCard from '../components/service-card'
+import Quote from '../components/quote'
 import {motion} from 'framer-motion'
 
 const Services = () => {

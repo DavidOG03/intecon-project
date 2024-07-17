@@ -2,15 +2,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
-import Home from './components/home';
-import About from './components/about';
-import Services from './components/services';
-import Contact from './components/contact';
+import Home from './pages/home';
+import About from './pages/about';
+import Services from './pages/services';
+import Contact from './pages/contact';
 import Footer from './components/footer';
-import StructuralDesign from './components/structural_design';
-import Geosciences from './components/geosciences';
-import Ndt from './components/ndt';
-import HighwayBridges from './components/highway-bridges';
+import StructuralDesign from './pages/structural_design';
+import Geosciences from './pages/geosciences';
+import Ndt from './pages/ndt';
+import HighwayBridges from './pages/highway-bridges';
 import ScrollToTop from './components/scrollToTop';
 import './App.css'
 

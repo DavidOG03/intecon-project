@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import MapComponent from "./map";
-import AnimatedText from "./animatedText";
+import MapComponent from "../components/map";
+import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
 
 export default function Contact() {
