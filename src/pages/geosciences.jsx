@@ -106,9 +106,9 @@ const Geosciences = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-left leading-tight mb-6 max-w-[768px]"
+          className="text capitalize font-jakarta font-bold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-6  mx-auto max-w-[768px]"
         >
-          Geoscience projects pictures
+          Geoscience projects gallery
         </motion.h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <motion.div
