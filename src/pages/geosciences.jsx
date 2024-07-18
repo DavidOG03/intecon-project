@@ -33,19 +33,19 @@ const Geosciences = () => {
 
   return (
     <main className="geosciences-page bg-white pt-[60px]">
-      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-6 pb-[120px]">
+      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]">
         <motion.div
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px]"
+          className="image-box w-full h-full min-h-[300px] max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/geosciences.png')] bg-cover bg-no-repeat bg-center"
         >
-          <img
+          {/* <img
             src="/images/geosciences.png"
             alt="geosciences"
             className="object-cover w-full"
-          />
+          /> */}
         </motion.div>
         <div className="text">
           <motion.h3
@@ -100,13 +100,13 @@ const Geosciences = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery px-6 py-[60px]">
+      <section className="gallery px-3 py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-bold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-6  mx-auto max-w-[768px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-tight mb-6  mx-auto max-w-[768px]"
         >
           Geoscience projects gallery
         </motion.h3>
