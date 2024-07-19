@@ -34,12 +34,18 @@ const StructuralDesign = () => {
   return (
     <main className="structural-design bg-white pt-[60px]">
       <motion.h1
-         variants={fadeup}
-         initial="hidden"
-         whileInView="visible"
-         viewport={{ once: true }} 
-         className="heading font-jakarta tracking-tighter text-blackish text-[42px] md:text-[68px] xl:text-[90px] text-left leading-tight font-medium mb-6 py-[5rem] pl-[3rem]">We have <span className="text-blue">designed & built amazing structures </span> that meet <span className="text-blue">the desire</span> of our <span className="text-blue">Clients</span></motion.h1>
-      
+        variants={fadeup}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="heading font-jakarta tracking-tighter text-blackish text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 py-[5rem] pl-[3rem]"
+      >
+        We have{" "}
+        <span className="text-blue">designed & built amazing structures </span>{" "}
+        that meet <span className="text-blue">the desire</span> of our{" "}
+        <span className="text-blue">Clients</span>
+      </motion.h1>
+
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]">
         <motion.div
           variants={fadeup}
@@ -47,8 +53,7 @@ const StructuralDesign = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="image-box w-full h-full max-h-[320px] md:max-h-[450px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/olive-court.webp')] bg-cover bg-no-repeat bg-center"
-        >
-        </motion.div>
+        ></motion.div>
         <div className="text ">
           <motion.h3
             variants={fadeup}
@@ -98,7 +103,7 @@ const StructuralDesign = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-[1] mb-6  mx-auto max-w-[620px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-[1] mb-[60px] mx-auto max-w-[620px]"
         >
           Structural Design projects gallery
         </motion.h3>
@@ -210,249 +215,378 @@ const StructuralDesign = () => {
         </div>
       </section>
       <section className="structural-projects">
-      <motion.h3
+        <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-6  mx-auto max-w-[768px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-[60px] mx-auto max-w-[768px]"
         >
-         Past Structural Design Projects
+          Past Structural Design Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row">
-        <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-8">
-          <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
-            Projects Tab 1 
-          </button>
-          <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
-            Projects Tab 2
-          </button>
-          <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
-            Projects Tab 3
-          </button>
-        </div>
-      <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]">
-          <thead>
-            <tr>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">S/N</th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
-                Project Description
-              </th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">Year</th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">Clients</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">1</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Supervision, Rehabilitation and Reconstruction of Lagos – Ibadan Dual Carriageway under Private Finance Initiative
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Project On-Hold</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Motorways Asset Ltd/FMW</td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Engineering Design for the Dualization of Ilorin – Jebba – Mokwa Highway
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2014</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Federal Ministry of Works Abuja</td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">3</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Engineering Design of Interchange Near Lokoja International Market and NNPC Mega Station, Along Abuja – Lokoja Road Dualization, Section IV
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Oct 2010 - July 2014</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">4</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Supervision of the Rehabilitation of Kunya- Kanya – Babura - Bababmutum Road
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2013</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">5</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Emergency Reconstruction of Flooded Sections of Abuja – Lokoja Road, CH 23 + 400 to CH 26 + 395 (Kotonkarfe – Lokoja) in Kogi State.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2013</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">6</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Engineering Design for the Rehabilitation of Ilorin – Jebba – Mokwa Highway.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2013</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        {/* 2nd Table */}
-        <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
-          <thead>
-            <tr>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">S/N</th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
-                Project Description
-              </th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">Year</th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">Clients</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">7</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Engineering Design for the Rehabilitation of Ijora – Apapa Bridge.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2013</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Federal Ministry of Works Abuja</td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">8</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Detailed Design and Preparation of Bidding Document for the Rehabilitation of Mokwa Bida Road in Niger State.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2012</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Federal Ministry of Works Abuja</td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">9</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Assessment of Railway Bridges, Western Line (KM 56,727- 488,034)
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2011</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Nigerian Railway Corporation
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">10</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Engineering Design for the Rehabilitation of Murtala Mohammed Bridge, Kotonkarfe, Kogi State.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2011</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">11</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy services for Engineering Design for the Rehabilitation of Mokwa – New Bussa –Kaima to Oyo State Border in Niger/Kwara States.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2010</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">12</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Engineering Supervision for Rehabilitation of Mararaba -Pambeguwa - Saminaka - Jos Road, Section 1: Mararaba -Pambeguwa in Kaduna State.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Feb 2010 (20 month)</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works & Urban Dev.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        {/* 3rd table */}
-        <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
-          <thead>
-            <tr>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">S/N</th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
-                Project Description
-              </th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">Year</th>
-              <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">Clients</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">13</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Engineering Supervision for Rehabilitation of Gombe -Numan-Yola Road Section II-Numan -Gombe in Gombe Adamawa States.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">October 2009 – Feb 2011</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Federal Ministry of Works & Urban Dev.</td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">14</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Dualization of Oba Adesida- Isinkan - Ondo Road Project
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Oct 2010 – July 2014</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">Ondo State Government</td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">15</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Structural Engineering Design and Construction Supervision of Ilorin Cargo Terminal.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2018 - 2010</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              FAAN / Kwara State Govt.
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">16</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Consultancy Services for the Dualization of Abuja – Abaji – Lokoja Road, Section IV
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">March 2007 to date</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Federal Ministry of Works Abuja
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">17</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              National Highways and urban Roads Rehabilitation project lot 14:Akure -owo,owo –Akungba –Isua Ibilo,Okene, Kabba,-Omua –Okaegbe –Ikare Akungba, Owo township Road, okaegbe township road.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">1998</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Petroleum (special)Trust fund(PTF)
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">18</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              Detailed Engineering Design of BRT Access Road including 1x 20m span bridge deck on pile.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2003</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              ExxonMobil
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">19</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              MHE By-Pass Road/Right of Way reestablishment survey at Eket.
-              </td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">2005</td>
-              <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-              ExxonMobil
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-8">
+            <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
+              Projects Tab 1
+            </button>
+            <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
+              Projects Tab 2
+            </button>
+            <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
+              Projects Tab 3
+            </button>
+          </div>
+          <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]">
+            <thead>
+              <tr>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  S/N
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  Project Description
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  Year
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  Clients
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  1
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Construction of School Block at Ogbona Secondary School,
+                  Ogbona, Edo State.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  On-going
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  ExxonMobil
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Structural Engineering Consultancy Services for Proposed
+                  Development for Oodua Investment Company Ltd at Jericho Area,
+                  Ibadan (ACE Project)
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  On-going
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Odua Investment Company
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  3
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Engineering Design of Proposed academic planning Complex for
+                  Oshun State , Polytechnic, Iree
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  {" "}
+                  On-going
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Design Haven Consult
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  4
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Structural Engineering Design of Elevator Backup at Level
+                  24.0m of F&HC Building
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2016
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Procter & Gamble
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  5
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Structural Engineering Consultancy Services for Design and
+                  Construction Supervision of Distance learning Institute
+                  Building, University of Lagos
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2015
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Unilag
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          {/* 2nd Table */}
+          <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
+            <thead>
+              <tr>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  S/N
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  Project Description
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  Year
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  Clients
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  6
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Structural Engineering Design and Construction Supervision
+                  Services for the Proposed Residential Development at Agodi,
+                  Ibadan, Oyo State.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2016
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  UACN Property Dev. Company
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  7
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Design Phase and detailing of the Steel Roof Structure
+                  covering the existing playground including the
+                  electromechanical services for French School Lagos
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  {" "}
+                  April - Oct 2014
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Association Francaise de Nigeria
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  8
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Construction Supervision of Osun State Stadium
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2013- Date
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Osun State Govt.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  9
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Consultancy Services for the Proposed Lecture theatre for the
+                  Faculty of Science, University of Ibadan
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2013 - Date
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  University of Ibadan
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          {/* 3rd table */}
+          <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
+            <thead>
+              <tr>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  S/N
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  Project Description
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  Year
+                </th>
+                <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  Clients
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  10
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  300 Bed hostel for Ajayi Crowther University, Oyo State.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2013
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Ajayi Crowther University
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  11
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Engineering Design and Supervision of Heritage Shopping Mall
+                  for Odua Investment.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2013
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Odua Investment Group
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  12
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Bowen University Library Complex, Iwo.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2012
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Bowen University
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  13
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Detailed Engineering Design and Construction Supervision of
+                  the Trauma Centre for the National Hospital, Abuja.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2012-2013
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  ab.dt. Partnership Project Managers
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  14
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Structural Engineering design and supervision of the Ilorin
+                  Airport Cargo Terminal, Ilorin
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2008-2010
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  FAAN/Kwara State Govt
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  15
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Engineering Design and Construction Supervision of Faculty of
+                  Natural Science Building, Ajayi Crowther University.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2009
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Ajayi Crowther University
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  16
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Engineering, Procurement and Construction of Eket Airstrip
+                  Control Tower, Eket, Akwa Ibom State.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2007
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  ExxonMobil
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  17
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Detailed Engineering: Architectural, Structural, Mechanical
+                  and Electrical Engineering Design Services for Geological
+                  Warehouse and QIT Laboratory projects, Qua Iboe Terminal Eket,
+                  Akwa Ibom State.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2006
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Exxonmobil
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  18
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  Detailed Engineering Design of BRT Access Road including 1x
+                  20m span bridge deck on pile.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2003
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  ExxonMobil
+                </td>
+              </tr>
+              <tr>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  19
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  MHE By-Pass Road/Right of Way reestablishment survey at Eket.
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  2005
+                </td>
+                <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  ExxonMobil
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
       <Quote />

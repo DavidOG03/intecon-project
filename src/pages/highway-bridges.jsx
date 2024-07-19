@@ -38,7 +38,7 @@ const HighwayBridges = () => {
          initial="hidden"
          whileInView="visible"
          viewport={{ once: true }} 
-         className="heading font-jakarta tracking-tighter text-blackish text-[42px] md:text-[68px] xl:text-[90px] text-left leading-tight font-medium mb-6 py-[5rem] pl-[3rem]">We have <span className="text-blue">designed road networks</span> that meet <span className="text-blue">modern day needs</span> for both <span className="text-blue">Goverment </span>and <span className="text-blue">private institutions</span></motion.h1>
+         className="heading font-jakarta tracking-tighter text-blackish text-[36px] md:text-[48px] xl:text-[72px] text-left leading-tight font-medium mb-6 py-[5rem] pl-[3rem]">We have <span className="text-blue">designed road networks</span> that meet <span className="text-blue">modern day needs</span> for both <span className="text-blue">Goverment </span>and <span className="text-blue">private institutions</span></motion.h1>
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]">
         
         <motion.div
@@ -96,7 +96,7 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-6  mx-auto max-w-[720px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[720px]"
         >
           Highway and bridges projects Gallery
         </motion.h3>
@@ -166,7 +166,7 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-6  mx-auto max-w-[768px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]"
         >
          Past Highway and Bridges Projects
         </motion.h3>
