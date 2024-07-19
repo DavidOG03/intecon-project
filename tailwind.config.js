@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blue":"#1695CD",
-
+        "blue":"#0499CF",
+        "black": "#1c1c1c",
+        "blackish": "#1c1c1c50",
       },
       backgroundImage:{
         "heroImageOne":'url("/images/structural-engr.webp")',

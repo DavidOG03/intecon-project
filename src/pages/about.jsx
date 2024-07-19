@@ -36,6 +36,16 @@ const fadein = {
 const About = () => {
   return (
     <main className="about w-full pt-[60px] lg:pt-[120px] bg-white ">
+      <motion.h1
+        variants={fadeup}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="heading font-jakarta capitalize tracking-tighter text-[#1c1c1c] text-[42px] md:text-[68px] xl:text-[90px] text-left leading-tight font-medium mb-6 max-w-[1024px] py-[5rem] pl-[3rem]"
+      >
+        We are <div className="text-blue">consulting engineers</div>
+      </motion.h1>
+      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section>
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-12 w-full">
         <motion.div
           variants={fadein}
@@ -43,9 +53,7 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
-        >
-         
-        </motion.div>
+        ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
@@ -55,7 +63,6 @@ const About = () => {
             className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10 "
           >
             Our Mission
-            
           </motion.h3>
           <motion.p
             variants={fadeup}
@@ -69,7 +76,6 @@ const About = () => {
             tested solutions, at optimum costs to clients, and in a timely and
             environmentally friendly manner, utilizing highly trained manpower,
             cutting- edge technology and equipment.
-            
           </motion.p>
         </div>
       </section>
@@ -81,9 +87,7 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px] shadow-xl "
-        >
-          
-        </motion.div>
+        ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -114,9 +118,8 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
-        >
-        </motion.div>
+          className="image-box w-full basis-[50%] h-[220px] md:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
+        ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -158,9 +161,8 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] lg:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px] shadow-xl "
-        >
-        </motion.div>
+          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px] shadow-xl "
+        ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.p
             variants={fadeup}
