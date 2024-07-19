@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8">
-        <Link to="/" className="logo h-[34px] lg:h-[54px] object-cover">
+        <Link to="/" className="logo h-[34px] lg:h-[36px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
         <nav className="navbar desktop hidden lg:block ">
@@ -37,8 +37,8 @@ const Header = () => {
                 end
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
                 }
               >
                 Home
@@ -49,8 +49,8 @@ const Header = () => {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
                 }
               >
                 About US
@@ -61,8 +61,8 @@ const Header = () => {
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
                 }
               >
                 Contact Us
@@ -73,8 +73,8 @@ const Header = () => {
                 to="/services"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[10px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
                 }
               >
                 Services
@@ -154,7 +154,7 @@ const Header = () => {
             <a
               href="mailto:intecon@intecon.com.ng"
               target="blank"
-              className=" text-[#fff] font-inter text-[10px] xl:text-[12px]"
+              className=" text-[#fff] font-inter text-[13px] xl:text-[12px]"
             >
               intecon@intecon.com.ng
             </a>
@@ -165,10 +165,10 @@ const Header = () => {
               alt="contact icon"
               className="inline-block w-3"
             />{" "}
-            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[10px] xl:text-[12px]">
+            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[13px] xl:text-[12px]">
               Call +234 803 324 2026
             </a>
-            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[10px] xl:text-[12px]">
+            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[13px] xl:text-[12px]">
               +234 803 328 3101
             </a>
           </div>

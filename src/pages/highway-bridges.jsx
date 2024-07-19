@@ -46,13 +46,8 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px]"
+          className="image-box w-full h-full max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/road-project-4.webp')] bg-no-repeat bg-cover bg-center"
         >
-          <img
-            src="/images/road.png"
-            alt="highway road"
-            className="object-cover w-full"
-          />
         </motion.div>
         <div className="text">
           <motion.h3
@@ -60,7 +55,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 max-w-[768px] lg:relative -left-[10rem]"
+            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 w-full max-w-[768px] break-keep"
           >
             Highways and bridges design
           </motion.h3>
@@ -112,7 +107,7 @@ const HighwayBridges = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="project-pic">
-            <img src="/images/road.png" alt="road-work" className="w-full" />
+            <img src="/images/road-project.webp" alt="road-work" className="w-full" />
           </motion.div>
           <motion.div 
           variants={fadein}
@@ -120,7 +115,39 @@ const HighwayBridges = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="project-pic">
-            <img src="/images/road2.png" alt="road-work" className="w-full" />
+            <img src="/images/road-project-2.webp" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road-project-3.webp" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road-project-4.webp" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/road-project-5.webp" alt="road-work" className="w-full" />
+          </motion.div>
+          <motion.div 
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="project-pic">
+            <img src="/images/quarry-3.webp" alt="road-work" className="w-full" />
           </motion.div>
           <motion.div 
           variants={fadein}
@@ -129,38 +156,6 @@ const HighwayBridges = () => {
           viewport={{ once: true }}
           className="project-pic">
             <img src="/images/road3.png" alt="road-work" className="w-full" />
-          </motion.div>
-          <motion.div 
-          variants={fadein}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
-            <img src="/images/road4.png" alt="road-work" className="w-full" />
-          </motion.div>
-          <motion.div 
-          variants={fadein}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
-            <img src="/images/road5.png" alt="road-work" className="w-full" />
-          </motion.div>
-          <motion.div 
-          variants={fadein}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
-            <img src="/images/road6.png" alt="road-work" className="w-full" />
-          </motion.div>
-          <motion.div 
-          variants={fadein}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="project-pic">
-            <img src="/images/road7.png" alt="road-work" className="w-full" />
           </motion.div>
         </div>
       </section>

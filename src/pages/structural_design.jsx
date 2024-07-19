@@ -33,19 +33,21 @@ const StructuralDesign = () => {
 
   return (
     <main className="structural-design bg-white pt-[60px]">
+      <motion.h1
+         variants={fadeup}
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ once: true }} 
+         className="heading font-jakarta tracking-tighter text-blackish text-[42px] md:text-[68px] xl:text-[90px] text-left leading-tight font-medium mb-6 py-[5rem] pl-[3rem]">We have <span className="text-blue">designed & built amazing structures </span> that meet <span className="text-blue">the desire</span> of our <span className="text-blue">Clients</span></motion.h1>
+      
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]">
         <motion.div
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full max-h-[320px] md:max-h-[450px] xl:max-h-none overflow-hidden rounded-[12px]"
+          className="image-box w-full h-full max-h-[320px] md:max-h-[450px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/olive-court.webp')] bg-cover bg-no-repeat bg-center"
         >
-          <img
-            src="/images/olive-court.webp"
-            alt="olive court"
-            className="object-cover w-full"
-          />
         </motion.div>
         <div className="text ">
           <motion.h3

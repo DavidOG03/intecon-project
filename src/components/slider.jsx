@@ -43,9 +43,9 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-            className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0  font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]"
+            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0  font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]"
           >
-            <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
+            <span className="block text-white text-[45px] md:text-[68px] lg:text-[90px]">
               Intecon Partnership Ltd
             </span>
             Consulting Engineers
@@ -60,9 +60,9 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={true}
-            className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]   "
+            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]   "
           >
-            <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
+            <span className="block text-white text-[45px] md:text-[68px] lg:text-[90px]">
               Intecon Partnership Ltd
             </span>
             Project Managers
@@ -76,9 +76,9 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{once:true}}
-            className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]  "
+            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%]  "
           >
-            <span className="block text-[#fff] text-[45px] md:text-[68px] lg:text-[90px]">
+            <span className="block text-white text-[45px] md:text-[68px] lg:text-[90px]">
               Intecon Partnership Ltd
             </span>
             Expert Solutions
@@ -92,9 +92,9 @@ const HeroSlider = () => {
           initial="hidden"
           whileInView="visible"
           viewport={true}
-            className="font-medium text-[#fff] text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%] "
+            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] ml-3 md:ml-0 font-jakarta tracking-tight leading-tight text-left w-full max-w-[300px] md:max-w-[1024px] absolute top-[50%] left-0 lg:left-8 -translate-y-[50%] "
           >
-            <span className="block text-[#fff] text-[45px]  md:text-[68px] lg:text-[90px]">
+            <span className="block text-white text-[45px]  md:text-[68px] lg:text-[90px]">
               Intecon Partnership Ltd
             </span>
             Innovative Design

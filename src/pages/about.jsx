@@ -41,7 +41,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="heading font-jakarta capitalize tracking-tighter text-[#1c1c1c] text-[42px] md:text-[68px] xl:text-[90px] text-left leading-tight font-medium mb-6 max-w-[1024px] py-[5rem] pl-[3rem]"
+        className="heading font-jakarta capitalize tracking-tighter text-black text-[42px] md:text-[68px] xl:text-[90px] text-left leading-tight font-medium mb-6 max-w-[1024px] py-[5rem] pl-[3rem]"
       >
         We are <div className="text-blue">consulting engineers</div>
       </motion.h1>
@@ -60,7 +60,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10 "
+            className="text-black font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10 "
           >
             Our Mission
           </motion.h3>
@@ -69,7 +69,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base font-inter text-[#1c1c1c] relative z-10 leading-relaxed"
+            className="text-base font-inter text-black relative z-10 leading-relaxed"
           >
             Our mission is to provide technically sound engineering services on
             projects, to achieve the production of durable facilities and time
@@ -94,7 +94,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-black font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
           >
             Our Vision
           </motion.h3>
@@ -103,7 +103,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10"
+            className="text-base text-black font-inter mb-6 relative z-10"
           >
             Our vision is to be one of the best consulting engineering firms in
             Africa and beyond, in the delivery of world class engineering
@@ -126,7 +126,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[#1c1c1c] font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-black font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
           >
             Who We Are
           </motion.h3>
@@ -135,7 +135,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10 leading-relaxed"
+            className="text-base text-black font-inter mb-6 relative z-10 leading-relaxed"
           >
             Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
             Engineers specializing in areas of heavy industrial and large scale
@@ -169,7 +169,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10"
+            className="text-base text-black font-inter mb-6 relative z-10"
           >
             Apart from its extensive consulting engineering capabilities,
             Intecon Partnership Ltd is the parent company of two other
@@ -181,7 +181,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-[#1c1c1c] font-inter mb-6 relative z-10"
+            className="text-base text-black font-inter mb-6 relative z-10"
           >
             <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
             1997 in response to the dearth of competent local Geotechnical
@@ -206,7 +206,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-jakarta font-medium capitalize text-[#1c1c1c]  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12"
+          className="font-jakarta font-medium capitalize text-black  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12"
         >
           Statutory Institutions Registration
         </motion.h3>
@@ -223,7 +223,7 @@ const About = () => {
               src="/images/cac.png"
               alt="corporate Affairs Commission logo"
             />
-            <p className="text-center text-[1rem] text-[#1c1c1c]">
+            <p className="text-center text-[1rem] text-black">
               Corporate Affairs Commission
             </p>
           </motion.div>
@@ -239,7 +239,7 @@ const About = () => {
               src="/images/coren.webp"
               alt="Council for the Regulation of Engineering in Nigeria logo"
             />
-            <p className="text-center text-[1rem] text-[#1c1c1c]">
+            <p className="text-center text-[1rem] text-black">
               Council for the Regulation of Engineering in Nigeria
             </p>
           </motion.div>
@@ -255,7 +255,7 @@ const About = () => {
               src="/images/acen.webp"
               alt="Association for Consulting Engineering Nigeria logo"
             />
-            <p className="text-center text-[1rem] text-[#1c1c1c]">
+            <p className="text-center text-[1rem] text-black">
               Association for Consulting Engineering Nigeria
             </p>
           </motion.div>
@@ -271,7 +271,7 @@ const About = () => {
               src="/images/dpr.webp"
               alt="Department of Petroleum Resources logo"
             />
-            <p className="text-center text-[1rem] text-[#1c1c1c]">
+            <p className="text-center text-[1rem] text-black">
               Department of Petroleum Resources
             </p>
           </motion.div>
@@ -287,7 +287,7 @@ const About = () => {
               src="/images/nnpc.webp"
               alt="Nigerian National Petroleum Corporation"
             />
-            <p className="text-center text-[1rem] text-[#1c1c1c]">
+            <p className="text-center text-[1rem] text-black">
               Nigerian National Petroleum Corporation
             </p>
           </motion.div>
@@ -299,7 +299,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className=" font-jakarta font-medium capitalize text-[#1c1c1c] tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
+          className=" font-jakarta font-medium capitalize text-black tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
         >
           Meet Our Directors
         </motion.h3>
@@ -347,7 +347,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-[54px] mb-6 md:text-[90px] tracking-tight text-[#1c1c1c] font-jakarta font-medium capitalize text-center"
+          className="text-[54px] mb-6 md:text-[90px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
         >
           Our Clients
         </motion.h3>
