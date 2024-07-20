@@ -96,7 +96,7 @@
   background:linear-gradient(to bottom, #11121349,#1112135d ,#0b0b0c2d),  url(/images/homepage-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 30% top ;
+  background-position: 30% bottom ;
 }
 
 .navbar ul li a,.navbar-mobile ul li a{

@@ -36,6 +36,7 @@ const fadein = {
 const About = () => {
   return (
     <main className="about w-full pt-[60px] lg:pt-[120px] bg-white ">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat">
       <motion.h1
         variants={fadeup}
         initial="hidden"
@@ -45,6 +46,7 @@ const About = () => {
       >
         We are <span className="text-blue">consulting engineers</span> for <span className="text-blue">structure</span> and  <span className="text-blue">highway projects</span>
       </motion.h1>
+      </section>
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section>
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-12 w-full">
         <motion.div
