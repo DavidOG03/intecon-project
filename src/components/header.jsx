@@ -31,50 +31,50 @@ const Header = () => {
         </Link>
         <nav className="navbar desktop hidden lg:block ">
           <ul className="uppercase text-[#fff] pt-2 pb-2 px-6">
-            <li className="inline-block mx-2 xl:mx-4 ">
+            <li className="inline-block mx-2 xl:mx-3 ">
               <NavLink
                 to="/"
                 end
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
                 }
               >
                 Home
               </NavLink>
             </li>
-            <li className="inline-block mx-2 xl:mx-4 ">
+            <li className="inline-block mx-2 xl:mx-3 ">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
                 }
               >
                 About US
               </NavLink>
             </li>
-            <li className="inline-block mx-2 xl:mx-4">
+            <li className="inline-block mx-2 xl:mx-3">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
                 }
               >
                 Contact Us
               </NavLink>
             </li>
-            <li className="inline-block mx-2 xl:mx-4 ">
+            <li className="inline-block mx-2 xl:mx-3 ">
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link active text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
-                    : "nav-link text-[#fff]  font-jakarta text-[12px] lg:text-[13px] tracking-[0.6px]"
+                    ? "nav-link active text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
+                    : "nav-link text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
                 }
               >
                 Services
