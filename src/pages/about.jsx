@@ -42,7 +42,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="heading font-jakarta capitalize tracking-tighter text-black text-[2rem] md:text-[4rem] xl:text-[6rem] text-left leading-tight font-medium mb-[60px] py-[5rem] pl-3 md:pl-[3rem]"
+        className="heading font-jakarta capitalize tracking-tighter text-blackish text-[2rem] md:text-[4rem] xl:text-[6rem] text-left leading-tight font-medium mb-[60px] py-[5rem] pl-3 md:pl-[3rem]"
       >
         We are <span className="text-blue">consulting engineers</span> for <span className="text-blue">structure</span> and  <span className="text-blue">highway projects</span>
       </motion.h1>
@@ -54,9 +54,9 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[55%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px]  "
         ></motion.div>
-        <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden ">
+        <div className="text pt-6 md:pt-0 basis-[45%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -71,7 +71,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base font-inter text-black relative z-10 leading-relaxed"
+            className="text-base font-inter text-black relative z-10 leading-relaxed text-justify"
           >
             Our mission is to provide technically sound engineering services on
             projects, to achieve the production of durable facilities and time
@@ -88,7 +88,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px]  "
         ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -114,13 +114,13 @@ const About = () => {
         </div>
       </section>
 
-      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-start rev gap-4 w-full">
+      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-start gap-12 w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] md:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[100%] rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[50%] h-[220px] md:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[100%] rounded-[12px]  "
         ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -137,7 +137,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10 leading-relaxed"
+            className="text-base text-black font-inter mb-6 relative z-10 leading-relaxed text-justify"
           >
             Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
             Engineers specializing in areas of heavy industrial and large scale
@@ -163,7 +163,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px] shadow-xl "
+          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px]  "
         ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.p
@@ -171,7 +171,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10"
+            className="text-base text-black font-inter mb-6 relative z-10 text-justify"
           >
             Apart from its extensive consulting engineering capabilities,
             Intecon Partnership Ltd is the parent company of two other
@@ -183,7 +183,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10"
+            className="text-base text-black font-inter mb-6 relative z-10 text-justify"
           >
             <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
             1997 in response to the dearth of competent local Geotechnical
@@ -307,7 +307,7 @@ const About = () => {
         </motion.h3>
         <div className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
           <Director
-            img="/images/engr-ajibola-profile.webp"
+            img="/images/engr-ajibola.webp"
             name="Engr. O. Alade Ajibola"
             role="chairman/CEO"
             office="Intecon Partnership Group Ltd"

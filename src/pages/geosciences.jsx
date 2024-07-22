@@ -33,13 +33,29 @@ const Geosciences = () => {
 
   return (
     <main className="geosciences-page bg-white pt-[60px]">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat">
+        <motion.h1
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[60px] xl:text-[90px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 md:pl-[3rem]"
+        >
+          We have provided
+          <span className="text-blue"> Geotechnical survey </span>
+          and <span className="text-blue"> Soil testing services</span> for
+          different 
+          <span className="text-blue"> multinational companies across the country.
+          </span>
+        </motion.h1>
+      </section>
       <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]">
         <motion.div
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full min-h-[300px] max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/geosciences.png')] bg-cover bg-no-repeat bg-center"
+          className="image-box w-full h-full min-h-[300px] max-h-[320px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/geosciences.webp')] bg-cover bg-no-repeat bg-center"
         >
           {/* <img
             src="/images/geosciences.png"

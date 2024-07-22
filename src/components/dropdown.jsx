@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Dropdown = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const location = useLocation();
 
   const handleMouseEnter = () => {
     setIsDropdownVisible(true);
@@ -11,13 +12,25 @@ const Dropdown = () => {
   const handleMouseLeave = () => {
     setIsDropdownVisible(false);
   };
+
+  const isActive = (paths) => paths.includes(location.pathname);
+
   return (
     <div
       className="nav-item max-w-[160px]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link to="#" className="nav-link inline-block mx-4 text-[#f0f0f0] font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px] hover:cursor-pointer">
+      <Link to="#" className={`project-link hover:text-blue nav-link inline-block mx-4 font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px] hover:cursor-pointer ${
+          isActive([
+            "/highway-bridges-design",
+            "/structural-design",
+            "/geosciences",
+            "/non-destructive-testing",
+          ])
+            ? "active"
+            : ""
+        } ${isDropdownVisible === true ? "text-blue" : "text-[#f0f0f0]"}`}>
         Projects
       </Link>
       {isDropdownVisible && (

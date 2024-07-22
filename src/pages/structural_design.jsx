@@ -33,26 +33,30 @@ const StructuralDesign = () => {
 
   return (
     <main className="structural-design bg-white pt-[60px]">
-      <motion.h1
-        variants={fadeup}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="heading font-jakarta tracking-tighter text-blackish text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 py-[5rem] pl-[3rem]"
-      >
-        We have{" "}
-        <span className="text-blue">designed & built amazing structures </span>{" "}
-        that meet <span className="text-blue">the desire</span> of our{" "}
-        <span className="text-blue">Clients</span>
-      </motion.h1>
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat">
+        <motion.h1
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[60px] xl:text-[90px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 md:pl-[3rem]"
+        >
+          We have{" "}
+          <span className="text-blue">
+            designed & built amazing structures{" "}
+          </span>{" "}
+          that meet <span className="text-blue">the desire</span> of our{" "}
+          <span className="text-blue">Clients</span>
+        </motion.h1>
+      </section>
 
-      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]">
+      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px]">
         <motion.div
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full max-h-[320px] md:max-h-[450px] xl:max-h-none overflow-hidden rounded-[12px] bg-[url('/images/olive-court.webp')] bg-cover bg-no-repeat bg-center"
+          className="image-box w-full h-full min-h-[320px] rounded-[12px] bg-[url('/images/olive-court.webp')] bg-cover bg-no-repeat bg-center"
         ></motion.div>
         <div className="text ">
           <motion.h3
@@ -103,7 +107,7 @@ const StructuralDesign = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-[1] mb-[60px] mx-auto max-w-[620px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[620px]"
         >
           Structural Design projects gallery
         </motion.h3>

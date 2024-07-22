@@ -87,7 +87,7 @@ const Header = () => {
         <nav
           className={`navbar-mobile fixed bg-[#1c1c1c] transition-all ease-in-out duration-500 lg:hidden top-0 ${
             isOpen ? "right-0" : "-right-full"
-          } h-[100vh] w-[50%] border-l border-l-[#413F3E]`}
+          } h-[100vh] w-[65%] border-l border-l-[#413F3E]`}
           ref={navbarRef}
         >
           <ul className="uppercase text-[#fff] flex flex-col justify-center items-start h-full">
