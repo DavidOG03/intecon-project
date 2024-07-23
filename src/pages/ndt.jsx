@@ -39,7 +39,7 @@ const Ndt = () => {
 
   return (
     <main className="ndt-page bg-white pt-[60px]">
-      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat h-[100vh] grid place-content-center">
         <motion.h1
           variants={fadeup}
           initial="hidden"
@@ -229,7 +229,7 @@ const Ndt = () => {
           </motion.div>
         </div>
       </section>
-      <section className="ndt-projects px-3">
+      <section className="ndt-projects px-4 py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -242,7 +242,7 @@ const Ndt = () => {
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px] relative">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[49px] left-0 z-50 bg-white py-4">
             <button
-              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -252,7 +252,7 @@ const Ndt = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -262,7 +262,7 @@ const Ndt = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"

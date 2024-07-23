@@ -40,7 +40,7 @@ const HighwayBridges = () => {
 
   return (
     <main className="highway-design  bg-white pt-[60px] ">
-      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat h-[100vh] grid place-content-center">
         <motion.h1
           variants={fadeup}
           initial="hidden"
@@ -50,7 +50,7 @@ const HighwayBridges = () => {
         >
           We have <span className="text-blue">designed road networks</span> that
           meet <span className="text-blue">modern day needs</span> for both{" "}
-          <span className="text-blue">Goverment </span>and{" "}
+          <span className="text-blue">Government </span>and{" "}
           <span className="text-blue">private institutions</span>
         </motion.h1>
       </section>
@@ -218,7 +218,7 @@ const HighwayBridges = () => {
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row relative">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[49px] left-0 z-50 bg-white py-4">
             <button
-              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -228,7 +228,7 @@ const HighwayBridges = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -238,7 +238,7 @@ const HighwayBridges = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"

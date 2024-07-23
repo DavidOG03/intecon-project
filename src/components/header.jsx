@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8">
-        <Link to="/" className="logo h-[34px] lg:h-[36px] object-cover">
+        <Link to="/" className="logo h-[34px] lg:h-[54px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
         <nav className="navbar desktop hidden lg:block ">
