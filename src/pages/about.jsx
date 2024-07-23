@@ -62,7 +62,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-black font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10 "
+            className="text-black font-jakarta font-medium text-[42px] lg:text-[68px] xl:text-[90px] relative z-10 "
           >
             Our Mission
           </motion.h3>
@@ -96,7 +96,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-black font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-black font-jakarta font-medium text-[42px] lg:text-[68px] xl:text-[90px] relative z-10"
           >
             Our Vision
           </motion.h3>
@@ -120,7 +120,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] md:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[100%] rounded-[12px]  "
+          className="image-box w-full basis-[50%] h-[220px] md:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[0%] rounded-[12px]  "
         ></motion.div>
         <div className="text pt-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -128,7 +128,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-black font-jakarta font-medium text-[42px] md:text-[68px] xl:text-[90px] relative z-10"
+            className="text-black font-jakarta font-medium text-[42px] lg:text-[68px] xl:text-[90px] relative z-10"
           >
             Who We Are
           </motion.h3>
@@ -208,7 +208,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-jakarta font-medium capitalize text-black  text-[42px] md:text-[68px] xl:text-[90px] text-center mb-12"
+          className="font-jakarta font-medium capitalize text-black  text-[42px] lg:text-[68px] xl:text-[90px] text-center mb-12"
         >
           Statutory Institutions Registration
         </motion.h3>
@@ -301,7 +301,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className=" font-jakarta font-medium capitalize text-black tracking-tight text-[42px] md:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
+          className=" font-jakarta font-medium capitalize text-black tracking-tight text-[42px] lg:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
         >
           Meet Our Directors
         </motion.h3>
@@ -349,7 +349,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-[54px] mb-6 md:text-[90px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
+          className="text-[42px] mb-6 lg:text-[68px] xl:text-[90px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
         >
           Our Clients
         </motion.h3>

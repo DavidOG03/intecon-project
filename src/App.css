@@ -81,22 +81,22 @@
   
 }
 .slick-slide .second-image{
-  background: linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d), url(/images/homepage-2.webp);
+  background: linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d), url(/images/bridge-reinforcement-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slick-slide .third-image{
-  background:linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d),  url(/images/homepage-1.webp);
+  background:linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d),  url(/images/structure.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 25% 60%;
+  background-position: 75% 60%;
 }
 .slick-slide .fourth-image{
   background:linear-gradient(to bottom, #11121349,#1112135d ,#0b0b0c2d),  url(/images/homepage-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 30% bottom ;
+  background-position: 5% bottom ;
 }
 
 .navbar ul li a,.navbar-mobile ul li a{
@@ -231,7 +231,7 @@
   rotate: 45deg;
 }
 
-.projects table tbody tr:nth-of-type(odd){
+.projects table tbody tr:nth-of-type(odd),.structural-projects table tbody tr:nth-of-type(odd),.geosciences-projects table tbody tr:nth-of-type(odd),.ndt-projects table tbody tr:nth-of-type(odd){
   background: rgba(0, 0, 0, 0.05);
 }
 

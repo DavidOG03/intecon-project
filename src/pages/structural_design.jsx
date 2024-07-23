@@ -1,8 +1,15 @@
-import React from "react";
+import React, { act } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
 
 const StructuralDesign = () => {
+
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+  };
+  
   const fadeup = {
     hidden: { opacity: 0, y: 10 },
     visible: {
@@ -39,7 +46,7 @@ const StructuralDesign = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[60px] xl:text-[90px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 md:pl-[3rem]"
+          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[60px] xl:text-[80px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
           We have{" "}
           <span className="text-blue">
@@ -218,7 +225,7 @@ const StructuralDesign = () => {
           </motion.div>
         </div>
       </section>
-      <section className="structural-projects">
+      <section className="structural-projects px-3">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -228,19 +235,34 @@ const StructuralDesign = () => {
         >
           Past Structural Design Projects
         </motion.h3>
-        <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row">
+        <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px]">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-8">
-            <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
+            <button className={`project-tab w-full p-6 lg:p-12 ${
+                activeTab === 1
+                  ? "bg-[#0499CF] text-white"
+                  : "bg-gray-200 text-black"
+              }`}
+              onClick={() => handleTabClick(1)}>
               Projects Tab 1
             </button>
-            <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
+            <button className={`project-tab w-full p-6 lg:p-12 ${
+                activeTab === 2
+                  ? "bg-[#0499CF] text-white"
+                  : "bg-gray-200 text-black"
+              }`}
+              onClick={() => handleTabClick(2)}>
               Projects Tab 2
             </button>
-            <button className="project-tab w-full p-6 lg:p-12 bg-[#0499CF] text-white">
+            <button className={`project-tab w-full p-6 lg:p-12 ${
+                activeTab === 3
+                  ? "bg-[#0499CF] text-white"
+                  : "bg-gray-200 text-black"
+              }`}
+              onClick={() => handleTabClick(3)}>
               Projects Tab 3
             </button>
           </div>
-          <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]">
+          {activeTab === 1 && <motion.table  className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]">
             <thead>
               <tr>
                 <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
@@ -337,9 +359,9 @@ const StructuralDesign = () => {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </motion.table >}
           {/* 2nd Table */}
-          <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
+          {activeTab === 2 && <motion.table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
             <thead>
               <tr>
                 <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
@@ -420,9 +442,9 @@ const StructuralDesign = () => {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </motion.table>}
           {/* 3rd table */}
-          <table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
+          {activeTab === 3 && <motion.table className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%] hidden">
             <thead>
               <tr>
                 <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
