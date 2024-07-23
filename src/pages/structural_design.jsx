@@ -1,4 +1,4 @@
-import React, { act } from "react";
+import React, {  useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
 
@@ -612,7 +612,7 @@ const StructuralDesign = () => {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </motion.table>}
         </div>
       </section>
       <Quote />
