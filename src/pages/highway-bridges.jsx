@@ -29,13 +29,13 @@ const HighwayBridges = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.75,
+        duration: 0.3,
         ease: "easeInOut",
         type: "tween",
         delay: 0.2,
       },
     },
-    exit: { opacity: 0, y: -20 }
+    exit: { opacity: 0, y: -20 },
   };
 
   return (
@@ -215,10 +215,10 @@ const HighwayBridges = () => {
         >
           Past Highway and Bridges Projects
         </motion.h3>
-        <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row">
-          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-center items-stretch gap-[60px]">
+        <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row relative">
+          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[49px] left-0 z-50 bg-white py-4">
             <button
-              className={`project-tab w-full p-6 lg:p-12 ${
+              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -228,7 +228,7 @@ const HighwayBridges = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-6 lg:p-12 ${
+              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -238,7 +238,7 @@ const HighwayBridges = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-6 lg:p-12 ${
+              className={`project-tab w-full p-3 lg:p-6 text-[13px] font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -373,22 +373,24 @@ const HighwayBridges = () => {
           {/* 2nd Table */}
           {activeTab === 2 && (
             <motion.table
-            variants={fadein}
-            initial="hidden"
-            animate="visible"
-            exit="exit" className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]">
+              variants={fadein}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]"
+            >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     Clients
                   </th>
                 </tr>
@@ -493,22 +495,24 @@ const HighwayBridges = () => {
           {/* 3rd table */}
           {activeTab === 3 && (
             <motion.table
-            variants={fadein}
-            initial="hidden"
-            animate="visible"
-            exit="exit" className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]">
+              variants={fadein}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="max-w-[750px] mx-auto bg-white border border-gray-300 basis-[80%]"
+            >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta pl-4">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
                     Clients
                   </th>
                 </tr>
