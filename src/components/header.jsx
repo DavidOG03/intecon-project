@@ -30,7 +30,7 @@ const Header = () => {
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
         <nav className="navbar desktop hidden lg:block ">
-          <ul className="uppercase text-[#fff] pt-2 pb-2 px-6">
+          <ul className="capitalize text-[#fff] pt-2 pb-2 px-6">
             <li className="inline-block mx-2 xl:mx-3 ">
               <NavLink
                 to="/"
@@ -53,7 +53,7 @@ const Header = () => {
                     : "nav-link text-[#fff]  font-jakarta text-[11px] xl:text-[13px] tracking-[0.6px]"
                 }
               >
-                About US
+                About Us
               </NavLink>
             </li>
             <li className="inline-block mx-2 xl:mx-3">
