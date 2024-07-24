@@ -40,7 +40,7 @@ const HighwayBridges = () => {
 
   return (
     <main className="highway-design  bg-white pt-[60px] ">
-      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat h-[100vh] grid place-content-center">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat bg-fixed h-[100vh] grid place-content-center">
         <motion.h1
           variants={fadeup}
           initial="hidden"
