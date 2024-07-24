@@ -69,7 +69,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 w-full max-w-[768px] break-keep"
+            className="capitalize font-jakarta tracking-tighter text-black text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 w-full max-w-[768px] break-keep"
           >
             Highways and bridges design
           </motion.h3>
@@ -78,7 +78,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]"
+            className="text-[14px] md:text-base text-textblack font-inter max-w-[768px]"
           >
             INTECON has been involved in many highway and bridge projects for
             state, federal governments and multinationals across the length and
@@ -95,7 +95,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[14px] md:text-base text-[#1c1c1c] font-inter max-w-[768px]"
+            className="mt-4 text-[14px] md:text-base text-black font-inter max-w-[768px]"
           >
             In our highway design we optimize sustainability and harmonize our
             design with the environment in form of developing design and
@@ -110,7 +110,7 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]"
         >
           Highway and bridges projects Gallery
         </motion.h3>
@@ -211,7 +211,7 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]"
+          className="text capitalize font-jakarta font-medium tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]"
         >
           Past Highway and Bridges Projects
         </motion.h3>

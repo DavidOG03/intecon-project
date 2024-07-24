@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8 lg:py-2">
         <Link to="/" className="logo h-[34px] lg:h-[54px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
@@ -144,7 +144,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#413F3E] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 hidden md:flex px-6 h-full">
+        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#413F3E] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 md:flex px-6 h-full">
           <div className="email flex flex-row items-center gap-2">
             <img
               src="/images/envelope.svg"
@@ -154,7 +154,7 @@ const Header = () => {
             <a
               href="mailto:intecon@intecon.com.ng"
               target="blank"
-              className=" text-[#fff] font-inter text-[13px] xl:text-[12px]"
+              className=" text-[#fff] font-inter text-[11px] xl:text-[13px]"
             >
               intecon@intecon.com.ng
             </a>
@@ -165,10 +165,10 @@ const Header = () => {
               alt="contact icon"
               className="inline-block w-3"
             />{" "}
-            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[13px] xl:text-[12px]">
+            <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[11px] xl:text-[13px]">
               Call +234 803 324 2026
             </a>
-            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[13px] xl:text-[12px]">
+            <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[11px] xl:text-[13px]">
               +234 803 328 3101
             </a>
           </div>

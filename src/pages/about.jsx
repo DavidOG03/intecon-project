@@ -36,7 +36,7 @@ const fadein = {
 const About = () => {
   return (
     <main className="about w-full pt-[60px] lg:pt-[120px] bg-white ">
-      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat h-[100vh] grid place-content-center">
       <motion.h1
         variants={fadeup}
         initial="hidden"
@@ -328,7 +328,7 @@ const About = () => {
             degree="b.sc, m.sc, mba, mnse"
           />
           <Director
-            img="/images/engr-jimmy.webp"
+            img="/images/jimmy.png"
             name="Engr. Jimmy Ajibola"
             role="Managing Director"
             office="Automated Geotechnical Ltd"
