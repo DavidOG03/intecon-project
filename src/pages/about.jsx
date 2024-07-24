@@ -42,7 +42,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="heading font-jakarta capitalize tracking-tighter text-blackish text-[2rem] md:text-[4rem] xl:text-[6rem] text-left leading-tight font-medium mb-[60px] py-[5rem] pl-3 md:pl-[3rem]"
+        className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[80px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
       >
         We are <span className="text-blue">consulting engineers</span> for <span className="text-blue">structure</span> and  <span className="text-blue">highway projects</span>
       </motion.h1>

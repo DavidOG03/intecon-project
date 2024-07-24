@@ -144,7 +144,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#413F3E] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 md:flex px-6 h-full">
+        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#413F3E] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 md:flex px-6 h-full hidden">
           <div className="email flex flex-row items-center gap-2">
             <img
               src="/images/envelope.svg"
