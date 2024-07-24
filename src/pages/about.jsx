@@ -328,8 +328,8 @@ const About = () => {
             degree="b.sc, m.sc, mba, mnse"
           />
           <Director
-            img="/images/jimmy.png"
-            name="Engr. Jimmy Ajibola"
+            img="/images/jinmi.png"
+            name="Engr. Jinmi Ajibola"
             role="Managing Director"
             office="Automated Geotechnical Ltd"
             degree="b.sc, m.sc, dic,mnse"
