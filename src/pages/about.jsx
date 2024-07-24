@@ -47,16 +47,18 @@ const About = () => {
         We are <span className="text-blue">consulting engineers</span> for <span className="text-blue">structure</span> and  <span className="text-blue">highway projects</span>
       </motion.h1>
       </section>
-      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section>
-      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-12 w-full">
+      {/* <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section> */}
+
+
+      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-[60px] w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[55%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px]  "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px]  "
         ></motion.div>
-        <div className="text pt-6 md:pt-0 basis-[45%] overflow-hidden ">
+        <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -82,7 +84,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="vision lg:flex lg:flex-row justify-center items-start gap-12 relative px-6 py-[80px] md:flex md:flex-row">
+      <section className="vision lg:flex lg:flex-row justify-center items-start gap-[60px] relative px-6 py-[80px] md:flex md:flex-row">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -114,7 +116,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-start gap-12 w-full">
+      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-start gap-[60px] w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -157,7 +159,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="division md:flex md:flex-row justify-between items-start gap-12 relative px-6 py-[60px] lg:py-[80px]">
+      <section className="division md:flex md:flex-row justify-between items-start gap-[60px] relative px-6 py-[60px] lg:py-[80px]">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -325,7 +327,7 @@ const About = () => {
             degree="b.sc,m.sc,mba,fnse, mni"
           />
           <Director
-            img="/images/engr-kehinde.webp"
+            img="/images/engr-aremu.webp"
             name="Engr. Kehinde Aremu"
             role="Managing Director"
             office="Interworks Engineering Ltd"
