@@ -128,10 +128,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/ndt1.png"
+              src="/images/qaqc-12.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />
@@ -141,10 +141,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/ndt2.png"
+              src="/images/qaqc-1.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />
@@ -154,10 +154,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/ndt3.png"
+              src="/images/qaqc-4.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />
@@ -167,10 +167,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/ndt4.png"
+              src="/images/qaqc-14.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />
@@ -180,10 +180,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/ndt5.png"
+              src="/images/qaqc-3.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />
@@ -193,10 +193,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/lab-test.png"
+              src="/images/qaqc-15.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />
@@ -206,10 +206,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/qaqc.png"
+              src="/images/qaqc-12.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px] "
             />
@@ -219,10 +219,10 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="project-pic"
+            className="project-pic h-[300px] overflow-hidden"
           >
             <img
-              src="/images/non-destructive.webp"
+              src="/images/qaqc-8.webp"
               alt="non-destructive Testingwork"
               className="w-full max-w-[768px]"
             />

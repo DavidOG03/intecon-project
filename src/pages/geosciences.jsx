@@ -143,7 +143,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/geosciences.png"
+              src="/images/geosciences.webp"
               alt="geo-work"
               className="w-full max-w-[768px] "
             />
@@ -156,7 +156,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/geo2.png"
+              src="/images/NAHCO_2.webp"
               alt="geo-work"
               className="w-full max-w-[768px]"
             />
@@ -169,7 +169,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/geo3.png"
+              src="/images/NAHCO_3.webp"
               alt="geo-work"
               className="w-full max-w-[768px]"
             />
@@ -182,7 +182,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/geo3.png"
+              src="/images/NAHCO_4.webp"
               alt="geo-work"
               className="w-full max-w-[768px]"
             />
@@ -195,7 +195,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/geosciences.webp"
+              src="/images/NAHCO_5.webp"
               alt="geo-work"
               className="w-full max-w-[768px]"
             />
@@ -208,7 +208,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/lab-test.png"
+              src="/images/NAHCO_6.webp"
               alt="geo-work"
               className="w-full max-w-[768px]"
             />
@@ -221,7 +221,7 @@ const Geosciences = () => {
             className="project-pic"
           >
             <img
-              src="/images/geo1.png"
+              src="/images/NAHCO_7.webp"
               alt="geo-work"
               className="w-full max-w-[768px] "
             />
