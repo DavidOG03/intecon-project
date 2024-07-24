@@ -9,6 +9,10 @@ const Header = () => {
   const navbarRef = useRef(null);
   const hamburgerRef = useRef(null);
 
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   const handleClickOutside = (event) => {
     if (navbarRef.current && !navbarRef.current.contains(event.target) && hamburgerRef.current &&
     !hamburgerRef.current.contains(event.target)) {
@@ -100,6 +104,7 @@ const Header = () => {
                     ? "nav-link active text-[#fff] font-jakarta text-[12px] tracking-[0.6px]"
                     : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
+                onClick={handleLinkClick}
               >
                 Home
               </NavLink>
@@ -112,6 +117,7 @@ const Header = () => {
                     ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                     : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
+                onClick={handleLinkClick}
               >
                 About US
               </NavLink>
@@ -124,6 +130,7 @@ const Header = () => {
                     ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                     : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
+                onClick={handleLinkClick}
               >
                 Contact Us
               </NavLink>
@@ -136,11 +143,12 @@ const Header = () => {
                     ? "nav-link active text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                     : "nav-link text-[#fff]  font-jakarta text-[12px] tracking-[0.6px]"
                 }
+                onClick={handleLinkClick}
               >
                 Services
               </NavLink>
             </li>
-            <Dropdown />
+            <Dropdown onLinkClick={handleLinkClick} />
           </ul>
         </nav>
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
-const Dropdown = () => {
+const Dropdown = ({ onLinkClick }) => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const location = useLocation();
 
@@ -35,18 +35,18 @@ const Dropdown = () => {
       </Link>
       {isDropdownVisible && (
         <ul className="dropdown ">
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]">
-            <NavLink to="/highway-bridges-design" className="project">
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]" onClick={onLinkClick }>
+            <NavLink to="/highway-bridges-design" className="project" >
               Highway and Bridges Design
             </NavLink>
           </li>
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]">
-            <NavLink to="/structural-design" className="project">Structural Design</NavLink>
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]" onClick={onLinkClick }>
+            <NavLink to="/structural-design" className="project" >Structural Design</NavLink>
           </li>
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]">
-            <NavLink to="/geosciences" className="project">Geosciences</NavLink>
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]" onClick={onLinkClick }>
+            <NavLink to="/geosciences" className="project" >Geosciences</NavLink>
           </li>
-          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]">
+          <li className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]" onClick={onLinkClick }>
             <NavLink to="/non-destructive-testing" className="project">
               Non-Destructive Testing
             </NavLink>
