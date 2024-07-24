@@ -305,7 +305,11 @@ const About = () => {
         >
           Meet Our Directors
         </motion.h3>
-        <div className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
+        <motion.div variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
           <Director
             img="/images/engr-ajibola.webp"
             name="Engr. O. Alade Ajibola"
@@ -341,7 +345,7 @@ const About = () => {
             office=" "
             degree="b.sc, m.sc,mnse"
           />
-        </div>
+        </motion.div>
       </section>
       <section className="clients py-[69px]">
         <motion.h3
