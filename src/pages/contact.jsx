@@ -30,7 +30,7 @@ export default function Contact() {
   const companyName = "Intecon Partnershipt Limited";
   return (
     <main className="contact-page py-[60px] bg-[#fff] ">
-      <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-6 pb-[60px]">
+      <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-[60px] pb-[60px]">
         <div className="contact-text">
           <motion.h3
             variants={fadeup}
@@ -68,13 +68,13 @@ export default function Contact() {
             className="address text-[#1c1c1c] mt-6 font-inter"
           >
             <h3 className="text-base pb-4 font-bold">Company Address</h3>
-            <p className="text-[14px] pb-2">
+            <p className="text-[14px] pb-2 text-textblack">
               16 Aperin Street, off Awolowo Road, Old Bodija Ibadan.
             </p>
-            <p className="text-[14px] pb-2">
+            <p className="text-[14px] pb-2 text-textblack">
               Telephone: +234 803 324 2026, +234 803 328 3101
             </p>
-            <p className="text-[14px] pb-2">
+            <p className="text-[14px] pb-2 text-textblack">
               E-mail:{" "}
               <a
                 href="mailto:intecon@intecon.com.ng"
@@ -92,13 +92,13 @@ export default function Contact() {
             className="address-two mt-6 text-[#1c1c1c] font-inter"
           >
             <h3 className="text-base pb- font-bold">Company Address Two</h3>
-            <p className="text-[14px] pb-2">
+            <p className="text-[14px] pb-2 text-textblack">
               Tecon House, Ikeja, Lagos Nigeria
             </p>
-            <p className="text-[14px] pb-2">
+            <p className="text-[14px] pb-2 text-textblack">
               Telephone: +234 803 242 2026, +234 803 671 8778
             </p>
-            <p className="text-[14px] pb-2">
+            <p className="text-[14px] pb-2 text-textblack">
               E-mail:{" "}
               <a
                 href="mailto:intecon@intecon.com.ng"
@@ -111,7 +111,7 @@ export default function Contact() {
         </div>
         <form
           action=""
-          className="contact-form grid grid-cols-1 md:grid-cols-2 gap-3 justify-start items-start font-inter mt-4"
+          className="contact-form grid grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start font-inter mt-4"
         >
           <motion.div
             variants={fadeup}
@@ -120,11 +120,11 @@ export default function Contact() {
             viewport={{ once: true }}
             className="input-group mb-6 flex flex-col justify-start items-start row"
           >
-            <label className="text-[#1c1c1c] block mb-2" htmlFor="name">
+            <label className="text-textblack block mb-2" htmlFor="name">
               Full Name
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-2 md:pb-6 text-[#1c1c1c] w-full"
+              className="bg-transparent border-b border-b-[#1f1f1f83] hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] pb-2 md:pb-3 text-[#1c1c1c] w-full"
               type="text"
               placeholder="Enter your full name"
               id="name"
@@ -138,11 +138,11 @@ export default function Contact() {
             viewport={{ once: true }}
             className="input-group mb-6 flex flex-col justify-start items-start row"
           >
-            <label className="text-[#1c1c1c] block mb-2" htmlFor="email">
+            <label className="text-textblack block mb-2" htmlFor="email">
               Email Address
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-3 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
               type="email"
               placeholder="Enter your Email Address"
               id="email"
@@ -156,11 +156,11 @@ export default function Contact() {
             viewport={{ once: true }}
             className="input-group mb-6 flex flex-col justify-start items-start row"
           >
-            <label className="text-[#1c1c1c] block mb-2" htmlFor="company">
+            <label className="text-textblack block mb-2" htmlFor="company">
               Company
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
+              className="bg-transparent border-b border-b-[#1f1f1f83]  pb-2 md:pb-3 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
               type="text"
               placeholder="Enter your Company Name"
               id="company"
@@ -174,11 +174,11 @@ export default function Contact() {
             viewport={{ once: true }}
             className="input-group mb-6 flex flex-col justify-start items-start row"
           >
-            <label className="text-[#1c1c1c] block mb-2" htmlFor="telephone">
+            <label className="text-textblack block mb-2" htmlFor="telephone">
               Telephone
             </label>
             <input
-              className="bg-transparent border-b border-b-[#1f1f1f83] pb-2 md:pb-6 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
+              className="bg-transparent border-b border-b-[#1f1f1f83] pb-2 md:pb-3 hover:border-b-[#1c1c1caf] focus:border-b-[#1c1c1c] text-[#1c1c1c] w-full"
               type="phone"
               placeholder="Enter your Telephone Number"
               id="telephone"
@@ -192,7 +192,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="input-group mb-6 flex flex-col justify-start items-start md:col-start-1 md:col-end-3"
           >
-            <label className="text-[#1c1c1c] block mb-2" htmlFor="message">
+            <label className="text-textblack block mb-2" htmlFor="message">
               Message
             </label>
             <textarea

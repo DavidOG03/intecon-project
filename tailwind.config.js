@@ -9,7 +9,7 @@ export default {
       colors: {
         "blue":"#0499CF",
         "black": "#1c1c1c",
-        "textblack": "1c1c1c90",
+        "textblack": "rgb(77, 70, 74)",
         "blackish": "#1c1c1c50",
       },
       backgroundImage:{

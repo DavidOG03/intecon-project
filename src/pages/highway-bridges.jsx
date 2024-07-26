@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
+import { Link } from "react-router-dom";
 
 const HighwayBridges = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -46,7 +47,7 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[80px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[74px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
           We have <span className="text-blue">designed road networks</span> that
           meet <span className="text-blue">modern day needs</span> for both{" "}
@@ -69,7 +70,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-black text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-medium mb-6 w-full max-w-[768px] break-keep"
+            className="capitalize font-jakarta tracking-tighter text-black text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-semibold mb-6 w-full max-w-[768px] break-keep"
           >
             Highways and bridges design
           </motion.h3>
@@ -95,7 +96,7 @@ const HighwayBridges = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[14px] md:text-base text-black font-inter max-w-[768px]"
+            className="mt-4 text-[14px] md:text-base text-textblack font-inter max-w-[768px]"
           >
             In our highway design we optimize sustainability and harmonize our
             design with the environment in form of developing design and
@@ -110,7 +111,7 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]"
+          className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]"
         >
           Highway and bridges projects Gallery
         </motion.h3>
@@ -211,14 +212,14 @@ const HighwayBridges = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-medium tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]"
+          className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]"
         >
           Past Highway and Bridges Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row relative">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[49px] left-0 z-50 bg-white py-4">
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -228,7 +229,7 @@ const HighwayBridges = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -238,7 +239,7 @@ const HighwayBridges = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-[#0499CF] text-white"
                   : "bg-gray-200 text-black"
@@ -630,6 +631,11 @@ const HighwayBridges = () => {
           )}
         </div>
       </section>
+      <section className="goto py-[20px] text-center">
+      <h3 className="text-[54px] capitalize font-jakarta font-semibold pb-5">Check out our other projects</h3>
+      <Link to="/structural-design" className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] py-4 px-8 rounded-lg">Structural Design Projects</Link>
+      </section>
+      
       <Quote />
     </main>
   );

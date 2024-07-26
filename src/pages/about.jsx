@@ -11,7 +11,7 @@ const fadeup = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       ease: "easeInOut",
       type: "tween",
       delay: 0.2,
@@ -25,7 +25,7 @@ const fadein = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.3,
       ease: "easeInOut",
       type: "tween",
       delay: 0.2,
@@ -42,7 +42,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[80px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+        className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
       >
         We are <span className="text-blue">consulting engineers</span> for <span className="text-blue">structure</span> and  <span className="text-blue">highway projects</span>
       </motion.h1>
@@ -50,7 +50,7 @@ const About = () => {
       {/* <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section> */}
 
 
-      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-start flex-row-reverse gap-[60px] w-full">
+      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-[60px] w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -64,7 +64,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-black font-jakarta font-medium text-[42px] lg:text-[68px] xl:text-[90px] relative z-10 "
+            className="text-black font-jakarta font-medium text-[34px] md:text-[54px] relative z-10 "
           >
             Our Mission
           </motion.h3>
@@ -73,7 +73,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base font-inter text-black relative z-10 leading-relaxed text-justify"
+            className="text-base font-inter text-textblack relative z-10 leading-relaxed text-justify"
           >
             Our mission is to provide technically sound engineering services on
             projects, to achieve the production of durable facilities and time
@@ -84,7 +84,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="vision lg:flex lg:flex-row justify-center items-start gap-[60px] relative px-6 py-[80px] md:flex md:flex-row">
+      <section className="vision lg:flex lg:flex-row justify-center items-center gap-[60px] relative px-6 py-[80px] md:flex md:flex-row">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -98,7 +98,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-black font-jakarta font-medium text-[42px] lg:text-[68px] xl:text-[90px] relative z-10"
+            className="text-black font-jakarta font-medium text-[34px] md:text-[54px] relative z-10"
           >
             Our Vision
           </motion.h3>
@@ -107,7 +107,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10"
+            className="text-base text-textblack font-inter mb-6 relative z-10"
           >
             Our vision is to be one of the best consulting engineering firms in
             Africa and beyond, in the delivery of world class engineering
@@ -116,7 +116,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-start gap-[60px] w-full">
+      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-center gap-[60px] w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -130,7 +130,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-black font-jakarta font-medium text-[42px] lg:text-[68px] xl:text-[90px] relative z-10"
+            className="text-black font-jakarta font-medium text-[34px] md:text-[54px] relative z-10"
           >
             Who We Are
           </motion.h3>
@@ -139,7 +139,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10 leading-relaxed text-justify"
+            className="text-base text-textblack font-inter mb-6 relative z-10 leading-relaxed text-justify"
           >
             Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
             Engineers specializing in areas of heavy industrial and large scale
@@ -159,7 +159,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="division md:flex md:flex-row justify-between items-start gap-[60px] relative px-6 py-[60px] lg:py-[80px]">
+      <section className="division md:flex md:flex-row justify-between items-center gap-[60px] relative px-6 py-[60px] lg:py-[80px]">
         <motion.div
           variants={fadein}
           initial="hidden"
@@ -173,7 +173,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10 text-justify"
+            className="text-base text-textblack font-inter mb-6 relative z-10 text-justify"
           >
             Apart from its extensive consulting engineering capabilities,
             Intecon Partnership Ltd is the parent company of two other
@@ -185,7 +185,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-black font-inter mb-6 relative z-10 text-justify"
+            className="text-base text-textblack font-inter mb-6 relative z-10 text-justify"
           >
             <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
             1997 in response to the dearth of competent local Geotechnical
@@ -210,7 +210,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-jakarta font-medium capitalize text-black  text-[42px] lg:text-[68px] xl:text-[90px] text-center mb-12"
+          className="font-jakarta font-medium capitalize text-black  text-[34px] md:text-[54px] text-center mb-12"
         >
           Statutory Institutions Registration
         </motion.h3>
@@ -227,7 +227,7 @@ const About = () => {
               src="/images/cac.png"
               alt="corporate Affairs Commission logo"
             />
-            <p className="text-center text-[1rem] text-black">
+            <p className="text-center text-[1rem] text-textblack font-inter">
               Corporate Affairs Commission
             </p>
           </motion.div>
@@ -243,7 +243,7 @@ const About = () => {
               src="/images/coren.webp"
               alt="Council for the Regulation of Engineering in Nigeria logo"
             />
-            <p className="text-center text-[1rem] text-black">
+            <p className="text-center text-[1rem] text-textblack font-inter">
               Council for the Regulation of Engineering in Nigeria
             </p>
           </motion.div>
@@ -259,7 +259,7 @@ const About = () => {
               src="/images/acen.webp"
               alt="Association for Consulting Engineering Nigeria logo"
             />
-            <p className="text-center text-[1rem] text-black">
+            <p className="text-center text-[1rem] text-textblack font-inter">
               Association for Consulting Engineering Nigeria
             </p>
           </motion.div>
@@ -275,7 +275,7 @@ const About = () => {
               src="/images/dpr.webp"
               alt="Department of Petroleum Resources logo"
             />
-            <p className="text-center text-[1rem] text-black">
+            <p className="text-center text-[1rem] text-textblack font-inter">
               Department of Petroleum Resources
             </p>
           </motion.div>
@@ -291,7 +291,7 @@ const About = () => {
               src="/images/nnpc.webp"
               alt="Nigerian National Petroleum Corporation"
             />
-            <p className="text-center text-[1rem] text-black">
+            <p className="text-center text-[1rem] text-textblack font-inter">
               Nigerian National Petroleum Corporation
             </p>
           </motion.div>
@@ -303,7 +303,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className=" font-jakarta font-medium capitalize text-black tracking-tight text-[42px] lg:text-[68px] xl:text-[90px] text-center  leading-tight mb-12"
+          className=" font-jakarta font-medium capitalize text-black tracking-tight text-[34px] md:text-[54px] text-center  leading-tight mb-12"
         >
           Meet Our Directors
         </motion.h3>
@@ -355,7 +355,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-[42px] mb-6 lg:text-[68px] xl:text-[90px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
+          className="text-[34px] mb-6 lg:text-[54px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
         >
           Our Clients
         </motion.h3>
