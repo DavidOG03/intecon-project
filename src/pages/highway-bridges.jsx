@@ -641,31 +641,30 @@ const HighwayBridges = () => {
           )}
         </div>
       </section>
-      <section className="goto py-[20px] text-center px-3">
+      <section className="py-[20px] text-center">
         <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
-        Explore Our Project Portfolio
+          Explore Our Project Portfolio
         </h3>
-        <div className="links flex justify-center items-center gap-6">
-        <Link
-          to="/structural-design"
-          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
-        >
-          Structural Design Projects
-        </Link>
-        <Link
-          to="/geosciences"
-          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
-        >
-          Geosciences Projects
-        </Link>
-        <Link
-          to="/non-destructive-testing"
-          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
-        >
-          Non-destructive Testing Projects
-        </Link>
+        <div className="links flex flex-col justify-center items-center md:flex-row">
+          <Link
+            to="/structural-design"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+          >
+            Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+          </Link>
+          <Link
+            to="/geosciences"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+          >
+            Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+          </Link>
+          <Link
+            to="/non-destructive-testing"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+          >
+            Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+          </Link>
         </div>
-        
       </section>
 
       <Quote />
