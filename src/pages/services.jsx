@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceCard from '../components/service-card'
 import Quote from '../components/quote'
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   const fadeup = {
@@ -41,7 +42,7 @@ const Services = () => {
       initial="hidden"
       whileInView = "visible"
       viewport= {{once:true}}
-      className="services-box grid grid-cols-1 md:grid-cols-3 items-stretch gap-4 px-4 md:px-8 mb-[120px]">
+      className="services-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-4 px-4 md:px-8 mb-[120px]">
       <ServiceCard
       name="Engineering Design"
       desc="Intecon, a leader in project development and engineering design, consistently exceeds client expectations. With extensive experience, we deliver successful projects in industrial, commercial, marine, and aviation facilities, highways, bridges, and infrastructure, including estates, terminals, warehouses, offices, and recreational facilities."
@@ -78,6 +79,17 @@ const Services = () => {
       img='/images/testing.webp'
       alt="Non destructive testing"/>
       </motion.div>
+      <section className="goto py-[20px] text-center">
+        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
+        Explore Our Project Portfolio
+        </h3>
+        <Link
+          to="/highway-bridges-design"
+          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
+        >
+          Highway and Bridges Design Projects
+        </Link>
+      </section>
       <Quote/>
     </main>
   )

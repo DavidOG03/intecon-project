@@ -1,4 +1,8 @@
-.slick-slider,.slick-list,.slick-track,.slick-slide,.slick-active div{
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-active div {
   width: 100%;
   height: 100%;
   position: relative;
@@ -6,11 +10,11 @@
   user-select: none;
 }
 
-.slick-arrow{
+.slick-arrow {
   position: absolute;
 }
 
-.slick-prev{
+.slick-prev {
   top: 90%;
   left: 1rem;
   translate: 0 -10%;
@@ -20,7 +24,7 @@
   background-color: #0b0b0c46;
 }
 
-.slick-prev::before{
+.slick-prev::before {
   content: url(/images/arrow-back.svg);
   position: absolute;
   top: 50%;
@@ -28,7 +32,7 @@
   translate: -45% -50%;
 }
 
-.slick-next{
+.slick-next {
   top: 90%;
   right: 1rem;
   translate: 0 -10%;
@@ -36,7 +40,7 @@
   border-radius: 50%;
   background-color: #0b0b0c46;
 }
-.slick-next::before{
+.slick-next::before {
   content: url(/images/arrow-forward.svg);
   position: absolute;
   top: 50%;
@@ -44,12 +48,11 @@
   translate: -50% -50%;
 }
 
-
-.slick-slider .slick-dots{
+.slick-slider .slick-dots {
   position: absolute;
   bottom: 4rem;
   left: 50%;
-  translate:-50% 0;
+  translate: -50% 0;
   display: flex;
   justify-items: center;
   gap: 4px;
@@ -59,60 +62,63 @@
   z-index: 10;
 }
 
-.slick-dots li{
+.slick-dots li {
   margin-inline: 1rem;
 }
 
-.slick-dots li button::before{
-  content: ' ';
+.slick-dots li button::before {
+  content: " ";
   width: 2rem;
   height: 8px;
   background: white;
-  
 }
 
-
-
-.slick-slide .first-image{
-  background:linear-gradient(to bottom, #11121349,#11121349 ,#0b0b0c2d),  url(/images/homepage-3.webp);
+.slick-slide .first-image {
+  background: linear-gradient(to bottom, #11121349, #11121349, #0b0b0c2d),
+    url(/images/homepage-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  
 }
-.slick-slide .second-image{
-  background: linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d), url(/images/bridge-reinforcement-2.webp);
+.slick-slide .second-image {
+  background: linear-gradient(to bottom, #11121325, #11121336, #0b0b0c2d),
+    url(/images/bridge-reinforcement-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.slick-slide .third-image{
-  background:linear-gradient(to bottom, #11121325,#11121336 ,#0b0b0c2d),  url(/images/structure.webp);
+.slick-slide .third-image {
+  background: linear-gradient(to bottom, #11121325, #11121336, #0b0b0c2d),
+    url(/images/structure.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 60%;
 }
-.slick-slide .fourth-image{
-  background:linear-gradient(to bottom, #11121349,#1112135d ,#0b0b0c2d),  url(/images/homepage-4.webp);
+.slick-slide .fourth-image {
+  background: linear-gradient(to bottom, #11121349, #1112135d, #0b0b0c2d),
+    url(/images/homepage-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 5% bottom ;
+  background-position: 5% bottom;
 }
 
-.navbar ul li a,.navbar-mobile ul li a{
+.navbar ul li a,
+.navbar-mobile ul li a {
   position: relative;
   height: 100%;
 }
 
-.navbar ul li a:hover,.navbar-mobile ul li a:hover{
-  color: #FFFFFF89;
+.navbar ul li a:hover,
+.navbar-mobile ul li a:hover {
+  color: #ffffff89;
 }
-.navbar ul li a.active, .navbar-mobile ul li a.active{
-  color: #0499CF;
+.navbar ul li a.active,
+.navbar-mobile ul li a.active {
+  color: #0499cf;
 }
 
 .navbar ul li a::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   bottom: -2.2rem;
   left: 0;
@@ -123,8 +129,8 @@
   transform-origin: left;
 }
 
-.navbar-mobile ul li a::after{
-  content: ' ';
+.navbar-mobile ul li a::after {
+  content: " ";
   position: absolute;
   bottom: -0.5rem;
   left: 0;
@@ -135,28 +141,31 @@
   transform-origin: left;
 }
 
-.navbar ul li a.active::after, .navbar-mobile ul li a.active::after{
+.navbar ul li a.active::after,
+.navbar-mobile ul li a.active::after {
   width: 100%;
   transform-origin: right;
-  background: #0499CF;
+  background: #0499cf;
 }
 
-.navbar ul li a.active:hover:after, .navbar-mobile ul li a.active:hover::after{
+.navbar ul li a.active:hover:after,
+.navbar-mobile ul li a.active:hover::after {
   width: 100%;
   transform-origin: right;
-  background: #0499CF;
+  background: #0499cf;
 }
 
-.navbar ul li:hover a:hover::after, .navbar-mobile ul li a:hover::after{
+.navbar ul li:hover a:hover::after,
+.navbar-mobile ul li a:hover::after {
   width: 100%;
   transform-origin: right;
-  background: #FFFFFF89;
+  background: #ffffff89;
 }
 
 .nav-item {
   position: relative;
   display: inline-block;
-  padding-block: 1rem;
+  padding-block: 12px;
 }
 
 .dropdown .nav-link {
@@ -168,21 +177,21 @@
 .dropdown {
   position: absolute;
   top: 100%;
-  right: -24px;
+  left: 0px;
   background-color: #1c1c1c;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 250px;
   display: none;
-  border: 1px solid #413F3E;
+  border: 1px solid #413f3e;
 }
 
 .nav-item:hover .dropdown {
   display: block;
 }
 
-.dropdown li .project::after{
-  content: ' ';
+.dropdown li .project::after {
+  content: " ";
   position: absolute;
   bottom: -0.4rem;
   left: 0;
@@ -193,7 +202,8 @@
   transform-origin: left;
 }
 
-.dropdown .project-link:hover::after, .dropdown li .project:hover::after{
+.dropdown .project-link:hover::after,
+.dropdown li .project:hover::after {
   width: 100%;
   transform-origin: right;
 }
@@ -208,18 +218,18 @@
   display: block;
 }
 
-.navbar-mobile.active{
+.navbar-mobile.active {
   right: 0;
 }
 
-
-.client img{
+.client img {
   padding-inline: 1rem;
   width: 200px;
 }
 
-.quote{
-  background:linear-gradient(to bottom right, #1112136b ,#0b0b0c56), url(/images/get-to-work.webp);
+.quote {
+  background: linear-gradient(to bottom right, #1112136b, #0b0b0c56),
+    url(/images/get-to-work.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 80%;
@@ -231,17 +241,20 @@
   rotate: 45deg;
 }
 
-.projects table tbody tr:nth-of-type(odd),.structural-projects table tbody tr:nth-of-type(odd),.geosciences-projects table tbody tr:nth-of-type(odd),.ndt-projects table tbody tr:nth-of-type(odd){
+.projects table tbody tr:nth-of-type(odd),
+.structural-projects table tbody tr:nth-of-type(odd),
+.geosciences-projects table tbody tr:nth-of-type(odd),
+.ndt-projects table tbody tr:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.05);
 }
 
-.project-link.active{
-  color: #0499CF;
+.project-link.active {
+  color: #0499cf;
   position: relative;
-} 
+}
 
-.project-link::after{
-  content: '';
+.project-link::after {
+  content: "";
   position: absolute;
   bottom: -2.1rem;
   left: 0;
@@ -252,43 +265,47 @@
   transform-origin: left;
 }
 
-.project-link:hover::after{
-  content: '';
+.project-link:hover::after {
+  content: "";
   position: absolute;
   bottom: -2.1rem;
   left: 0;
   width: 100%;
-  
-  
 }
 
-.project-link.active::after{
-  content: '';
+.project-link.active::after {
+  content: "";
   position: absolute;
   bottom: -2.1rem;
   left: 0;
   width: 100%;
   height: 4px;
-  background: #0499CF;
+  background: #0499cf;
   transition: all 0.3s ease;
   transform-origin: left;
 }
 
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus {
+  outline: none;
+}
 
-
-@media screen and (max-width:768px) {
-  .slick-dots li{
+@media screen and (max-width: 768px) {
+  .slick-dots li {
     margin-inline: 0.4rem;
   }
-  .slick-dots li button::before{
-    content: ' ';
+  .slick-dots li button::before {
+    content: " ";
     width: 1.5rem;
     height: 8px;
     background: white;
-    
   }
 
-  .client img{
+  .client img {
     padding-inline: 1rem;
     width: 100px;
   }
@@ -303,11 +320,11 @@
     /* z-index: 1; */
     width: full;
     display: none;
-    border: 1px solid #413F3E;
+    border: 1px solid #413f3e;
   }
 
-  .dropdown li .project::after{
-    content: ' ';
+  .dropdown li .project::after {
+    content: " ";
     position: absolute;
     bottom: -0.4rem;
     left: 0;
@@ -321,8 +338,8 @@
     padding: 10px;
   }
 
-  .project-link:hover::after{
-    content: '';
+  .project-link:hover::after {
+    content: "";
     position: absolute;
     bottom: -0.4rem;
     left: 0;
@@ -332,30 +349,27 @@
     transition: all 0.3s ease;
     transform-origin: left;
   }
-  
-  .project-link.active::after{
-    content: '';
+
+  .project-link.active::after {
+    content: "";
     position: absolute;
     bottom: -0.5rem;
     left: 0;
     width: 100%;
     height: 2px;
-    background: #0499CF;
+    background: #0499cf;
     transition: all 0.3s ease;
     transform-origin: left;
   }
-  
-
-  
 }
 
-@media screen and (min-width:1024px) {
-  .hamburger-react{
+@media screen and (min-width: 1024px) {
+  .hamburger-react {
     display: none;
   }
-  
 }
 
-button, button:focus{
+button,
+button:focus {
   outline: none;
 }

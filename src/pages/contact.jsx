@@ -206,7 +206,7 @@ export default function Contact() {
           </motion.div>
           <button
             type="submit"
-            className="font-inter font-semibold text-base py-3 px-6 md:py-6 md:px-8 rounded-[48px] border border-transparent w-full  transition ease-in text-[#fff] bg-[#1c1c1c] hover:bg-transparent hover:border hover:border-[#1c1c1c] hover:text-[#1c1c1c]"
+            className="font-inter font-semibold text-base py-3 px-6 md:py-6 md:px-8 rounded-[48px] border border-transparent w-full  transition ease-in text-[#fff] bg-[#1c1c1c] hover:bg-transparent hover:border hover:border-[#1c1c1c] hover:text-[#1c1c1c] md:col-start-1 md:col-end-3 max-w-[200px]"
           >
             Send Message
           </button>

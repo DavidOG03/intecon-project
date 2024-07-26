@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
+import { Link } from "react-router-dom";
 
 const StructuralDesign = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -35,10 +36,19 @@ const StructuralDesign = () => {
         delay: 0.2,
       },
     },
-    exit:{
-      opacity:0, y:-20,
-    }
+    exit: {
+      opacity: 0,
+      y: -20,
+    },
   };
+
+  const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    if (mainContentRef.current) {
+      mainContentRef.current.focus();
+    }
+  }, []);
 
   return (
     <main className="structural-design bg-white pt-[60px]">
@@ -48,6 +58,8 @@ const StructuralDesign = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          ref={mainContentRef}
+          tabIndex="-1"
           className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[74px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
           We have{" "}
@@ -647,6 +659,32 @@ const StructuralDesign = () => {
             </motion.table>
           )}
         </div>
+      </section>
+      <section className="goto py-[20px] text-center px-3">
+        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
+        Explore Our Project Portfolio
+        </h3>
+        <div className="links flex justify-center items-center gap-6">
+        <Link
+          to="/highway-bridges-design"
+          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
+        >
+          Highway and Bridges Design Projects
+        </Link>
+        <Link
+          to="/geosciences"
+          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
+        >
+          Geosciences Projects
+        </Link>
+        <Link
+          to="/non-destructive-testing"
+          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
+        >
+          Non-destructive Testing Projects
+        </Link>
+        </div>
+        
       </section>
       <Quote />
     </main>

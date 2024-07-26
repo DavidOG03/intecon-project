@@ -21,7 +21,7 @@ const Dropdown = ({ onLinkClick }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link to="#" className={`project-link hover:text-blue nav-link inline-block mx-4 font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px] hover:cursor-pointer ${
+      <Link to="#" className={`project-link hover:text-blue nav-link mx-4 font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px] hover:cursor-pointer flex items-center ${
           isActive([
             "/highway-bridges-design",
             "/structural-design",
@@ -31,7 +31,7 @@ const Dropdown = ({ onLinkClick }) => {
             ? "active"
             : ""
         } ${isDropdownVisible === true ? "text-blue" : "text-[#f0f0f0]"}`}>
-        Projects
+        Projects <span className="ml-1"><img src="/images/arrow-down.svg" alt="arrow down" /></span>
       </Link>
       {isDropdownVisible && (
         <ul className="dropdown ">

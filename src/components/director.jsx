@@ -20,7 +20,7 @@ const Director = ({ img, name, role, office, degree }) => {
       variants={fadeup}
       initial="hidden"
       whileInView="visible"
-      view={{ once: true }}
+      viewport={{ once: true }}
       className="director flex flex-col flex-grow min-w-[300px] max-w-[400px] justify-center items-start mt-6 overflow-hidden"
     >
       <div className="image-box w-full bg-[#f1f1f1] min-h-[519px] flex justify-end items-center flex-col">

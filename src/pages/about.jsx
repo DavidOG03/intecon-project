@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Director from "../components/director";
 import Clients from "../components/clients";
 import Quote from "../components/quote";
 import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const fadeup = {
   hidden: { opacity: 0, y: 10 },
@@ -33,22 +34,34 @@ const fadein = {
   },
 };
 
+
+
 const About = () => {
+  const mainContentRef = useRef(null);
+
+useEffect(() => {
+  if (mainContentRef.current) {
+    mainContentRef.current.focus();
+  }
+}, []);
   return (
     <main className="about w-full pt-[60px] lg:pt-[120px] bg-white ">
       <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat bg-fixed h-[100vh] grid place-content-center">
-      <motion.h1
-        variants={fadeup}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
-      >
-        We are <span className="text-blue">consulting engineers</span> for <span className="text-blue">structure</span> and  <span className="text-blue">highway projects</span>
-      </motion.h1>
+        <motion.h1
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          ref={mainContentRef}
+          tabIndex="-1"
+          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+        >
+          We are <span className="text-blue">consulting engineers</span> for{" "}
+          <span className="text-blue">structure</span> and{" "}
+          <span className="text-blue">highway projects</span>
+        </motion.h1>
       </section>
       {/* <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section> */}
-
 
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-[60px] w-full">
         <motion.div
@@ -307,11 +320,13 @@ const About = () => {
         >
           Meet Our Directors
         </motion.h3>
-        <motion.div variants={fadeup}
+        <motion.div
+          variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6">
+          className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6"
+        >
           <Director
             img="/images/engr-ajibola.webp"
             name="Engr. O. Alade Ajibola"
@@ -355,11 +370,22 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-[34px] mb-6 lg:text-[54px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
+          className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-jakarta font-medium capitalize text-center"
         >
           Our Clients
         </motion.h3>
         <Clients position="relative" />
+      </section>
+      <section className="goto py-[20px] text-center">
+        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
+        Explore Our Project Portfolio
+        </h3>
+        <Link
+          to="/highway-bridges-design"
+          className="goto block max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg"
+        >
+          Highway and Bridges Design Projects
+        </Link>
       </section>
       <Quote />
     </main>
