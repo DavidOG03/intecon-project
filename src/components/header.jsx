@@ -30,12 +30,12 @@ const Header = () => {
   return (
     <>
       <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8 lg:py-2">
-        <Link to="/" className="logo h-[34px] lg:h-[54px] object-cover">
+        <Link to="/" className="logo h-[34px] xl:h-[44px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
         <nav className="navbar desktop hidden lg:block ">
           <ul className="capitalize text-[#fff] pt-2 pb-2 px-6">
-            <li className="inline-block mx-2 xl:mx-3 ">
+            <li className="inline-block mx-2 ">
               <NavLink
                 to="/"
                 end
@@ -48,7 +48,7 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
-            <li className="inline-block mx-2 xl:mx-3 ">
+            <li className="inline-block mx-2 ">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -60,7 +60,7 @@ const Header = () => {
                 About Us
               </NavLink>
             </li>
-            <li className="inline-block mx-2 xl:mx-3">
+            <li className="inline-block mx-2">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -72,7 +72,7 @@ const Header = () => {
                 Contact Us
               </NavLink>
             </li>
-            <li className="inline-block mx-2 xl:mx-3 ">
+            <li className="inline-block mx-2 ">
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
