@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import ServiceCard from '../components/service-card'
 import Quote from '../components/quote'
 import {motion} from 'framer-motion'
@@ -30,13 +30,24 @@ const Services = () => {
     },
   };
 
+  const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    if (mainContentRef.current) {
+      mainContentRef.current.focus();
+    }
+  }, []);
+
   return (
     <main className='services pt-[120px] bg-white'>
       <motion.h3 
           variants={fadeup}
           initial="hidden"
           whileInView = "visible"
-          viewport= {{once:true}}className="text-[54px] md:text-[90px] font-medium text-black col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</motion.h3>
+          viewport= {{once:true}}
+          ref={mainContentRef}
+          tabIndex="-1"
+          className="text-[54px] md:text-[90px] font-medium text-black col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</motion.h3>
       <motion.div 
       variants={container}
       initial="hidden"
@@ -79,32 +90,32 @@ const Services = () => {
       img='/images/testing.webp'
       alt="Non destructive testing"/>
       </motion.div>
-      <section className=" py-[20px] text-center">
-        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
+      <section className=" py-[20px] text-center px-3">
+        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-6 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center md:flex-row">
+        <div className="links flex flex-col justify-center items-center lg:flex-row gap-2">
           <Link
             to="/highway-bridges-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg  items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg  items-center gap-2"
           >
             Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
           >
             Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/geosciences"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
           >
             Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-4 rounded-lg items-center gap-2"
           >
             Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>

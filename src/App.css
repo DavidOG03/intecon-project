@@ -305,6 +305,15 @@ h6:focus {
 .goto:hover{
   cursor: pointer;
   background: #0499cfce;
+ 
+}
+
+.goto img{
+  transition: all 0.1s ease-in-out;
+}
+
+.goto:hover img{
+  rotate: 45deg;
 }
 
 @media screen and (max-width: 768px) {

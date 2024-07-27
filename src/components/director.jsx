@@ -28,13 +28,13 @@ const Director = ({ img, name, role, office, degree }) => {
           <img src={img} alt={name} className="w-full h-full object-cover" />
         )}
       </div>
-      <h4 className="text-[2rem] font-semibold capitalize text-black font-jakarta tracking-tight leading-relaxed pt-4">
+      <h4 className="text-[2rem] font-medium capitalize text-black font-jakarta tracking-tight leading-relaxed pt-4">
         {name}
       </h4>
-      <p className="text-[18px] font-medium text-[#1c1c1ce5] capitalize font-jakarta">
+      <p className="text-[18px] font-normal text-[#1c1c1ce5] capitalize font-jakarta">
         {role}
       </p>
-      <p className="text-[18px] font-normal text-[#1c1c1ccb] uppercase mt-3 font-inter">
+      <p className="text-[18px] font-light text-[#1c1c1ccb] uppercase mt-3 font-inter">
         {office}
       </p>
       <p className="text-base font-light text-[#1c1c1ca8] capitalize font-inter">

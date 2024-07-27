@@ -52,24 +52,15 @@ const About = () => {
           viewport={{ once: true }}
           ref={mainContentRef}
           tabIndex="-1"
-          className="heading font-jakarta tracking-tighter text-blackish text-[32px] md:text-[48px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
           We are <span className="text-blue">consulting engineers</span> for{" "}
           <span className="text-blue">structure</span> and{" "}
           <span className="text-blue">highway projects</span>
         </motion.h1>
       </section>
-      {/* <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-0 pb-[60px]"></section> */}
-
-      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[80px] md:flex md:flex-row-reverse items-center flex-row-reverse gap-[60px] w-full">
-        <motion.div
-          variants={fadein}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[12px]  "
-        ></motion.div>
-        <div className="text pt-6 md:pt-0 basis-[50%] overflow-hidden ">
+      <section className="mission px-3 lg:px-8 relative py-[20px] pb-[60px] md:flex items-center gap-[60px] w-full">
+        <div className="text pb-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -93,17 +84,17 @@ const About = () => {
             cutting- edge technology and equipment.
           </motion.p>
         </div>
-      </section>
-
-      <section className="vision lg:flex lg:flex-row justify-center items-center gap-[60px] relative px-6 py-[80px] md:flex md:flex-row">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[12px]  "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[6px]  "
         ></motion.div>
-        <div className="text pt-6 md:pt-0 basis-[50%]">
+      </section>
+
+      <section className="vision justify-center items-center gap-[60px] relative px-6 py-[80px] md:flex md:flex-row-reverse">
+        <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -125,17 +116,18 @@ const About = () => {
             services.
           </motion.p>
         </div>
-      </section>
-
-      <section className="overview px-6 relative py-[80px] md:flex md:flex-row-reverse items-center gap-[60px] w-full">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] md:h-[515px] bg-[url('/images/homepage-4.webp')] bg-cover bg-[0%] rounded-[12px]  "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/vision.webp')] bg-cover bg-[20%] rounded-[6px]  "
         ></motion.div>
-        <div className="text pt-6 md:pt-0 basis-[50%]">
+      </section>
+
+      <section className="overview px-6 relative py-[80px] md:flex items-center gap-[60px] w-full">
+        
+        <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -163,22 +155,22 @@ const About = () => {
             clientele include operators in the Oil and Gas Industry, Federal and
             State Governments, Infrastructure Companies, Aviation and Private
             Institutions.
-            <span className="font-bold font-inter block my-12">
+            <span className="font-bold font-inter block my-3">
               INTECON is an ISO 9001 :2015 Certiﬁed Company
             </span>
           </motion.p>
         </div>
-      </section>
-
-      <section className="division md:flex md:flex-row justify-between items-center gap-[60px] relative px-6 py-[60px] lg:py-[80px]">
         <motion.div
           variants={fadein}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[220px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[12px]  "
+          className="image-box w-full basis-[50%] h-[320px] md:h-[515px] bg-[url('/images/qaqc-13.webp')] bg-cover bg-center rounded-[6px]  "
         ></motion.div>
-        <div className="text pt-6 md:pt-0 basis-[50%]">
+      </section>
+
+      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-6 py-[60px] lg:py-[80px]">
+        <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.p
             variants={fadeup}
             initial="hidden"
@@ -214,6 +206,13 @@ const About = () => {
             and Government Institutions across the country.
           </motion.p>
         </div>
+        <motion.div
+          variants={fadein}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="image-box w-full basis-[50%] flex flex-col gap-4 h-[320px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[6px]  "
+        ></motion.div>
       </section>
       <section className="institutions py-[60px] px-6 border-b border-t border-b-[#c9c7c7] border-t-[#c9c7c7]">
         <motion.h3
@@ -221,7 +220,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-jakarta font-medium capitalize text-black  text-[34px] md:text-[54px] text-center mb-12"
+          className="font-jakarta font-medium capitalize text-black text-[34px] md:text-[54px] text-center mb-8 max-w-[400px] md:max-w-[600px] mx-auto"
         >
           Statutory Institutions Registration
         </motion.h3>
@@ -374,32 +373,32 @@ const About = () => {
         </motion.h3>
         <Clients position="relative" />
       </section>
-      <section className=" py-[20px] text-center">
-        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
+      <section className=" py-[20px] text-center px-3">
+        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center md:flex-row">
+        <div className="links flex flex-col justify-center items-center lg:flex-row gap-2">
           <Link
             to="/highway-bridges-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg  items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
           >
             Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
           >
             Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/geosciences"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
           >
             Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-[60px] p-4 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
           >
             Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
