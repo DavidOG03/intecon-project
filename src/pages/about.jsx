@@ -43,7 +43,7 @@ const About = () => {
     }
   }, []);
   return (
-    <main className="about w-full pt-[60px] lg:pt-[120px] bg-white ">
+    <main className="about w-full pt-[60px] lg:pt-[120px] bg-white relative">
       <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat bg-fixed h-[100vh] grid place-content-center">
         <motion.h1
           variants={fadeup}
@@ -59,6 +59,7 @@ const About = () => {
           <span className="text-blue">highway projects</span>
         </motion.h1>
       </section>
+
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[60px] md:flex items-center gap-[60px] w-full">
         <div className="text pb-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
@@ -93,7 +94,10 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="vision justify-center items-center gap-[60px] relative px-6 py-[80px] md:flex md:flex-row-reverse">
+
+      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute -z-1 translate-x-[90%]"/>
+
+      <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[80px] md:flex md:flex-row-reverse">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
