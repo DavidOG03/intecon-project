@@ -13,6 +13,7 @@ import Ndt from './pages/ndt';
 import HighwayBridges from './pages/highway-bridges';
 import ScrollToTop from './components/scrollToTop';
 import './App.css'
+import AdminPage from './admin/admin';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Route path="/structural-design" element={<StructuralDesign />} />
       <Route path="/geosciences" element={<Geosciences />} />
       <Route path="/non-destructive-testing" element={<Ndt />} />
+      <Route path="/admin" element={<AdminPage />} />
     </Routes>
     <Footer/>
   </Router>

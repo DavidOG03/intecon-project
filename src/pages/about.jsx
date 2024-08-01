@@ -76,7 +76,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base font-inter text-textblack relative z-10 leading-relaxed text-justify"
+            className="text-base font-inter text-textblack relative z-10 leading-relaxed text-left"
           >
             Our mission is to provide technically sound engineering services on
             projects, to achieve the production of durable facilities and time
@@ -95,7 +95,7 @@ const About = () => {
       </section>
 
 
-      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute -z-1 translate-x-[90%]"/>
+      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute z-1 translate-x-[90%]"/>
 
       <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[80px] md:flex md:flex-row-reverse">
         <div className="text pb-6 md:pt-0 basis-[50%]">
@@ -113,7 +113,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-textblack font-inter mb-6 relative z-10"
+            className="text-base text-textblack font-inter mb-6 relative z-10 text-left"
           >
             Our vision is to be one of the best consulting engineering firms in
             Africa and beyond, in the delivery of world class engineering
@@ -146,7 +146,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-textblack font-inter mb-6 relative z-10 leading-relaxed text-justify"
+            className="text-base text-textblack font-inter mb-6 relative z-10 leading-relaxed text-left"
           >
             Intecon Partnership Limited is a leading ﬁrm of Nigerian Consulting
             Engineers specializing in areas of heavy industrial and large scale
@@ -180,7 +180,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-textblack font-inter mb-6 relative z-10 text-justify"
+            className="text-base text-textblack font-inter mb-6 relative z-10 text-left"
           >
             Apart from its extensive consulting engineering capabilities,
             Intecon Partnership Ltd is the parent company of two other
@@ -192,7 +192,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-textblack font-inter mb-6 relative z-10 text-justify"
+            className="text-base text-textblack font-inter mb-6 relative z-10 text-left"
           >
             <strong>AUTOMATED GEOTECHNICS</strong> was established in the year
             1997 in response to the dearth of competent local Geotechnical
