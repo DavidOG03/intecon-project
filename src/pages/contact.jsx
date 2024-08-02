@@ -52,7 +52,7 @@ export default function Contact() {
             className="text-base text-[#1c1c1c] font-inter max-w-[520px]"
           >
             Feel free to talk to our Business Department at any time you please
-            using our Live Chat system on our website or one of the below
+            using one of the below
             instant messaging programs. Please be patient while waiting for
             response.
             <strong className="block mt-6">

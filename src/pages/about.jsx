@@ -52,7 +52,7 @@ const About = () => {
           viewport={{ once: true }}
           ref={mainContentRef}
           tabIndex="-1"
-          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:px-[3rem]"
         >
           We are <span className="text-blue">consulting engineers</span> for{" "}
           <span className="text-blue">structure</span> and{" "}
@@ -61,6 +61,8 @@ const About = () => {
       </section>
 
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[60px] md:flex items-center gap-[60px] w-full">
+      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute z-1 scale-50 -translate-x-[30%] translate-y-[20%]"/>
+
         <div className="text pb-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
@@ -95,7 +97,7 @@ const About = () => {
       </section>
 
 
-      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute z-1 translate-x-[90%]"/>
+      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute z-1 translate-x-[50%]"/>
 
       <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[80px] md:flex md:flex-row-reverse">
         <div className="text pb-6 md:pt-0 basis-[50%]">
