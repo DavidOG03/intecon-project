@@ -380,7 +380,7 @@ const About = () => {
         <Clients position="relative" />
       </section>
       <section className=" py-[20px] text-center px-3">
-        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
+        <h3 className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-jakarta font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
         <div className="links flex flex-col justify-center items-center lg:flex-row gap-2">

@@ -13,59 +13,53 @@ const UploadForm = () => {
   };
 
   // const handleSubmit = async (values) => {
-  //   console.log('Frontend Passkey:', values.passkey);
-
+  //   // event.preventDefault();
   //   const formData = new FormData();
   //   formData.append("passkey", values.passkey);
-  //   formData.append("image", values.image);
-  //   formData.append("video", values.video);
+  //   if (selectedFile) formData.append("file", selectedFile);
   //   formData.append("youtubeLink", values.youtubeLink);
 
   //   try {
-  //     const response = await axios.post(
-  //       "http://localhost:5000/upload",
-  //       formData,
-  //       {
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //         },
-  //       }
-  //     );
-  //     setMessage("Upload successful");
+  //     const response = await axios.post("/upload", formData, {
+  //       headers: {
+  //         "Content-Type": "multipart/form-data",
+  //       },
+  //     });
+  //     if (response.status === 200) {
+  //       setMessage("File uploaded successfully!");
+  //       // setFile(null); // Clear the file input
+  //       // setPasskey(''); // Optionally clear the passkey
+  //       // setYoutubeLink(''); // Optionally clear the YouTube link
+  //       setSelectedFile(null);
+  //     } else {
+  //       setMessage("File upload failed.");
+  //     }
   //   } catch (error) {
-  //     console.error("Error uploading files:", error);
-  //     setMessage("Upload failed: " + (error.response?.data || "Unknown error"));
+  //     setMessage(
+  //       "Error uploading file. Please check your passkey and try again."
+  //     );
   //   }
   // };
 
-  const handleSubmit = async (values) => {
-    // event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const formData = new FormData();
-    formData.append("passkey", values.passkey);
-    if (selectedFile) formData.append("file", selectedFile);
-    formData.append("youtubeLink", values.youtubeLink);
-
+    formData.append('video', video);
+  
     try {
-      const response = await axios.post("/upload", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
+      const response = await fetch('http://localhost:5000/upload', {
+        method: 'POST',
+        body: formData,
       });
-      if (response.status === 200) {
-        setMessage("File uploaded successfully!");
-        // setFile(null); // Clear the file input
-        // setPasskey(''); // Optionally clear the passkey
-        // setYoutubeLink(''); // Optionally clear the YouTube link
-        setSelectedFile(null);
-      } else {
-        setMessage("File upload failed.");
-      }
+      const data = await response.json();
+      const videoURL = data.videoURL;
+      // Save videoURL and youtubeLink to database
+      await saveVideoDetails(videoURL, youtubeLink);
     } catch (error) {
-      setMessage(
-        "Error uploading file. Please check your passkey and try again."
-      );
+      console.error('Error uploading video:', error);
     }
   };
+  
 
   return (
     <div>
@@ -86,6 +80,7 @@ const UploadForm = () => {
                 name="passkey"
                 type={showPassword ? "text" : "password"}
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
+                
               />
               <button
                 className="show-hide absolute top-[60%] right-0 -translate-y-[40%] border-none bg-transparent p-4"

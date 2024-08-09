@@ -138,6 +138,9 @@ const HighwayBridges = () => {
               alt="road-work"
               className="w-full"
             />
+            <div className="project-pic-description">
+              
+            </div>
           </motion.div>
           <motion.div
             variants={fadein}
@@ -642,8 +645,8 @@ const HighwayBridges = () => {
         </div>
       </section>
       <section className="py-[20px] text-center px-3">
-        <h3 className="text-[34px] md:text-[54px] capitalize font-jakarta font-medium pb-5">
-          Explore Our Project Portfolio
+        <h3 className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]">
+          Explore Other Project Portfolio
         </h3>
         <div className="links flex flex-col justify-center items-center md:flex-row gap-2">
           <Link
