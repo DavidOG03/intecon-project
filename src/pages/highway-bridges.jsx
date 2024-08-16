@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
 import { Link } from "react-router-dom";
+import ProjectVideos from "../components/projectVideo";
 
 const HighwayBridges = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -125,7 +126,7 @@ const HighwayBridges = () => {
         >
           Highway and bridges projects Gallery
         </motion.h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
           <motion.div
             variants={fadein}
             initial="hidden"
@@ -218,6 +219,7 @@ const HighwayBridges = () => {
           </motion.div>
         </div>
       </section>
+      <ProjectVideos/>
 
       <section className="projects px-4 py-[60px] ">
         <motion.h3
@@ -651,19 +653,19 @@ const HighwayBridges = () => {
         <div className="links flex flex-col justify-center items-center md:flex-row gap-2">
           <Link
             to="/structural-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/geosciences"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>

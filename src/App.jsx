@@ -32,7 +32,7 @@ function App() {
       <Route path="/structural-design" element={<StructuralDesign />} />
       <Route path="/geosciences" element={<Geosciences />} />
       <Route path="/non-destructive-testing" element={<Ndt />} />
-      <Route path="/admin" element={<AdminPage />} />
+      {/* <Route path="/admin" element={<AdminPage />} /> */}
     </Routes>
     <Footer/>
   </Router>

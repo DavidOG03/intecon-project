@@ -41,8 +41,8 @@ const UploadForm = () => {
   //   }
   // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
+    // e.preventDefault();
     const formData = new FormData();
     formData.append('video', video);
   

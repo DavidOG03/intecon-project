@@ -658,19 +658,19 @@ const Geosciences = () => {
         <div className="links flex flex-col justify-center items-center md:flex-row md:justify-center gap-2">
           <Link
             to="/highway-bridges-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg  items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
           >
             Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>

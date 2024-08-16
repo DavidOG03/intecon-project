@@ -92,7 +92,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] rounded-[6px]  "
+          className="image-box w-full basis-[50%] h-[220px] lg:h-[320px] bg-[url('/images/mission.webp')] bg-cover bg-[100%] bg-no-repeat  rounded-[6px]  "
         ></motion.div>
       </section>
 
@@ -386,25 +386,25 @@ const About = () => {
         <div className="links flex flex-col justify-center items-center lg:flex-row gap-2">
           <Link
             to="/highway-bridges-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/geosciences"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 p-2 rounded-lg items-center gap-2"
+            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
             Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
           </Link>

@@ -256,7 +256,7 @@
 .project-link::after {
   content: "";
   position: absolute;
-  bottom: -1.8rem;
+  bottom: -1rem;
   left: 0;
   width: 0;
   height: 4px;
@@ -268,7 +268,7 @@
 .project-link:hover::after {
   content: "";
   position: absolute;
-  bottom: -1.8rem;
+  bottom: -1rem;
   left: 0;
   width: 100%;
 }
@@ -279,7 +279,7 @@
 .project-link.active::after {
   content: "";
   position: absolute;
-  bottom: -1.8rem;
+  bottom: -1.85rem;
   left: 0;
   width: 100%;
   height: 4px;
