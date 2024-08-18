@@ -207,8 +207,9 @@ const HighwayBridges = () => {
               alt="road-work"
               className="w-full"
             />
+            
           </motion.div>
-          <motion.div
+          {/* <motion.div
             variants={fadein}
             initial="hidden"
             whileInView="visible"
@@ -216,9 +217,10 @@ const HighwayBridges = () => {
             className="project-pic"
           >
             <img src="/images/road3.png" alt="road-work" className="w-full" />
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
+      
       <ProjectVideos/>
 
       <section className="projects px-4 py-[60px] ">
