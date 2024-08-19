@@ -114,13 +114,13 @@
 }
 .navbar ul li a.active,
 .navbar-mobile ul li a.active {
-  color: #0499cf;
+  color: #fff;
 }
 
 .navbar ul li a::after {
   content: " ";
   position: absolute;
-  bottom: -2rem;
+  bottom: -1.95rem;
   left: 0;
   width: 0;
   height: 4px;
@@ -132,7 +132,7 @@
 .navbar-mobile ul li a::after {
   content: " ";
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.45rem;
   left: 0;
   width: 0;
   height: 2px;
@@ -145,21 +145,21 @@
 .navbar-mobile ul li a.active::after {
   width: 100%;
   transform-origin: right;
-  background: #0499cf;
+  background: #fff;
 }
 
 .navbar ul li a.active:hover:after,
 .navbar-mobile ul li a.active:hover::after {
   width: 100%;
   transform-origin: right;
-  background: #0499cf;
+  background: #fff;
 }
 
 .navbar ul li:hover a:hover::after,
 .navbar-mobile ul li a:hover::after {
   width: 100%;
   transform-origin: right;
-  background: #ffffff89;
+  background: #ffffffa8;
 }
 
 .nav-item {
@@ -178,12 +178,12 @@
   position: absolute;
   top: 100%;
   left: 0px;
-  background-color: #1c1c1c;
+  background-color: #0499cf;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 250px;
   display: none;
-  border: 1px solid #413f3e;
+  border: 1px solid #686564;
 }
 
 .nav-item:hover .dropdown {
@@ -249,7 +249,7 @@
 }
 
 .project-link.active {
-  color: #0499cf;
+  color: #fff;
   position: relative;
 }
 
@@ -274,16 +274,16 @@
 }
 .project-link.active:hover::after {
   
-  background: #0499cf;
+  background: #fff;
 }
 .project-link.active::after {
   content: "";
   position: absolute;
-  bottom: -1.85rem;
+  bottom: -1.8rem;
   left: 0;
   width: 100%;
   height: 4px;
-  background: #0499cf;
+  background: #fff;
   transition: all 0.3s ease;
   transform-origin: left;
 }

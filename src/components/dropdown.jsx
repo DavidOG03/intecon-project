@@ -28,7 +28,7 @@ const Dropdown = ({ onLinkClick }) => {
       <Link
         to="#"
         onClick={handleToggleClick}
-        className={`project-link hover:text-blue nav-link mx-4 font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px] hover:cursor-pointer flex items-center ${
+        className={`project-link hover:text-[#fff] nav-link mx-4 font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px] hover:cursor-pointer flex items-center ${
           isActive([
             "/highway-bridges-design",
             "/structural-design",
@@ -37,7 +37,7 @@ const Dropdown = ({ onLinkClick }) => {
           ])
             ? "active"
             : ""
-        } ${isDropdownVisible ? "text-blue" : "text-[#f0f0f0]"}`}
+        } ${isDropdownVisible ? "text-[#fff]" : "text-[#f0f0f0]"}`}
       >
         Projects
         <span className="ml-1">
@@ -49,8 +49,8 @@ const Dropdown = ({ onLinkClick }) => {
             className={` transition-all ${isDropdownVisible ? "rotate-180" : "rotate-0"}`}
           >
             <path
-              fill=""
-              stroke="currentColor"
+              fill="transparent"
+              stroke="#fff"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}

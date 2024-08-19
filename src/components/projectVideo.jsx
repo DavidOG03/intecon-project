@@ -43,9 +43,9 @@ const ProjectMedia = () => {
           />
         </div>
       ))} */}
-      <h3 className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]">
+      {/* <h3 className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]">
         Project Videos
-      </h3>
+      </h3> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 px-3">
         {mediaItems.map((mediaItem) => (
           <div key={mediaItem.id}>

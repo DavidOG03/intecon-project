@@ -29,7 +29,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-[#1c1c1c] border-b border-b-[#413F3E] px-3 lg:px-8 lg:py-2">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-blue px-3 lg:px-8 lg:py-2">
+      {/* border-b border-b-[#413F3E] */}
         <Link to="/" className="logo h-[34px] xl:h-[44px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
@@ -152,7 +153,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#413F3E] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 md:flex px-6 h-full hidden">
+        <div className="contact-info md:border-l-[0px] lg:border-l border-l-[#fff] flex-row lg:flex-col xl:flex-row justify-end items-stretch gap-3 xl:gap-6 md:flex px-6 h-full hidden">
           <div className="email flex flex-row items-center gap-2">
             <img
               src="/images/envelope.svg"
