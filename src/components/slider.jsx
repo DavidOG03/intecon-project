@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
+
 
 const HeroSlider = () => {
   var settings = {
@@ -45,14 +45,13 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px]  drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px]  drop-shadow-lg"
           >
-            <span className="block text-white text-[45px] md:text-[64px] lg:text-[74px]">
+            <span className="block text-white text-[42px] md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
             </span>
             Consulting Engineers
           </motion.h3>
-         
           </div>
         </div>
 
@@ -63,14 +62,13 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={true}
-            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
           >
-            <span className="block text-white text-[45px] md:text-[64px] lg:text-[74px]">
+            <span className="block text-white text-[42px] md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
             </span>
             Project Managers
           </motion.h3>
-         
           </div>
         </div>
 
@@ -81,14 +79,14 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
           >
-            <span className="block text-white text-[45px] md:text-[64px] lg:text-[74px]">
+            <span className="block text-white text-[42px] md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
             </span>
             Expert Solutions
           </motion.h3>
-          <Link to="/about" className="block px-4 py-2 border border-[#fff]">About us</Link>
+          
           </div>
         </div>
 
@@ -99,14 +97,13 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={true}
-            className="font-medium text-white text-[24px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[54px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
           >
-            <span className="block text-white text-[45px]  md:text-[64px] lg:text-[74px]">
+            <span className="block text-white text-[42px]  md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
             </span>
             Innovative Design
           </motion.h3>
-         
           </div>
         </div>
       </Slider>
