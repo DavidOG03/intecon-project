@@ -127,7 +127,7 @@ const HighwayBridges = () => {
         >
           Highway and bridges projects Gallery
         </motion.h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
           <ProjectCard
           img="/images/road-project.webp"
           title="Highway/Road Construction"
@@ -193,7 +193,7 @@ const HighwayBridges = () => {
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 1
-                  ? "bg-[#0499CF] text-white"
+                  ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
               }`}
               onClick={() => handleTabClick(1)}
@@ -203,7 +203,7 @@ const HighwayBridges = () => {
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 2
-                  ? "bg-[#0499CF] text-white"
+                  ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
               }`}
               onClick={() => handleTabClick(2)}
@@ -213,7 +213,7 @@ const HighwayBridges = () => {
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 3
-                  ? "bg-[#0499CF] text-white"
+                  ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
               }`}
               onClick={() => handleTabClick(3)}

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
 import { Link } from "react-router-dom";
+import ProjectCard from "../components/projectCard";
 
 const StructuralDesign = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -132,111 +133,40 @@ const StructuralDesign = () => {
         >
           Structural Design projects gallery
         </motion.h3>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structure1.png"
-              alt="structure-work"
-              className="w-full max-w-[768px] "
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structure2.png"
-              alt="structure-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structure3.png"
-              alt="structure-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structure4.png"
-              alt="structure-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/staircase.png"
-              alt="structure-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structure5.png"
-              alt="structure-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structural-engr.png"
-              alt="structure-work"
-              className="w-full max-w-[768px] "
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/structure6.png"
-              alt="structure-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+          
+          <ProjectCard
+          img="/images/structure1.png"
+          title="Structural Design Project"
+          description="Olive Court"/>
+          <ProjectCard
+          img="/images/structure2.png"
+          title="Olive Court"
+          description="Structural Design Project"/>
+          <ProjectCard
+          img="/images/structure3.png"
+          title="Faculty of Natural Sciences, Ajayi Crowther University, Oyo."
+          description="Structural Design Project"/>
+          <ProjectCard
+          img="/images/structure4.png"
+          title="Bowen University"
+          description="Structural Design Project"/>
+          <ProjectCard
+          img="/images/staircase.png"
+          title="Structural Design Project"
+          description="Olive Court"/>
+          <ProjectCard
+          img="/images/structure5.png"
+          title="Ajayi Crowther University Female Hostel"
+          description="Structural Design Project"/>
+          <ProjectCard
+          img="/images/structural-engr.png"
+          title="Structural Design Project"
+          description="Olive Court"/>
+          <ProjectCard
+          img="/images/structure6.png"
+          title="Structural Design Project"
+          description="Olive Court"/>
         </div>
       </section>
       <section className="structural-projects px-4 py-[60px]">
@@ -254,7 +184,7 @@ const StructuralDesign = () => {
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 1
-                  ? "bg-[#0499CF] text-white"
+                  ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
               }`}
               onClick={() => handleTabClick(1)}
@@ -264,7 +194,7 @@ const StructuralDesign = () => {
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 2
-                  ? "bg-[#0499CF] text-white"
+                  ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
               }`}
               onClick={() => handleTabClick(2)}
@@ -274,7 +204,7 @@ const StructuralDesign = () => {
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 3
-                  ? "bg-[#0499CF] text-white"
+                  ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
               }`}
               onClick={() => handleTabClick(3)}

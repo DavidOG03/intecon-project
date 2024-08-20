@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const HeroSlider = () => {
@@ -87,7 +88,7 @@ const HeroSlider = () => {
             </span>
             Expert Solutions
           </motion.h3>
-         
+          <Link to="/about" className="block px-4 py-2 border border-[#fff]">About us</Link>
           </div>
         </div>
 
