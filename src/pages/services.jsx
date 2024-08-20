@@ -47,7 +47,7 @@ const Services = () => {
           viewport= {{once:true}}
           ref={mainContentRef}
           tabIndex="-1"
-          className="text-[54px] md:text-[90px] font-medium text-black col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</motion.h3>
+          className="text-[54px] md:text-[64px] lg:text-[74px] font-medium text-black col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</motion.h3>
       <motion.div 
       variants={container}
       initial="hidden"

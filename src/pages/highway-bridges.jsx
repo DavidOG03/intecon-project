@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Quote from "../components/quote";
 import { Link } from "react-router-dom";
 import ProjectVideos from "../components/projectVideo";
+import ProjectCard from "../components/projectCard";
 
 const HighwayBridges = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -127,88 +128,42 @@ const HighwayBridges = () => {
           Highway and bridges projects Gallery
         </motion.h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/road-project.webp"
-              alt="road-work"
-              className="w-full"
-            />
-            <div className="project-pic-description">
-              
-            </div>
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/road-project-2.webp"
-              alt="road-work"
-              className="w-full"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/road-project-3.webp"
-              alt="road-work"
-              className="w-full"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/road-project-4.webp"
-              alt="road-work"
-              className="w-full"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/road-project-5.webp"
-              alt="road-work"
-              className="w-full"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/quarry-3.webp"
-              alt="road-work"
-              className="w-full"
-            />
-            
-          </motion.div>
+          <ProjectCard
+          img="/images/road-project.webp"
+          title="Highway/Road Construction"
+          description="Construction Supervision Of Iseyin Ogbomosho Road"
+          
+          />
+          <ProjectCard
+          img="/images/road-project-2.webp"
+          title="Highway/Road Construction"
+          description="Construction Supervision Of Iseyin Ogbomosho Road"
+          
+          />
+          <ProjectCard
+          img="/images/road-project-3.webp"
+          title="Highway/Road Construction"
+          description="Construction Supervision Of Iseyin Ogbomosho Road"
+          
+          />
+          <ProjectCard
+          img="/images/road-project-4.webp"
+          title="Highway/Road Construction"
+          description="Construction Supervision Of Iseyin Ogbomosho Road"
+          
+          />
+          <ProjectCard
+          img="/images/road-project-5.webp"
+          title="Highway/Road Construction"
+          description="Construction Supervision Of Iseyin Ogbomosho Road"
+          
+          />
+          <ProjectCard
+          img="/images/quarry-3.webp"
+          title="Highway/Road Construction"
+          description="Construction Supervision Of Iseyin Ogbomosho Road"
+          
+          />
           {/* <motion.div
             variants={fadein}
             initial="hidden"

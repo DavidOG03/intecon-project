@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
 import { Link } from "react-router-dom";
+import ProjectCard from "../components/projectCard";
 
 const Ndt = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -132,111 +133,47 @@ const Ndt = () => {
         >
           Non-destructive Testing Projects gallery
         </motion.h3>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-11.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-1.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-4.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-3.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-15.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-12.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px] "
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-8.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic h-auto overflow-hidden"
-          >
-            <img
-              src="/images/qaqc-14.webp"
-              alt="non-destructive Testingwork"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
+        <div className="w-full grid grid-flow-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+          <ProjectCard
+            img="/images/qaqc-11.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-1.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-4.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-3.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-15.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-12.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-8.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
+          <ProjectCard
+            img="/images/qaqc-14.webp"
+            title="Quantity Assurance and Control"
+            description="Structural integrity assessment of alapere pedestrian bridge"
+          />
         </div>
       </section>
       <section className="ndt-projects px-4 py-[60px]">
@@ -667,21 +604,36 @@ const Ndt = () => {
         <div className="links flex flex-col justify-center items-center md:flex-row gap-2">
           <Link
             to="/highway-bridges-design"
-            className="goto flex max-w-auto bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
+            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
           >
-            Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Highway and Bridges Design{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex max-w-auto bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Structural Design{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
           <Link
             to="/geosciences"
-            className="goto flex max-w-auto bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Geosciences{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
         </div>
       </section>

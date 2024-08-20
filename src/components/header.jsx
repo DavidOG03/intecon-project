@@ -29,12 +29,12 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-blue px-3 lg:px-8 lg:py-2">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[100] bg-blue px-3 py-2 lg:px-8 lg:py-0">
       {/* border-b border-b-[#413F3E] */}
-        <Link to="/" className="logo h-[34px] xl:h-[44px] object-cover">
+        <Link to="/" className="logo h-[44px] xl:h-[44px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />
         </Link>
-        <nav className="navbar desktop hidden lg:block ">
+        <nav className="navbar desktop hidden lg:block lg:py-2 ">
           <ul className="capitalize text-[#fff] pt-2 pb-2 px-6">
             <li className="inline-block mx-2 ">
               <NavLink
@@ -90,9 +90,9 @@ const Header = () => {
         </nav>
 
         <nav
-          className={`navbar-mobile fixed bg-[#1c1c1c] transition-all ease-in-out duration-500 lg:hidden top-0 ${
+          className={`navbar-mobile fixed bg-blue transition-all ease-in-out duration-500 lg:hidden top-0 shadow-2xl ${
             isOpen ? "right-0" : "-right-full"
-          } h-[100vh] w-[65%] border-l border-l-[#413F3E]`}
+          } h-[100vh] w-[65%] border-l border-l-blue`}
           ref={navbarRef}
         >
           <ul className="uppercase text-[#fff] flex flex-col justify-center items-start h-full">
@@ -187,8 +187,9 @@ const Header = () => {
           size={20}
           toggled={isOpen}
           toggle={setOpen}
-          color="#0499CF"
+          color="#fff"
         />
+        {/* #0499CF */}
         </div>
         
       </header>

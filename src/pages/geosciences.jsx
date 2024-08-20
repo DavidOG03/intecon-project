@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Quote from "../components/quote";
 import { Link } from "react-router-dom";
+import ProjectCard from "../components/projectCard";
 
 const Geosciences = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -145,7 +146,7 @@ const Geosciences = () => {
           Geoscience projects gallery
         </motion.h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-          <motion.div
+          {/* <motion.div
             variants={fadein}
             initial="hidden"
             whileInView="visible"
@@ -157,85 +158,44 @@ const Geosciences = () => {
               alt="geo-work"
               className="w-full max-w-[768px] "
             />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/NAHCO_2.webp"
-              alt="geo-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/NAHCO_3.webp"
-              alt="geo-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/NAHCO_4.webp"
-              alt="geo-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/NAHCO_5.webp"
-              alt="geo-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/NAHCO_6.webp"
-              alt="geo-work"
-              className="w-full max-w-[768px]"
-            />
-          </motion.div>
-          <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img
-              src="/images/NAHCO_7.webp"
-              alt="geo-work"
-              className="w-full max-w-[768px] "
-            />
-          </motion.div>
+          </motion.div> */}
+          <ProjectCard
+            img="/images/geosciences.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
+
+          <ProjectCard
+            img="/images/NAHCO_2.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
+          <ProjectCard
+            img="/images/NAHCO_3.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
+
+          <ProjectCard
+            img="/images/NAHCO_4.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
+          <ProjectCard
+            img="/images/NAHCO_5.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
+          <ProjectCard
+            img="/images/NAHCO_6.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
+          <ProjectCard
+            img="/images/NAHCO_7.webp"
+            title="Geosciences Project"
+            description="Consultancy services for the construction of NDLEA-GIZ k9 unit office building  at Muritala Mohammed Airport"
+          />
         </div>
       </section>
       <section className="geosciences-projects px-4 py-[60px]">
@@ -658,21 +618,36 @@ const Geosciences = () => {
         <div className="links flex flex-col justify-center items-center md:flex-row md:justify-center gap-2">
           <Link
             to="/highway-bridges-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
+            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
           >
-            Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Highway and Bridges Design{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Structural Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Structural Design{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Non-destructive Testing{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
         </div>
       </section>

@@ -110,7 +110,7 @@
 
 .navbar ul li a:hover,
 .navbar-mobile ul li a:hover {
-  color: #ffffff89;
+  color: #ffffffe3;
 }
 .navbar ul li a.active,
 .navbar-mobile ul li a.active {
@@ -178,7 +178,7 @@
   position: absolute;
   top: 100%;
   left: 0px;
-  background-color: #0499cf;
+  background-color: #035891;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 250px;
@@ -304,7 +304,7 @@ h6:focus {
 
 .goto:hover{
   cursor: pointer;
-  background: #0499cfce;
+  background: #035891ce;
  
 }
 
@@ -314,6 +314,14 @@ h6:focus {
 
 .goto:hover img{
   rotate: 45deg;
+}
+
+.project-pic:hover img{
+  scale:1.1;
+}
+
+.project-pic:hover .media-content{
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -337,12 +345,12 @@ h6:focus {
     top: 100%;
     left: 0%;
     /* translate: -50% 0; */
-    background-color: #1c1c1c;
+    background-color: #035891;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     /* z-index: 1; */
     width: full;
     display: none;
-    border: 1px solid #413f3e;
+    border: 1px solid #ccc7c5;
   }
 
   .dropdown li .project::after {
@@ -379,7 +387,7 @@ h6:focus {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #0499cf;
+    background: #fff;
     transition: all 0.3s ease;
     transform-origin: left;
   }

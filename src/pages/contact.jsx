@@ -39,7 +39,7 @@ export default function Contact() {
             viewport={{ once: true }}
             ref={mainContentRef}
             tabIndex="-1"
-            className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[68px] lg:text-[90px] text-left leading-[1] font-medium mb-6 focus:outline-none"
+            className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[64px] lg:text-[74px] text-left leading-[1] font-medium mb-6 focus:outline-none"
           >
             Let's work together
           </motion.h3>
