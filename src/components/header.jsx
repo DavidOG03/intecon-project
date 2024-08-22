@@ -175,7 +175,7 @@ const Header = () => {
               className="inline-block w-3"
             />{" "}
             <a href="tel:+2348033242026" className=" text-[#fff] font-inter text-[11px] xl:text-[13px]">
-              Call +234 803 324 2026
+              Call +234 803 472 5942
             </a>
             <a href="tel:+2348033283101" className=" text-[#fff] font-inter text-[11px] xl:text-[13px]">
               +234 803 328 3101
