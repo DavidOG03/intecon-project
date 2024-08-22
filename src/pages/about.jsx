@@ -62,7 +62,7 @@ const About = () => {
       </section>
 
       <section className="mission px-3 lg:px-8 relative py-[20px] pb-[60px] md:flex items-center gap-[60px] w-full">
-      <img src="/images/intecon-thick.png" alt="intecon"  className="absolute z-1 scale-50 -translate-x-[30%] translate-y-[20%]"/>
+      
 
         <div className="text pb-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
@@ -100,7 +100,7 @@ const About = () => {
 
       <img src="/images/intecon-thick.png" alt="intecon"  className="absolute z-1 translate-x-[50%]"/>
 
-      <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[80px] md:flex md:flex-row-reverse">
+      <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[80px] md:flex md:flex-row-reverse min-h-[100vh]" >
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -132,7 +132,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="overview px-6 relative py-[80px] md:flex items-center gap-[60px] w-full">
+      <section className="overview px-6 relative py-[80px] md:flex items-center gap-[60px] w-full min-h-[100vh">
         
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
@@ -176,7 +176,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-6 py-[60px] lg:py-[80px]">
+      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-6 py-[60px] lg:py-[80px] min-h-[100vh">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.p
             variants={fadeup}
@@ -221,7 +221,7 @@ const About = () => {
           className="image-box w-full basis-[50%] flex flex-col gap-4 h-[320px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[6px]  "
         ></motion.div>
       </section>
-      <section className="institutions py-[60px] px-6 border-b border-t border-b-[#c9c7c7] border-t-[#c9c7c7]">
+      <section className="institutions py-[60px] px-6 border-b border-t border-b-[#f1f1f1] border-t-[#c9c7c7] min-h-[100vh">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -231,16 +231,16 @@ const About = () => {
         >
           Statutory Institutions Registration
         </motion.h3>
-        <div className="flex flex-row flex-wrap md:flex-nowrap justify-center items-stretch gap-12 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-6 place-items-end">
           <motion.div
             variants={fadeup}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className=" cac flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+            className=" cac flex flex-col justify-between items-center gap-4"
           >
             <img
-              className="w-[120px]"
+              className="object-cover"
               src="/images/cac.png"
               alt="corporate Affairs Commission logo"
             />
@@ -253,7 +253,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className=" coren flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+            className=" coren flex flex-col justify-between items-center gap-4 "
           >
             <img
               className="w-[200px]"
@@ -269,10 +269,10 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className=" acen flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+            className=" acen flex flex-col justify-between items-center gap-4 "
           >
             <img
-              className="w-[120px]"
+              className="object-cover"
               src="/images/acen.webp"
               alt="Association for Consulting Engineering Nigeria logo"
             />
@@ -285,7 +285,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className=" dpr flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+            className=" dpr flex flex-col justify-between items-center gap-4 "
           >
             <img
               className="w-[200px]"
@@ -301,10 +301,10 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className=" nnpc flex flex-col justify-between items-center gap-4 h-[150px] md:h-[200px]"
+            className=" nnpc flex flex-col justify-between items-center gap-4 "
           >
             <img
-              className="w-[120px]"
+              className="object-cover"
               src="/images/nnpc.webp"
               alt="Nigerian National Petroleum Corporation"
             />
@@ -314,7 +314,7 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-      <section className="directors py-[120px] border-b border-b-[#c9c7c7]">
+      <section className="directors py-[120px] border-b border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -329,7 +329,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="team flex flex-row flex-wrap justify-center items-start gap-8 px-6"
+          className="team grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-4 px-3 md:px-6"
         >
           <Director
             img="/images/engr-ajibola.webp"
@@ -368,7 +368,7 @@ const About = () => {
           />
         </motion.div>
       </section>
-      <section className="clients py-[69px]">
+      <section className="clients py-[69px] border border-transparent border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"

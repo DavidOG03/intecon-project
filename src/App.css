@@ -183,7 +183,7 @@
   z-index: 1;
   min-width: 250px;
   display: none;
-  border: 1px solid #686564;
+  border: 1px solid #f1f1f1;
 }
 
 .nav-item:hover .dropdown {
@@ -358,7 +358,7 @@ h6:focus {
     /* z-index: 1; */
     width: full;
     display: none;
-    border: 1px solid #ccc7c5;
+    border: 1px solid #f1f1f1;
   }
 
   .dropdown li .project::after {

@@ -21,23 +21,23 @@ const Director = ({ img, name, role, office, degree }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="director flex flex-col flex-grow min-w-[300px] max-w-[400px] justify-center items-start mt-6 overflow-hidden"
+      className="director flex flex-col flex-grow w-full sm:max-w-[270px] justify-center items-start mt-6 overflow-hidden"
     >
-      <div className="image-box w-full bg-[#f1f1f1] min-h-[519px] flex justify-end items-center flex-col">
+      <div className="image-box w-full bg-[#f1f1f1] min-h-[200px] flex justify-end items-center flex-col">
         {img && (
-          <img src={img} alt={name} className="w-full h-full object-cover" />
+          <img src={img} alt={name} className="w-full h-full object-cover min-h-[300px]" />
         )}
       </div>
-      <h4 className="text-[2rem] font-medium capitalize text-black font-jakarta tracking-tight leading-relaxed pt-4">
+      <h4 className=" text-base font-medium capitalize text-black font-jakarta tracking-tight leading-relaxed pt-4">
         {name}
       </h4>
-      <p className="text-[18px] font-normal text-[#1c1c1ce5] capitalize font-jakarta">
+      <p className="text-[14px] font-normal text-[#1c1c1ce5] capitalize font-jakarta">
         {role}
       </p>
-      <p className="text-[18px] font-light text-[#1c1c1ccb] uppercase mt-3 font-inter">
+      <p className="text-[12px] font-light text-[#1c1c1ccb] uppercase mt-3 font-inter">
         {office}
       </p>
-      <p className="text-base font-light text-[#1c1c1ca8] capitalize font-inter">
+      <p className=" text-[12px] font-light text-[#1c1c1ca8] capitalize font-inter">
         {degree}
       </p>
     </motion.div>
