@@ -5,6 +5,7 @@ import Quote from "../components/quote";
 import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import ScrollToTopButton from "../components/scrolltotopbtn";
 
 const fadeup = {
   hidden: { opacity: 0, y: 10 },
@@ -411,6 +412,7 @@ const About = () => {
         </div>
       </section>
       <Quote />
+      <ScrollToTopButton/>
     </main>
   );
 };

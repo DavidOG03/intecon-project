@@ -137,8 +137,8 @@ const StructuralDesign = () => {
           
           <ProjectCard
           img="/images/structure1.png"
-          title="Structural Design Project"
-          description="Olive Court"/>
+          title="Ogbonna School Project"
+          description="Structural Design Project"/>
           <ProjectCard
           img="/images/structure2.png"
           title="Olive Court"
@@ -149,24 +149,24 @@ const StructuralDesign = () => {
           description="Structural Design Project"/>
           <ProjectCard
           img="/images/structure4.png"
-          title="Bowen University"
+          title="Bowen University Library Complex"
           description="Structural Design Project"/>
           <ProjectCard
           img="/images/staircase.png"
-          title="Structural Design Project"
-          description="Olive Court"/>
+          title="Heritage Mall, Ibadan"
+          description="Structural Design Project"/>
           <ProjectCard
           img="/images/structure5.png"
-          title="Ajayi Crowther University Female Hostel"
+          title="Ajayi Crowther University Female Hostel Block"
           description="Structural Design Project"/>
           <ProjectCard
           img="/images/structural-engr.png"
-          title="Structural Design Project"
-          description="Olive Court"/>
+          title="Ace Estate"
+          description="Structural Design Project"/>
           <ProjectCard
           img="/images/structure6.png"
-          title="Structural Design Project"
-          description="Olive Court"/>
+          title="Cargo terminal federal airport, Ilorin"
+          description="Structural Design Project"/>
         </div>
       </section>
       <section className="structural-projects px-4 py-[60px]">
