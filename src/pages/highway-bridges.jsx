@@ -59,7 +59,7 @@ const HighwayBridges = () => {
           viewport={{ once: true }}
           ref={mainContentRef}
           tabIndex="-1"
-          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[74px] text-center md:text-left leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[64px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
           We have <span className="text-blue">designed road networks</span> that
           meet <span className="text-blue">modern day needs</span> for both{" "}
@@ -127,7 +127,7 @@ const HighwayBridges = () => {
         >
           Highway and bridges projects Gallery
         </motion.h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <ProjectCard
           img="/images/road-project.webp"
           title="Highway/Road Construction"
@@ -189,7 +189,7 @@ const HighwayBridges = () => {
           Past Highway and Bridges Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row relative">
-          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[49px] left-0 z-50 bg-white py-4">
+          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[90px] left-0 z-50 bg-white py-4">
             <button
               className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 1
@@ -605,7 +605,7 @@ const HighwayBridges = () => {
       </section>
       <section className="py-[20px] text-center px-3 lg:px-8">
         <h3 className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]">
-          Explore Other Project Portfolio
+          Explore Other Projects Portfolio
         </h3>
         <div className="links flex flex-col justify-center items-center md:flex-row gap-2">
           <Link

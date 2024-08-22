@@ -324,6 +324,14 @@ h6:focus {
   bottom: 0;
 }
 
+.service:hover svg{
+  display: block;
+}
+
+.service:hover .image-box img{
+  scale: 0.95;
+}
+
 @media screen and (max-width: 768px) {
   .slick-dots li {
     margin-inline: 0.4rem;
