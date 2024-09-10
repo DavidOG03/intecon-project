@@ -12,6 +12,7 @@
 
 .slick-arrow {
   position: absolute;
+  z-index: 888;
 }
 
 .slick-prev {
@@ -79,6 +80,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  z-index: 99;
 }
 .slick-slide .second-image {
   background: linear-gradient(to bottom, #11121325, #11121336, #0b0b0c2d),
@@ -86,6 +88,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 99;
+
 }
 .slick-slide .third-image {
   background: linear-gradient(to bottom, #11121325, #11121336, #0b0b0c2d),
@@ -93,6 +97,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 60%;
+  z-index: 99;
+
 }
 .slick-slide .fourth-image {
   background: linear-gradient(to bottom, #11121349, #1112135d, #0b0b0c2d),
@@ -100,6 +106,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 5% bottom;
+  z-index: 99;
+
 }
 
 .navbar ul li a,
@@ -317,7 +325,7 @@ h6:focus {
 }
 
 .project-pic:hover img{
-  scale:1.1;
+  scale:0.95;
 }
 
 .project-pic:hover .media-content{

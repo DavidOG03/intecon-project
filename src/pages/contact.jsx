@@ -1,9 +1,20 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import MapComponent from "../components/map";
 import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
+import emailjs from 'emailjs-com';  // Install this package if you want to use EmailJS
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    telephone: '',
+    message: ''
+  });
+
+  const [formStatus, setFormStatus] = useState({ submitting: false, success: false, error: false });
+
   const fadeup = {
     hidden: { opacity: 0, y: 10 },
     visible: {
@@ -26,8 +37,32 @@ export default function Contact() {
     }
   }, []);
 
-  const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
-  const companyName = "Intecon Partnershipt Limited";
+  // Handle input change
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [id]: value }));
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormStatus({ submitting: true, success: false, error: false });
+
+    // Example using EmailJS
+    emailjs.send('service_tbha9vf', 'template_4e6qxfp', formData, '1lo5s4O9sOSYeI011')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setFormStatus({ submitting: false, success: true, error: false });
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        setFormStatus({ submitting: false, success: false, error: true });
+      });
+  };
+
+  // const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
+  // const companyName = "Intecon Partnership Limited";
+
   return (
     <main className="contact-page py-[60px] bg-[#fff] ">
       <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-[60px] pb-[60px]">
@@ -110,7 +145,7 @@ export default function Contact() {
           </motion.div>
         </div>
         <form
-          action=""
+          onSubmit={handleSubmit}
           className="contact-form grid grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start font-inter mt-4"
         >
           <motion.div
@@ -128,6 +163,8 @@ export default function Contact() {
               type="text"
               placeholder="Enter your full name"
               id="name"
+              value={formData.name}
+              onChange={handleInputChange}
               required
             />
           </motion.div>
@@ -146,6 +183,8 @@ export default function Contact() {
               type="email"
               placeholder="Enter your Email Address"
               id="email"
+              value={formData.email}
+              onChange={handleInputChange}
               required
             />
           </motion.div>
@@ -164,6 +203,8 @@ export default function Contact() {
               type="text"
               placeholder="Enter your Company Name"
               id="company"
+              value={formData.company}
+              onChange={handleInputChange}
               required
             />
           </motion.div>
@@ -182,6 +223,8 @@ export default function Contact() {
               type="phone"
               placeholder="Enter your Telephone Number"
               id="telephone"
+              value={formData.telephone}
+              onChange={handleInputChange}
               required
             />
           </motion.div>
@@ -202,14 +245,20 @@ export default function Contact() {
               cols="30"
               rows="5"
               placeholder="Enter Your Message"
+              value={formData.message}
+              onChange={handleInputChange}
+              required
             ></textarea>
           </motion.div>
           <button
             type="submit"
             className="font-inter font-semibold text-base py-3 px-6 md:py-6 md:px-8 rounded-[48px] border border-transparent w-full  transition ease-in text-[#fff] bg-[#1c1c1c] hover:bg-transparent hover:border hover:border-[#1c1c1c] hover:text-[#1c1c1c] md:col-start-1 md:col-end-3 max-w-[200px]"
+            disabled={formStatus.submitting}
           >
-            Send Message
+            {formStatus.submitting ? "Sending..." : "Send Message"}
           </button>
+          {formStatus.success && <p className="text-green-500 mt-4">Message sent successfully!</p>}
+          {formStatus.error && <p className="text-red-500 mt-4">Failed to send the message. Please try again.</p>}
         </form>
       </section>
       {/* <MapComponent lat={companyCoordinates.lat} lng={companyCoordinates.lng} companyName={companyName}/> */}

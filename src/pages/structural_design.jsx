@@ -180,9 +180,9 @@ const StructuralDesign = () => {
           Past Structural Design Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px] relative">
-          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-4">
+          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -192,7 +192,7 @@ const StructuralDesign = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -202,7 +202,7 @@ const StructuralDesign = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"

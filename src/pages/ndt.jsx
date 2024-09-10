@@ -78,7 +78,7 @@ const Ndt = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="image-box w-full h-full max-h-[420px] xl:max-h-none overflow-hidden rounded-[12px]"
+          className="image-box w-full h-full max-h-[420px] overflow-hidden rounded-[12px]"
         >
           <img
             src="/images/qaqc-8.webp"
@@ -133,7 +133,7 @@ const Ndt = () => {
         >
           Non-destructive Testing Projects gallery
         </motion.h3>
-        <div className="w-full grid grid-flow-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="w-full grid grid-flow-dense grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           <ProjectCard
             img="/images/qaqc-11.webp"
             title="Quantity Assurance and Control"
@@ -187,9 +187,9 @@ const Ndt = () => {
           Past Structural Design Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px] relative">
-          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-4">
+          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -199,7 +199,7 @@ const Ndt = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -209,7 +209,7 @@ const Ndt = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-12 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
