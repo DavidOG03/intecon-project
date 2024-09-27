@@ -22,7 +22,7 @@ const YouTubeVideos = () => {
   }, []);
 
   return (
-    <div className="videos-container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-4 px-3 md:px-6 pt-8 md:pt-[120px] bg-white h-full">
+    <div className="videos-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4 px-3 md:px-6 pt-8 md:pt-[120px] bg-white h-full">
       {videos.map((video) => (
         <div key={video.id.videoId} className="video-item">
           <iframe
@@ -33,7 +33,7 @@ const YouTubeVideos = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-          <h3 className='font-jakarta font-semibold text-[24px]'>{video.snippet.title}</h3>
+          <h3 className='font-jakarta font-semibold text-[21px] tracking-tight'>{video.snippet.title}</h3>
           <p className='font-inter font-normal text-base'>{video.snippet.description}</p>
         </div>
       ))}
