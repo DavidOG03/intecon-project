@@ -21,9 +21,9 @@ const Director = ({ img, name, role, office, degree }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="director flex flex-col flex-grow w-full sm:max-w-[270px] justify-center items-start mt-6 overflow-hidden"
+      className="director flex flex-col flex-grow w-full sm:max-w-[270px] justify-center items-start overflow-hidden"
     >
-      <div className="image-box w-full bg-[#f1f1f1] min-h-[200px] flex justify-end items-center flex-col">
+      <div className="image-box w-full bg-[#f1f1f1] min-h-[300px] flex justify-end items-center flex-col">
         {img && (
           <img src={img} alt={name} className="w-full h-full object-cover min-h-[300px]" />
         )}

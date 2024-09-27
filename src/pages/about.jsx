@@ -329,7 +329,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="team grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-4 px-3 md:px-6"
+          className="team grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-4 px-3 md:px-6"
         >
           <Director
             img="/images/engr-ajibola.webp"

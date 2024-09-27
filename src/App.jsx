@@ -14,6 +14,7 @@ import HighwayBridges from './pages/highway-bridges';
 import ScrollToTop from './components/scrollToTop';
 import './App.css'
 import AdminPage from './admin/admin';
+import YouTubeVideos from './pages/ytvideos';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/structural-design" element={<StructuralDesign />} />
       <Route path="/geosciences" element={<Geosciences />} />
       <Route path="/non-destructive-testing" element={<Ndt />} />
+      <Route path="/youtube-videos" element={<YouTubeVideos />} />
       {/* <Route path="/admin" element={<AdminPage />} /> */}
     </Routes>
     <Footer/>
