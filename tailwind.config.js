@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         // "blue":"#0499CF",
-        "blue":"#035891",
+        "blue":"#2196F3",
         // "lightblue": "#0499CF89",
-        "lightblue": "#03589189",
+        "lightblue": "#2196F389",
         "black": "#1c1c1c",
         "textblack": "rgb(77, 70, 74)",
         "blackish": "#1c1c1c50",
