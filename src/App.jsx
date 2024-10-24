@@ -13,7 +13,6 @@ import Ndt from './pages/ndt';
 import HighwayBridges from './pages/highway-bridges';
 import ScrollToTop from './components/scrollToTop';
 import './App.css'
-import AdminPage from './admin/admin';
 import YouTubeVideos from './pages/ytvideos';
 
 function App() {
