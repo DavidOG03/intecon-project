@@ -23,7 +23,7 @@ const YouTubeVideos = () => {
   }, []);
 
   return (
-    <div className="videos-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4 px-3 md:px-6 pt-8 md:pt-[120px] bg-white h-full">
+    <div className="videos-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4 px-3 md:px-6 pt-[80px] md:pt-[120px] bg-white h-full">
       {videos.map((video) => (
         <div key={video.id.videoId} className="video-item">
           <iframe
