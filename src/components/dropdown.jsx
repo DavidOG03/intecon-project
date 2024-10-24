@@ -60,7 +60,7 @@ const Dropdown = ({ onLinkClick }) => {
         </span>
       </Link>
       {isDropdownVisible && (
-        <ul className="dropdown bg-[#]">
+        <ul className="dropdown bg-blue">
           <li
             className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]"
             onClick={onLinkClick}
