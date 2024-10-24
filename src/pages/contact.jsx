@@ -49,7 +49,7 @@ export default function Contact() {
     setFormStatus({ submitting: true, success: false, error: false });
 
     // Example using EmailJS
-    emailjs.send('service_tbha9vf', 'template_4e6qxfp', formData, '1lo5s4O9sOSYeI011')
+    emailjs.send('service_ex5zrnj', 'template_4e6qxfp', formData, '1lo5s4O9sOSYeI011')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setFormStatus({ submitting: false, success: true, error: false });
