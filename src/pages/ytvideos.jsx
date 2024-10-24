@@ -9,6 +9,7 @@ const YouTubeVideos = () => {
       try {
         const channelId = import.meta.env.VITE_YOUTUBE_CHANNEL_ID;
         const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
+        
         const response = await axios.get(
           `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=10&type=video&key=${apiKey}`
         );

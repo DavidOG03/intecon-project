@@ -60,7 +60,7 @@ const Dropdown = ({ onLinkClick }) => {
         </span>
       </Link>
       {isDropdownVisible && (
-        <ul className="dropdown ">
+        <ul className="dropdown bg-[#]">
           <li
             className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]"
             onClick={onLinkClick}
@@ -91,6 +91,14 @@ const Dropdown = ({ onLinkClick }) => {
           >
             <NavLink to="/non-destructive-testing" className="project">
               Non-Destructive Testing
+            </NavLink>
+          </li>
+          <li
+            className="dropdown-item inline-block ml-2 text-left font-jakarta text-[12px] xl:text-[13px] tracking-[0.6px]"
+            onClick={onLinkClick}
+          >
+            <NavLink to="/youtube-videos" className="project">
+              Our Videos
             </NavLink>
           </li>
         </ul>
