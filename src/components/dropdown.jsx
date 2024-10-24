@@ -98,7 +98,7 @@ const Dropdown = ({ onLinkClick }) => {
             onClick={onLinkClick}
           >
             <NavLink to="/youtube-videos" className="project">
-              Our Videos
+             Project Videos
             </NavLink>
           </li>
         </ul>
