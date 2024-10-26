@@ -2,18 +2,65 @@ import React, { useEffect, useRef, useState } from "react";
 import MapComponent from "../components/map";
 import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
-import emailjs from 'emailjs-com';  // Install this package if you want to use EmailJS
+import emailjs from "emailjs-com"; // Install this package if you want to use EmailJS
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    telephone: '',
-    message: ''
+    name: "",
+    email: "",
+    company: "",
+    telephone: "",
+    message: "",
   });
 
-  const [formStatus, setFormStatus] = useState({ submitting: false, success: false, error: false });
+  const [formStatus, setFormStatus] = useState({
+    submitting: false,
+    success: false,
+    error: false,
+  });
+  const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    if (mainContentRef.current) {
+      mainContentRef.current.focus();
+    }
+  }, []);
+
+  useEffect(() => {
+    if (formStatus.success || formStatus.error) {
+      const timer = setTimeout(() => {
+        setFormStatus({ submitting: false, success: false, error: false });
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [formStatus.success, formStatus.error]);
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [id]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormStatus({ submitting: true, success: false, error: false });
+
+    emailjs
+      .send(
+        "service_ex5zrnj",
+        "template_4e6qxfp",
+        formData,
+        "1lo5s4O9sOSYeI011"
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setFormStatus({ submitting: false, success: true, error: false });
+      })
+      .catch((err) => {
+        console.error("FAILED...", err);
+        setFormStatus({ submitting: false, success: false, error: true });
+      });
+  };
 
   const fadeup = {
     hidden: { opacity: 0, y: 10 },
@@ -27,37 +74,6 @@ export default function Contact() {
         delay: 0.2,
       },
     },
-  };
-
-  const mainContentRef = useRef(null);
-
-  useEffect(() => {
-    if (mainContentRef.current) {
-      mainContentRef.current.focus();
-    }
-  }, []);
-
-  // Handle input change
-  const handleInputChange = (e) => {
-    const { id, value } = e.target;
-    setFormData((prevState) => ({ ...prevState, [id]: value }));
-  };
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus({ submitting: true, success: false, error: false });
-
-    // Example using EmailJS
-    emailjs.send('service_ex5zrnj', 'template_4e6qxfp', formData, '1lo5s4O9sOSYeI011')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setFormStatus({ submitting: false, success: true, error: false });
-      })
-      .catch((err) => {
-        console.error('FAILED...', err);
-        setFormStatus({ submitting: false, success: false, error: true });
-      });
   };
 
   // const companyCoordinates = { lat: 7.376736, lng: 3.939786 };
@@ -87,9 +103,8 @@ export default function Contact() {
             className="text-base text-[#1c1c1c] font-inter max-w-[520px]"
           >
             Feel free to talk to our Business Department at any time you please
-            using one of the below
-            instant messaging programs. Please be patient while waiting for
-            response.
+            using one of the below instant messaging programs. Please be patient
+            while waiting for response.
             <strong className="block mt-6">
               Phone General Inquiries:
               <a href="tel:+2348036718778">+234 803 671 8778</a>
@@ -146,7 +161,7 @@ export default function Contact() {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="contact-form grid grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start font-inter mt-4"
+          className="contact-form grid relative grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start font-inter mt-4"
         >
           <motion.div
             variants={fadeup}
@@ -257,8 +272,15 @@ export default function Contact() {
           >
             {formStatus.submitting ? "Sending..." : "Send Message"}
           </button>
-          {formStatus.success && <p className="text-green-500 mt-4">Message sent successfully!</p>}
-          {formStatus.error && <p className="text-red-500 mt-4">Failed to send the message. Please try again.</p>}
+
+          {formStatus.success && (
+            <p className="text-green-500 mt-4 absolute bottom-4 right-4">Message sent successfully!</p>
+          )}
+          {formStatus.error && (
+            <p className="text-red-500 mt-4 absolute bottom-4 right-4">
+              Failed to send the message. Please try again.
+            </p>
+          )}
         </form>
       </section>
       {/* <MapComponent lat={companyCoordinates.lat} lng={companyCoordinates.lng} companyName={companyName}/> */}

@@ -47,7 +47,13 @@ const Services = () => {
           viewport= {{once:true}}
           ref={mainContentRef}
           tabIndex="-1"
-          className="text-[54px] md:text-[64px] lg:text-[74px] font-medium text-black col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-6">Our Services</motion.h3>
+          className="text-[54px] md:text-[64px] lg:text-[74px] font-medium text-black col-start-1 col-end-4 font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-3">Our Services</motion.h3>
+          <motion.p 
+           variants={fadeup}
+           initial="hidden"
+           whileInView = "visible"
+           viewport= {{once:true}}
+           className='text-base md:text-[18px] font-inter font-normal tracking-tight leading-tight mb-9 pl-4 md:pl-8'>Take a look at the services we offer. We're here to help make your project a success.</motion.p>
       <motion.div 
       variants={container}
       initial="hidden"
