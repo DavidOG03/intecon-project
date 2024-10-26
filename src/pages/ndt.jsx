@@ -131,7 +131,7 @@ const Ndt = () => {
           viewport={{ once: true }}
           className="text capitalize font-jakarta font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-tight mb-6  mx-auto max-w-[768px]"
         >
-          Non-destructive Testing Projects gallery
+          Projects gallery
         </motion.h3>
         <div className="w-full grid grid-flow-dense grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           <ProjectCard

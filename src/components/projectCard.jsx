@@ -22,13 +22,13 @@ const ProjectCard = ({ img, title, description }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="project-pic relative overflow-hidden transition-all duration-500 "
+      className="project-pic relative overflow-hidden transition-all duration-500"
     >
       {img && (
         <img
           src={img}
           alt={description}
-          className="w-full scale-110 transition-all duration-700 object-cover"
+          className="w-full scale-110 transition-all duration-700 object-cover h-full"
         />
       )}
       <div className="media-content bg-gradient-to-t from-blue via-lightblue to-transparent text-white absolute -bottom-[10rem] left-0 transition-all duration-300 w-full pt-[0.5rem] md:pt-[1.5rem]">

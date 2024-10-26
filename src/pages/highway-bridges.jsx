@@ -125,7 +125,7 @@ const HighwayBridges = () => {
           viewport={{ once: true }}
           className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[720px]"
         >
-          Highway and bridges projects Gallery
+         Projects gallery
         </motion.h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <ProjectCard

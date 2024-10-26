@@ -131,7 +131,7 @@ const StructuralDesign = () => {
           viewport={{ once: true }}
           className="text capitalize font-jakarta font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[620px]"
         >
-          Structural Design projects gallery
+          Projects gallery
         </motion.h3>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           

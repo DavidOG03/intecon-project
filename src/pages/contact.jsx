@@ -274,7 +274,7 @@ export default function Contact() {
           </button>
 
           {formStatus.success && (
-            <p className="text-green-500 mt-4 absolute bottom-4 right-4">Message sent successfully!</p>
+            <p className="text-green-500 mt-4 absolute bottom-[60px] left-0 md:bottom-4 md:right-4">Message sent successfully!</p>
           )}
           {formStatus.error && (
             <p className="text-red-500 mt-4 absolute bottom-4 right-4">
