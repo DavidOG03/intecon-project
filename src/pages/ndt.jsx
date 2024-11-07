@@ -103,12 +103,12 @@ const Ndt = () => {
             viewport={{ once: true }}
             className="text-[14px] md:text-base text-textblack font-inter max-w-[768px]"
           >
-            INTECON’S has state of the art non-destructive test equipment, and
-            highly trained inspection team, in carried out detailed, and
-            accurate inspection to international standard. Our team of expert
-            has successfully investigated, engineering infrastructures of
-            varying complexities, including, Bridges, High-rise Building,
-            Foundation structures, Steel structural Facilities.
+            INTECON has state-of-the-art non-destructive testing equipment and a
+            highly trained inspection team, capable of carrying out detailed and
+            accurate inspections to international standards. Our team of experts
+            has successfully investigated engineering infrastructures of varying
+            complexities, including bridges, high-rise buildings, foundation
+            structures, and steel facilities.
           </motion.p>
           <motion.p
             variants={fadeup}
@@ -117,9 +117,7 @@ const Ndt = () => {
             viewport={{ once: true }}
             className="mt-4 text-[14px] md:text-base text-textblack font-inter max-w-[768px]"
           >
-            INTECON is working continuously to ensure continual improvement of
-            its non-destructive services to global trends international best
-            practices.
+           INTECON is committed to the continuous improvement of its non-destructive testing services, aligning with global trends and international best practices.
           </motion.p>
         </div>
       </section>

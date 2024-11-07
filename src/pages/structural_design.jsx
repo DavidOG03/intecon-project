@@ -134,39 +134,51 @@ const StructuralDesign = () => {
           Projects gallery
         </motion.h3>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-          
           <ProjectCard
-          img="/images/structure1.png"
-          title="Ogbonna School Project"
-          description="Structural Design Project"/>
+            img="/images/structure1.png"
+            title="Ogbonna School Project"
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/structure2.png"
-          title="Olive Court"
-          description="Structural Design Project"/>
+            img="/images/structure1.png"
+            title="Ogbonna School Project"
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/structure3.png"
-          title="Faculty of Natural Sciences, Ajayi Crowther University, Oyo."
-          description="Structural Design Project"/>
+            img="/images/structure2.png"
+            title="Olive Court"
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/structure4.png"
-          title="Bowen University Library Complex"
-          description="Structural Design Project"/>
+            img="/images/structure3.png"
+            title="Faculty of Natural Sciences, Ajayi Crowther University, Oyo."
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/staircase.png"
-          title="Heritage Mall, Ibadan"
-          description="Structural Design Project"/>
+            img="/images/structure4.png"
+            title="Bowen University Library Complex"
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/structure5.png"
-          title="Ajayi Crowther University Female Hostel Block"
-          description="Structural Design Project"/>
+            img="/images/staircase.png"
+            title="Heritage Mall, Ibadan"
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/structural-engr.png"
-          title="Ace Estate"
-          description="Structural Design Project"/>
+            img="/images/structure5.png"
+            title="Ajayi Crowther University Female Hostel Block"
+            description="Structural Design Project"
+          />
           <ProjectCard
-          img="/images/structure6.png"
-          title="Cargo terminal federal airport, Ilorin"
-          description="Structural Design Project"/>
+            img="/images/structural-engr.png"
+            title="Ace Estate"
+            description="Structural Design Project"
+          />
+          <ProjectCard
+            img="/images/structure6.png"
+            title="Cargo terminal federal airport, Ilorin"
+            description="Structural Design Project"
+          />
         </div>
       </section>
       <section className="structural-projects px-4 py-[60px]">
@@ -599,19 +611,34 @@ const StructuralDesign = () => {
             to="/highway-bridges-design"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
           >
-            Highway and Bridges Design <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Highway and Bridges Design{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
           <Link
             to="/geosciences"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Geosciences <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Geosciences{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
           <Link
             to="/non-destructive-testing"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Non-destructive Testing <img src="/images/arrow_outward.svg" alt="arrow_outward.svg" className="w-4" />
+            Non-destructive Testing{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
           </Link>
         </div>
       </section>
