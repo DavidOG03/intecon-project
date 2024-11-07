@@ -93,7 +93,7 @@
 }
 .slick-slide .third-image {
   background: linear-gradient(to bottom, #11121325, #11121336, #0b0b0c2d),
-    url(/images/structure.webp);
+    url(/images/qaqc-13.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 60%;
@@ -102,10 +102,10 @@
 }
 .slick-slide .fourth-image {
   background: linear-gradient(to bottom, #11121349, #1112135d, #0b0b0c2d),
-    url(/images/homepage-4.webp);
+    url(/images/ogudu-5.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 5% bottom;
+  background-position: 5% 30%;
   z-index: 99;
 
 }

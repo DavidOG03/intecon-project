@@ -6,6 +6,9 @@ import ProjectCard from "../components/projectCard";
 
 const Ndt = () => {
   const [activeTab, setActiveTab] = useState(1);
+  const [loading, setLoading] = useState(true); // Track loading state
+  const [imagesLoaded, setImagesLoaded] = useState(0); // Track loaded images count
+  const totalImages = 8; // Total number of images in the gallery
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
@@ -17,10 +20,10 @@ const Ndt = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        ease: "easeInOut",
+        duration: 1,
+        ease: "easeOut",
         type: "tween",
-        delay: 0.2,
+        
       },
     },
   };
@@ -32,12 +35,13 @@ const Ndt = () => {
       y: 0,
       transition: {
         duration: 0.3,
-        ease: "easeInOut",
+        ease: "easeOut",
         type: "tween",
-        delay: 0.2,
+        
       },
     },
   };
+
   const mainContentRef = useRef(null);
 
   useEffect(() => {
@@ -45,6 +49,29 @@ const Ndt = () => {
       mainContentRef.current.focus();
     }
   }, []);
+
+  // Check loading state once all images have loaded
+  useEffect(() => {
+    if (imagesLoaded >= totalImages) {
+      setLoading(false);
+    }
+  }, [imagesLoaded]);
+
+  const handleImageLoad = () => {
+    setImagesLoaded((prevCount) => prevCount + 1);
+  };
+
+  // if (loading) {
+  //   // Display loading animation until all images are loaded
+  //   return (
+  //     <main className="h-full bg-gray-50 pt-[80px] text-center">
+  //       <div className="h-full flex flex-col justify-center items-center gap-4">
+  //         <div className="text-blue font-bold font-jakarta">LOADING...</div>
+  //       </div>
+  //     </main>
+  //   );
+  // }
+
 
   return (
     <main className="ndt-page bg-white pt-[60px]">
@@ -117,11 +144,13 @@ const Ndt = () => {
             viewport={{ once: true }}
             className="mt-4 text-[14px] md:text-base text-textblack font-inter max-w-[768px]"
           >
-           INTECON is committed to the continuous improvement of its non-destructive testing services, aligning with global trends and international best practices.
+            INTECON is committed to the continuous improvement of its
+            non-destructive testing services, aligning with global trends and
+            international best practices.
           </motion.p>
         </div>
       </section>
-      <section className="gallery px-3 py-[60px]">
+      <section className="gallery h-full px-3 py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -136,41 +165,49 @@ const Ndt = () => {
             img="/images/qaqc-11.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-1.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-4.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-3.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-15.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-12.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-8.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
           <ProjectCard
             img="/images/qaqc-14.webp"
             title="Quantity Assurance and Control"
             description="Structural integrity assessment of alapere pedestrian bridge"
+            // onLoad={handleImageLoad}
           />
         </div>
       </section>
@@ -182,7 +219,7 @@ const Ndt = () => {
           viewport={{ once: true }}
           className="text capitalize font-jakarta font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-[60px] mx-auto max-w-[768px]"
         >
-          Past Structural Design Projects
+          Past Non-Destructive Testing Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px] relative">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
@@ -247,14 +284,13 @@ const Ndt = () => {
                     1
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Construction of School Block at Ogbona Secondary School,
-                    Ogbona, Edo State.
+                    Technical Evaluation of Burnt Ijora-7up Bridge Lagos
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    On-going
+                    2016
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    ExxonMobil
+                    Federal Ministry of Works Abuja
                   </td>
                 </tr>
                 <tr>
@@ -262,15 +298,14 @@ const Ndt = () => {
                     2
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Structural Engineering Consultancy Services for Proposed
-                    Development for Oodua Investment Company Ltd at Jericho
-                    Area, Ibadan (ACE Project)
+                    Structural Assessment of the Proposed Hotel & Conference
+                    Centre at Plot 617, Sabon-Lugbe East District, Abuja
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    On-going
+                    2016
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Odua Investment Company
+                    Homtel Developers
                   </td>
                 </tr>
                 <tr>
@@ -278,15 +313,14 @@ const Ndt = () => {
                     3
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Engineering Design of Proposed academic planning Complex for
-                    Oshun State , Polytechnic, Iree
+                    Integrity Test of 16 Nos Concrete Column for the Proposed
+                    Extension to the Banquet Hall.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    {" "}
-                    On-going
+                    2016
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Design Haven Consult
+                    Central Council of Ibadan Indigenes.
                   </td>
                 </tr>
                 <tr>
@@ -294,14 +328,14 @@ const Ndt = () => {
                     4
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Structural Engineering Design of Elevator Backup at Level
-                    24.0m of F&HC Building
+                    Integrity Test of 8Nos Concrete Pile Extension for the
+                    proposed Centre of Excellence Unilag.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
                     2016
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Procter & Gamble
+                    Quintec Construction Limited
                   </td>
                 </tr>
                 <tr>
@@ -309,15 +343,14 @@ const Ndt = () => {
                     5
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Structural Engineering Consultancy Services for Design and
-                    Construction Supervision of Distance learning Institute
-                    Building, University of Lagos
+                    Structural Audit of Oritamefa Baptist , Church, Basement
+                    Extension Building.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2015
+                    2016
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Unilag
+                    Multicad Nigeria Ltd
                   </td>
                 </tr>
               </tbody>
@@ -354,15 +387,13 @@ const Ndt = () => {
                     6
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Structural Engineering Design and Construction Supervision
-                    Services for the Proposed Residential Development at Agodi,
-                    Ibadan, Oyo State.
+                    Assessment of Existing Warehouse Floor and Concrete Road.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
                     2016
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    UACN Property Dev. Company
+                    Unilever
                   </td>
                 </tr>
                 <tr>
@@ -370,16 +401,14 @@ const Ndt = () => {
                     7
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Design Phase and detailing of the Steel Roof Structure
-                    covering the existing playground including the
-                    electromechanical services for French School Lagos
+                    Technical Evaluation of Fire Damaged Ibagwa Bridge, Along
+                    Ikot Ekpene – Abak – Ekparakwa – Ette Road in Akwa Ibom.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    {" "}
-                    April - Oct 2014
+                    2015
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Association Francaise de Nigeria
+                    Ministry of Works
                   </td>
                 </tr>
                 <tr>
@@ -387,13 +416,14 @@ const Ndt = () => {
                     8
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Construction Supervision of Osun State Stadium
+                    Technical Evaluation of Burnt Bridge at CH 57 + 450 Along
+                    Abuja – Abaji – Lokoja Road.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2013- Date
+                    2015
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Osun State Govt.
+                    Federal Ministry of Works Abuja
                   </td>
                 </tr>
                 <tr>
@@ -401,14 +431,29 @@ const Ndt = () => {
                     9
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Consultancy Services for the Proposed Lecture theatre for
-                    the Faculty of Science, University of Ibadan
+                    Structural Integrity Assessment of Heritage Mall – Cinema
+                    Area for Odua Investment Company Ltd.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2013 - Date
+                    2015
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    University of Ibadan
+                    Odua Investment Ltd
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                    10
+                  </td>
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                    Structural Audit for a Bungalow Building within the Premises
+                    of Central Bank of Nigeria, Abeokuta, Ogun State.
+                  </td>
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                    2012
+                  </td>
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                    CEDRA Nig. Ltd.
                   </td>
                 </tr>
               </tbody>
@@ -442,31 +487,17 @@ const Ndt = () => {
               <tbody>
                 <tr>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    10
-                  </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    300 Bed hostel for Ajayi Crowther University, Oyo State.
-                  </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2013
-                  </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Ajayi Crowther University
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
                     11
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Engineering Design and Supervision of Heritage Shopping Mall
-                    for Odua Investment.
+                    Structural Integrity Audit of Costain and JDP Point Block
+                    Towers In Rainbow Town Project Site.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
                     2013
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Odua Investment Group
+                    Rainbow Town Development Limited.
                   </td>
                 </tr>
                 <tr>
@@ -474,13 +505,14 @@ const Ndt = () => {
                     12
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Bowen University Library Complex, Iwo.
+                    Structural Integrity Audit Of Masta Services Point Block
+                    Tower In Rainbow Town Project Site.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2012
+                    Feb 2013
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Bowen University
+                    Rainbow Town Development Limited.
                   </td>
                 </tr>
                 <tr>
@@ -488,14 +520,14 @@ const Ndt = () => {
                     13
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Detailed Engineering Design and Construction Supervision of
-                    the Trauma Centre for the National Hospital, Abuja.
+                    Structural Integrity Check for the Engineering Design for
+                    the rehabilitation of Ijora – Apapa Bridge, Lagos State.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2012-2013
+                    October 2003
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    ab.dt. Partnership Project Managers
+                    Fujinkey
                   </td>
                 </tr>
                 <tr>
@@ -503,14 +535,14 @@ const Ndt = () => {
                     14
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    Structural Engineering design and supervision of the Ilorin
-                    Airport Cargo Terminal, Ilorin
+                    Structural Integrity Check for the Rehabilitation of Murtala
+                    Mohammed Bridge at Kotonkarfe, Kogi State.
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    2008-2010
+                    2012
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    FAAN/Kwara State Govt
+                    Federal Ministry of Works
                   </td>
                 </tr>
                 <tr>
