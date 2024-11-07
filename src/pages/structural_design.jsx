@@ -136,7 +136,7 @@ const StructuralDesign = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <ProjectCard
             img="/images/structure1.png"
-            title="Ogbonna School Project"
+            title="The International School Ibadan"
             description="Structural Design Project"
           />
           <ProjectCard

@@ -28,7 +28,7 @@ const ProjectCard = ({ img, title, description }) => {
         <img
           src={img}
           alt={description}
-          className="w-full scale-110 transition-all duration-700 object-cover h-full"
+          className="w-full scale-110 transition-all duration-700 object-cover h-full max-h-[270px]"
         />
       )}
       <div className="media-content bg-gradient-to-t from-blue via-lightblue to-transparent text-white absolute -bottom-[10rem] left-0 transition-all duration-300 w-full pt-[0.5rem] md:pt-[1.5rem]">

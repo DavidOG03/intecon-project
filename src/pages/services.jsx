@@ -78,7 +78,7 @@ const Services = () => {
       link="/structural-design"
       name="Project Management"
       desc="Our highly skilled team manages projects of all complexities, offering cost-effective, sound approaches to achieve objectives. With diverse experience and up-to-date training, we ensure quality, timely, and cost-effective construction supervision. Our strategy involves working closely with contractors and providing comprehensive reports as needed."
-      img='/images/project-management.webp'
+      img='/images/project-management.jpg'
       alt="Project Management"/>
 
       <ServiceCard
