@@ -63,11 +63,11 @@ const StructuralDesign = () => {
           tabIndex="-1"
           className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[64px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
-          We have{" "}
+          We have
           <span className="text-blue">
-            designed & built amazing structures{" "}
-          </span>{" "}
-          that meet <span className="text-blue">the desire</span> of our{" "}
+            designed & built amazing structures
+          </span>
+          that meet <span className="text-blue">the desire</span> of our
           <span className="text-blue">Clients</span>
         </motion.h1>
       </section>
@@ -304,7 +304,7 @@ const StructuralDesign = () => {
                     Oshun State , Polytechnic, Iree
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    {" "}
+                    
                     On-going
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
@@ -397,7 +397,7 @@ const StructuralDesign = () => {
                     electromechanical services for French School Lagos
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    {" "}
+                    
                     April - Oct 2014
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
@@ -626,7 +626,7 @@ const StructuralDesign = () => {
             to="/highway-bridges-design"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
           >
-            Highway and Bridges Design{" "}
+            Highway and Bridges Design
             <img
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"
@@ -637,7 +637,7 @@ const StructuralDesign = () => {
             to="/geosciences"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Geosciences{" "}
+            Geosciences
             <img
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"
@@ -648,7 +648,7 @@ const StructuralDesign = () => {
             to="/non-destructive-testing"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
-            Non-destructive Testing{" "}
+            Non-destructive Testing
             <img
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"
