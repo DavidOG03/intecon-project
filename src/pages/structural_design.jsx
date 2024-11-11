@@ -277,7 +277,7 @@ const StructuralDesign = () => {
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
                     ExxonMobil
-                  </td>
+                  </td> 
                 </tr>
                 <tr>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
