@@ -134,14 +134,29 @@ const StructuralDesign = () => {
           Projects gallery
         </motion.h3>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-          <ProjectCard
-            img="/images/structure1.png"
-            title="The International School Ibadan"
+        <ProjectCard
+            img="/images/ogudu-1.webp"
+            title="Ogudu Project"
             description="Structural Design Project"
           />
           <ProjectCard
-            img="/images/structure1.png"
-            title="Ogbonna School Project"
+            img="/images/ogudu-2.webp"
+            title="Ogudu Project"
+            description="Structural Design Project"
+          />
+          <ProjectCard
+            img="/images/ogudu-6.webp"
+            title="Ogudu Project"
+            description="Structural Design Project"
+          />
+          <ProjectCard
+            img="/images/ogudu-7.webp"
+            title="Ogudu Project"
+            description="Structural Design Project"
+          />
+          <ProjectCard
+            img="/images/isi-building.jpeg"
+            title="The International School Ibadan"
             description="Structural Design Project"
           />
           <ProjectCard
