@@ -90,7 +90,7 @@ export default function Contact() {
             viewport={{ once: true }}
             ref={mainContentRef}
             tabIndex="-1"
-            className="heading font-jakarta tracking-tighter text-[#1c1c1c] text-[54px] md:text-[64px] lg:text-[74px] text-left leading-[1] font-medium mb-6 focus:outline-none"
+            className="heading font-host tracking-tighter text-[#1c1c1c] text-[54px] md:text-[64px] lg:text-[74px] text-left leading-[1] font-medium mb-6 focus:outline-none"
           >
             Let's work together
           </motion.h3>
@@ -100,7 +100,7 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-base text-[#1c1c1c] font-inter max-w-[520px]"
+            className="text-base text-[#1c1c1c] font-jakarta max-w-[520px]"
           >
             Feel free to talk to our Business Department at any time you please
             using one of the below instant messaging programs. Please be patient
@@ -115,7 +115,7 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="address text-[#1c1c1c] mt-6 font-inter"
+            className="address text-[#1c1c1c] mt-6 font-jakarta"
           >
             <h3 className="text-base pb-4 font-bold">Company Address</h3>
             <p className="text-[14px] pb-2 text-textblack">
@@ -139,7 +139,7 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="address-two mt-6 text-[#1c1c1c] font-inter"
+            className="address-two mt-6 text-[#1c1c1c] font-jakarta"
           >
             <h3 className="text-base pb- font-bold">Company Address Two</h3>
             <p className="text-[14px] pb-2 text-textblack">
@@ -161,7 +161,7 @@ export default function Contact() {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="contact-form grid relative grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start font-inter mt-4"
+          className="contact-form grid relative grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start font-jakarta mt-4"
         >
           <motion.div
             variants={fadeup}
@@ -267,7 +267,7 @@ export default function Contact() {
           </motion.div>
           <button
             type="submit"
-            className="font-inter font-semibold text-base py-3 px-6 md:py-6 md:px-8 rounded-[48px] border border-transparent w-full  transition ease-in text-[#fff] bg-blue hover:bg-transparent hover:border hover:border-blue hover:text-blue md:col-start-1 md:col-end-3 max-w-[200px]"
+            className="font-jakarta font-semibold text-base px-6 py-3 md:py-3 md:px-6 rounded-[48px] border border-transparent w-full  transition ease-in text-[#fff] bg-blue hover:bg-transparent hover:border hover:border-blue hover:text-blue md:col-start-1 md:col-end-3 max-w-[200px]"
             disabled={formStatus.submitting}
           >
             {formStatus.submitting ? "Sending..." : "Send Message"}

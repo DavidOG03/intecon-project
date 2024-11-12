@@ -31,10 +31,10 @@ const YouTubeVideos = () => {
     return (
       <div className="h-full bg-gray-50 pt-[80px] text-center">
         {/* <div className="w-16 h-16 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div> */}
-        <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-4 text-center ">
+        <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-host tracking-tight leading-tight pl-4 md:pl-8 mb-4 text-center ">
           Our Videos
         </h3>
-        <p className="text-base md:text-[18px] font-normal text-black font-inter leading-tight pl-4 md:pl-8 mb-6 max-w-[650px] mx-auto">
+        <p className="text-base md:text-[18px] font-normal text-black font-jakarta leading-tight pl-4 md:pl-8 mb-6 max-w-[650px] mx-auto">
           See our completed and ongoing projects in action. Check out the videos
           to learn what we can accomplish together!
         </p>
@@ -46,11 +46,11 @@ const YouTubeVideos = () => {
   }
 
   return (
-    <main className="videos pt-[80px] md:pt-[80px] bg-white w-full h-full text-center ">
-      <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-jakarta tracking-tight leading-tight pl-4 md:pl-8 mb-4">
+    <main className="videos pt-[80px] md:pt-[120px] bg-white w-full h-full text-center ">
+      <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-host tracking-tight leading-tight pl-4 md:pl-8 mb-4">
         Our Videos
       </h3>
-      <p className="text-base md:text-[18px] font-normal text-black font-inter leading-tight pl-4 md:pl-8 mb-6 max-w-[650px] mx-auto">
+      <p className="text-base md:text-[18px] font-normal text-black font-jakarta leading-tight pl-4 md:pl-8 mb-6 max-w-[650px] mx-auto">
         See our completed and ongoing projects in action. Check out the videos
         to learn what we can accomplish together!
       </p>
@@ -66,10 +66,10 @@ const YouTubeVideos = () => {
               allowFullScreen
               className="min-h-[250px]"
             ></iframe>
-            <h3 className="font-jakarta font-semibold text-[21px] tracking-tight">
+            <h3 className="font-host font-semibold text-[21px] tracking-tight">
               {video.snippet.title}
             </h3>
-            <p className="font-inter font-normal text-base">
+            <p className="font-jakarta font-normal text-base">
               {video.snippet.description}
             </p>
           </div>

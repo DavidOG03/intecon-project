@@ -12,28 +12,28 @@ const StructuralDesign = () => {
   };
 
   const fadeup = {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.5,
-        ease: "easeInOut",
-        type: "tween",
+        ease: "easeOut",
+        type: "spring",
         delay: 0.2,
       },
     },
   };
 
   const fadein = {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0.5, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-        type: "tween",
+        duration: 0.5,
+        ease: "easeOut",
+        type: "spring",
         delay: 0.2,
       },
     },
@@ -61,18 +61,18 @@ const StructuralDesign = () => {
           viewport={{ once: true }}
           ref={mainContentRef}
           tabIndex="-1"
-          className="heading font-jakarta tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[64px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
+          className="heading font-host tracking-tight text-blackish text-[34px] md:text-[54px] xl:text-[64px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:pl-[3rem]"
         >
-          We have
+          We have{" "}
           <span className="text-blue">
-            designed & built amazing structures
+            designed & built amazing structures{" "}
           </span>
-          that meet <span className="text-blue">the desire</span> of our
+          that meet <span className="text-blue">the desire</span> of our{" "}
           <span className="text-blue">Clients</span>
         </motion.h1>
       </section>
 
-      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px]">
+      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px] items-center">
         <motion.div
           variants={fadeup}
           initial="hidden"
@@ -81,15 +81,15 @@ const StructuralDesign = () => {
           className="image-box w-full h-full min-h-[320px] rounded-[12px] bg-[url('/images/olive-court.webp')] bg-cover bg-no-repeat bg-center"
         ></motion.div>
         <div className="text ">
-          <motion.h3
+          {/* <motion.h3
             variants={fadeup}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-jakarta tracking-tighter text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[72px] text-left leading-tight font-semibold mb-6 max-w-[768px]"
+            className="capitalize font-host tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[72px] text-left leading-tight font-semibold mb-6 max-w-[768px]"
           >
             Structural Engineering design
-          </motion.h3>
+          </motion.h3> */}
           <motion.p
             variants={fadeup}
             initial="hidden"
@@ -129,12 +129,12 @@ const StructuralDesign = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[64px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[620px]"
+          className="text capitalize font-host font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1.2] mb-[60px] mx-auto max-w-[620px]"
         >
           Projects gallery
         </motion.h3>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        <ProjectCard
+          <ProjectCard
             img="/images/ogudu-1.webp"
             title="Ogudu Project"
             description="Structural Design Project"
@@ -202,14 +202,14 @@ const StructuralDesign = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text capitalize font-jakarta font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-[60px] mx-auto max-w-[768px]"
+          className="text capitalize font-host font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-[60px] mx-auto max-w-[768px]"
         >
           Past Structural Design Projects
         </motion.h3>
         <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px] relative">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
             <button
-              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-host font-bold rounded-lg ${
                 activeTab === 1
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -219,7 +219,7 @@ const StructuralDesign = () => {
               Projects Tab 1
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-host font-bold rounded-lg ${
                 activeTab === 2
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -229,7 +229,7 @@ const StructuralDesign = () => {
               Projects Tab 2
             </button>
             <button
-              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-jakarta font-bold rounded-lg ${
+              className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-host font-bold rounded-lg ${
                 activeTab === 3
                   ? "bg-blue text-white"
                   : "bg-gray-200 text-black"
@@ -249,16 +249,16 @@ const StructuralDesign = () => {
             >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Clients
                   </th>
                 </tr>
@@ -277,7 +277,7 @@ const StructuralDesign = () => {
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
                     ExxonMobil
-                  </td> 
+                  </td>
                 </tr>
                 <tr>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
@@ -304,7 +304,6 @@ const StructuralDesign = () => {
                     Oshun State , Polytechnic, Iree
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    
                     On-going
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
@@ -356,16 +355,16 @@ const StructuralDesign = () => {
             >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Clients
                   </th>
                 </tr>
@@ -397,7 +396,6 @@ const StructuralDesign = () => {
                     electromechanical services for French School Lagos
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
-                    
                     April - Oct 2014
                   </td>
                   <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
@@ -447,16 +445,16 @@ const StructuralDesign = () => {
             >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-jakarta px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
                     Clients
                   </th>
                 </tr>
@@ -618,7 +616,7 @@ const StructuralDesign = () => {
         </div>
       </section>
       <section className=" py-[20px] text-center p-3">
-        <h3 className="text capitalize font-jakarta font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[768px]">
+        <h3 className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
           Explore Other Projects Portfolio
         </h3>
         <div className="links flex flex-col justify-center items-center md:flex-row gap-2">
@@ -626,6 +624,17 @@ const StructuralDesign = () => {
             to="/highway-bridges-design"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg  items-center gap-2"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="#fff"
+                d="M5.996 2.566a.5.5 0 0 0-.992-.132l-2 15a.5.5 0 0 0 .992.132zm9-.132a.5.5 0 0 0-.992.132l2 15a.5.5 0 0 0 .992-.132zM10.5 2.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0zm-1 9a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-1 0zm0 3a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0z"
+              ></path>
+            </svg>
             Highway and Bridges Design
             <img
               src="/images/arrow_outward.svg"
@@ -637,6 +646,17 @@ const StructuralDesign = () => {
             to="/geosciences"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fff"
+                d="M8 2.75A.75.75 0 0 1 8.75 2h1.5a.75.75 0 0 1 .75.75V3h1.25a.75.75 0 0 1 .75.75v1.785q.013 0 .025.002A8.25 8.25 0 0 1 16.994 20.5h3.256a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5h8.527A6.75 6.75 0 0 0 13 7.042v5.208a.75.75 0 0 1-.75.75h-.75v1a2 2 0 1 1-4 0v-1h-.75a.75.75 0 0 1-.75-.75v-8.5A.75.75 0 0 1 6.75 3H8zM9 13v1a.5.5 0 0 0 1 0v-1zm-3.25 4.5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"
+              ></path>
+            </svg>
             Geosciences
             <img
               src="/images/arrow_outward.svg"
@@ -648,6 +668,17 @@ const StructuralDesign = () => {
             to="/non-destructive-testing"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 2048 2048"
+            >
+              <path
+                fill="#fff"
+                d="M1930 220q26 45 47 86t38 83t24 87t9 100q0 79-20 152t-58 138t-91 117t-117 90t-137 58t-153 21q-23 0-46-2t-47-6l-806 806q-48 48-109 73t-129 25q-69 0-130-26t-106-72t-72-107t-27-130q0-67 25-128t73-110l806-806q-4-23-6-46t-2-47q0-79 20-152t58-138t91-117t117-90t137-58t153-21q54 0 99 8t88 25t83 37t86 48l-394 394l102 102zm-458 804q93 0 174-35t142-96t96-142t36-175q0-73-24-141l-360 359l-282-282l359-360q-68-24-141-24q-93 0-174 35t-142 96t-96 142t-36 175q0 35 6 68t14 66l-855 856q-29 29-45 67t-16 80t16 80t45 66t66 44t80 17q42 0 80-16t67-45l856-855q33 8 66 14t68 6"
+              ></path>
+            </svg>
             Non-destructive Testing
             <img
               src="/images/arrow_outward.svg"

@@ -45,7 +45,7 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px]  drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-host tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px]  drop-shadow-lg"
           >
             <span className="block text-white text-[42px] md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
@@ -62,7 +62,7 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={true}
-            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-host tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
           >
             <span className="block text-white text-[42px] md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
@@ -79,7 +79,7 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-host tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
           >
             <span className="block text-white text-[42px] md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd
@@ -97,7 +97,7 @@ const HeroSlider = () => {
             initial="hidden"
             whileInView="visible"
             viewport={true}
-            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-jakarta tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
+            className="font-medium text-white text-[21px] md:text-[36px] lg:text-[44px] font-host tracking-tight leading-tight text-left w-full max-w-[320px] md:max-w-[1024px] drop-shadow-lg"
           >
             <span className="block text-white text-[42px]  md:text-[64px] lg:text-[74px]">
               Intecon Partnership Ltd

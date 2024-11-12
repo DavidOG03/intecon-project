@@ -8,11 +8,12 @@ export default {
     extend: {
       colors: {
         // "blue":"#0499CF",
-        "blue":"#4284DA",
+        "blue":"#1D35A1",
+        // "blue":"#4284DA",
         // "lightblue": "#0499CF89",
-        "lightblue": "#4284DA89",
-        "black": "#1c1c1c",
-        "textblack": "rgb(77, 70, 74)",
+        "lightblue": "#1D35A189",
+        "black": "#2c2c2c",
+        "textblack": "rgb(36, 32, 32)",
         "blackish": "#1c1c1c50",
       },
       backgroundImage:{
@@ -26,6 +27,7 @@ export default {
       },
       fontFamily:{
         "jakarta":'"Plus Jakarta Sans", sans-serif',
+        "host":'"Host Grotesk", sans-serif',
         "inter": '"Inter", sans-serif',
         "electrolize": '"Electrolize", sans-serif'
       }
