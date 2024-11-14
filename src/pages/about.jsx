@@ -44,8 +44,8 @@ const About = () => {
     }
   }, []);
   return (
-    <main className="about w-full pt-[60px] lg:pt-[120px] bg-white relative">
-      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat bg-fixed h-[100%] grid place-content-center">
+    <main className="about w-full pt-[60px] lg:pt-[120px] bg-white relative ">
+      <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat bg-fixed h-[100vh] grid place-content-center">
         <motion.h1
           variants={fadeup}
           initial="hidden"
@@ -101,7 +101,7 @@ const About = () => {
         className="absolute z-1 translate-x-[50%]"
       />
 
-      <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[80px] md:flex md:flex-row-reverse min-h-[100vh]">
+      <section className="vision justify-center items-center gap-[60px] relative px-3 lg:px-8 py-[40px] md:flex md:flex-row-reverse min-h-[100vh]">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -133,7 +133,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="overview px-6 relative py-[80px] md:flex items-center gap-[60px] w-full min-h-[100vh">
+      <section className="overview px-6 relative py-[40px] md:flex items-center gap-[60px] w-full min-h-[100vh">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -314,7 +314,7 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-      <section className="directors py-[120px] border-b border-b-[#f1f1f1]">
+      <section className="directors py-[40px] border-b border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -384,10 +384,10 @@ const About = () => {
         <h3 className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host  font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center lg:flex-row gap-2">
+        <div className="links flex flex-col justify-center items-center xl:flex-row gap-2  mx-auto">
           <Link
             to="/highway-bridges-design"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -409,7 +409,7 @@ const About = () => {
           </Link>
           <Link
             to="/structural-design"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -431,7 +431,7 @@ const About = () => {
           </Link>
           <Link
             to="/geosciences"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -453,7 +453,7 @@ const About = () => {
           </Link>
           <Link
             to="/non-destructive-testing"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-lg items-center gap-2"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -467,6 +467,28 @@ const About = () => {
               ></path>
             </svg>
             Non-destructive Testing{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
+          </Link>
+          <Link
+            to="/youtube-videos"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 2048 2048"
+            >
+              <path
+                fill="currentColor"
+                d="M0 1408V512h1408v896zm1536-640l512-256v896l-512-256z"
+              ></path>
+            </svg>
+            Project Videos{" "}
             <img
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"

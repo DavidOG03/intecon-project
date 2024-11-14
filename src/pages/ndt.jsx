@@ -224,7 +224,7 @@ const Ndt = () => {
         >
           Past Non-Destructive Testing Projects
         </motion.h3>
-        <div className="projects-container w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row my-[60px] relative">
+        <div className="projects-container xl:max-w-[70%] mx-auto w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row relative">
           <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
             <button
               className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-host
@@ -676,7 +676,7 @@ const Ndt = () => {
         >
           Explore Other Projects Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center md:flex-row gap-2 max-w-[70%] mx-auto">
+        <div className="links flex flex-col justify-center items-center lg:flex-row gap-2 mx-auto">
           <Link
             to="/highway-bridges-design"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-[3rem]  items-center gap-2"
@@ -737,6 +737,28 @@ const Ndt = () => {
               ></path>
             </svg>
             Geosciences{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
+          </Link>
+          <Link
+            to="/youtube-videos"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 2048 2048"
+            >
+              <path
+                fill="currentColor"
+                d="M0 1408V512h1408v896zm1536-640l512-256v896l-512-256z"
+              ></path>
+            </svg>
+            Project Videos{" "}
             <img
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"
