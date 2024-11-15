@@ -384,7 +384,7 @@ const About = () => {
         <h3 className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host  font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center xl:flex-row gap-2  mx-auto">
+        <div className="links flex flex-col justify-center items-center xl:flex-row gap-2 mx-auto">
           <Link
             to="/highway-bridges-design"
             className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"

@@ -119,7 +119,7 @@ const Services = () => {
         <h3 className="text-[34px] md:text-[54px] capitalize tracking-tight font-host font-medium pb-6 max-w-[400px] md:max-w-[600px] mx-auto text-textblack leading-[1]">
           Explore Our Project Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center lg:flex-row gap-2">
+        <div className="links flex flex-col justify-center items-center gap-2 mx-auto">
           <Link
             to="/highway-bridges-design"
             className="goto flex max-w-[300px] bg-blue text-white mx-auto mb-6 py-4 px-2 rounded-[3rem] items-center gap-2"
@@ -202,6 +202,28 @@ const Services = () => {
               ></path>
             </svg>
             Non-destructive Testing{" "}
+            <img
+              src="/images/arrow_outward.svg"
+              alt="arrow_outward.svg"
+              className="w-4"
+            />
+          </Link>
+          <Link
+            to="/youtube-videos"
+            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 2048 2048"
+            >
+              <path
+                fill="currentColor"
+                d="M0 1408V512h1408v896zm1536-640l512-256v896l-512-256z"
+              ></path>
+            </svg>
+            Project Videos{" "}
             <img
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"
