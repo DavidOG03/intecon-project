@@ -55,7 +55,7 @@ const Services = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-base md:text-[18px] font-jakarta font-normal tracking-tight leading-tight mb-[100px] pl-4 md:pl-8"
+        className="text-base md:text-[18px] max-w-[520px] font-jakarta font-normal tracking-tight leading-tight mb-[100px] pl-4 md:pl-8"
       >
         Take a look at the services we offer. We're here to help make your
         project a success.

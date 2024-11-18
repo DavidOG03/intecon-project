@@ -6,6 +6,8 @@ import AnimatedText from "../components/animatedText";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../components/scrolltotopbtn";
+import PortfolioCard from "../components/portfolioCard";
+import highway from '../../public/images/highway.webp'
 
 const fadeup = {
   hidden: { opacity: 0, y: 20 },
@@ -384,8 +386,38 @@ const About = () => {
         <h3 className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host  font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center xl:flex-row gap-2 mx-auto">
-          <Link
+        <div className="links grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-6 place-items-end">
+          <PortfolioCard
+          img={highway}
+          title="Highway and Bridges Projects"
+          description=""
+          link="/highway-bridges-design"
+          />
+          <PortfolioCard
+          img={highway}
+          title="Structural Design Projects"
+          description=""
+          link="/structural-design"
+          />
+          <PortfolioCard
+          img={highway}
+          title="Geosciences Projects"
+          description=""
+          link="/geosciences"
+          />
+          <PortfolioCard
+          img={highway}
+          title="Highway Projects"
+          description=""
+          link="/highway-bridges-design"
+          />
+          <PortfolioCard
+          img={highway}
+          title="Highway Projects"
+          description=""
+          link="/highway-bridges-design"
+          />
+          {/* <Link
             to="/highway-bridges-design"
             className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
           >
@@ -493,8 +525,8 @@ const About = () => {
               src="/images/arrow_outward.svg"
               alt="arrow_outward.svg"
               className="w-4"
-            />
-          </Link>
+            /> 
+          </Link>*/}
         </div>
       </section>
       <Quote />
