@@ -772,7 +772,7 @@ const Ndt = () => {
             />
           </Link>
         </div> */}
-        <div className="links grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
+        <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
           <PortfolioCard
           img={highway}
           title="Highway and Bridges Projects"

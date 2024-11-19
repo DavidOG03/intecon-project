@@ -126,7 +126,7 @@ const Services = () => {
         <h3 className="text-[34px] md:text-[54px] capitalize tracking-tight font-host font-medium pb-6 max-w-[400px] md:max-w-[600px] mx-auto text-textblack leading-[1]">
           Explore Our Project Portfolio
         </h3>
-        <div className="links grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
+        <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
           <PortfolioCard
           img={highway}
           title="Highway and Bridges Projects"
