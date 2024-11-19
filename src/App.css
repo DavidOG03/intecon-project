@@ -332,7 +332,20 @@ h6:focus {
 }
 
 .project-pic:hover .media-content{
+  height: 100%;
+  opacity: 1;
   bottom: 0;
+}
+.project-pic .media-content .media-title, .project-pic .media-content .media-description{
+ transition: all 0.3s ease;
+}
+
+.project-pic:hover .media-content .media-title{
+  bottom: 4rem;
+}
+.project-pic:hover .media-content .media-description{
+
+  bottom: 1rem;
 }
 
 .service:hover svg{
