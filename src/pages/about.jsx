@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 import ScrollToTopButton from "../components/scrolltotopbtn";
 import PortfolioCard from "../components/portfolioCard";
 import highway from '../../public/images/highway.webp'
+import structure from '../../public/images/ogudu-3.webp'
+import geoscience from '../../public/images/geosciences.webp'
+import ndt from '../../public/images/testing.webp'
+import video from '../../public/images/qaqc-13.webp'
 
 const fadeup = {
   hidden: { opacity: 0, y: 20 },
@@ -55,7 +59,7 @@ const About = () => {
           viewport={{ once: true }}
           ref={mainContentRef}
           tabIndex="-1"
-          className="heading font-host tracking-tighter text-blackish text-[34px] md:text-[54px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:px-[3rem]"
+          className="heading font-host tracking-tight text-blackish text-[34px] md:text-[54px] xl:text-[84px] text-center leading-tight font-medium mb-6 py-[5rem] px-3 lg:px-[3rem]"
         >
           We are <span className="text-blue">consulting engineers</span> for{" "}
           <span className="text-blue">structure</span> and{" "}
@@ -382,11 +386,11 @@ const About = () => {
         </motion.h3>
         <Clients position="relative" />
       </section>
-      <section className=" py-[20px] text-center px-3">
+      <section className=" py-[60px] text-center px-3">
         <h3 className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host  font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
           Explore Our Project Portfolio
         </h3>
-        <div className="links grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-6 place-items-end">
+        <div className="links grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
           <PortfolioCard
           img={highway}
           title="Highway and Bridges Projects"
@@ -394,28 +398,28 @@ const About = () => {
           link="/highway-bridges-design"
           />
           <PortfolioCard
-          img={highway}
+          img={structure}
           title="Structural Design Projects"
           description=""
           link="/structural-design"
           />
           <PortfolioCard
-          img={highway}
+          img={geoscience}
           title="Geosciences Projects"
           description=""
           link="/geosciences"
           />
           <PortfolioCard
-          img={highway}
-          title="Highway Projects"
+          img={ndt}
+          title="Non-Destructive Testing Projects"
           description=""
-          link="/highway-bridges-design"
+          link="/non-destructive-testing"
           />
           <PortfolioCard
-          img={highway}
-          title="Highway Projects"
+          img={video}
+          title="Projects Videos"
           description=""
-          link="/highway-bridges-design"
+          link="/youtube-videos"
           />
           {/* <Link
             to="/highway-bridges-design"

@@ -18,14 +18,14 @@ const PortfolioCard = ({ img, title, description, link }) => {
     exit: { opacity: 0, y: -20 },
   };
   return (
-    <div className="portfolio-card shadow-sm">
+    <div className="portfolio-card shadow-sm w-full h-full">
       <Link
         to={link}
         variants={fadein}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="project-pic relative overflow-hidden transition-all duration-500 block"
+        className="project-pic relative w-full h-full overflow-hidden transition-all duration-500 block"
       >
         {img && (
           <img
@@ -34,8 +34,8 @@ const PortfolioCard = ({ img, title, description, link }) => {
             className="w-full scale-110 transition-all duration-700 object-cover h-full max-h-[270px]"
           />
         )}
-        <div className="media-content bg-gradient-to-t from-blue via-lightblue to-transparent text-white absolute -bottom-[10rem] left-0 transition-all duration-300 w-full pt-[0.5rem] md:pt-[1.5rem]">
-          <h3 className="media-title text-[1.5rem] font-jakarta px-[1rem] pb-[0.5rem] md:pb-[1rem]">
+        <div className="media-content bg-gradient-to-b from-blackish to-textblack text-white absolute inset-0 transition-all duration-300 w-full pt-[0.5rem] md:pt-[1.5rem]">
+          <h3 className="media-title text-[1.5rem] font-host px-[1rem] pb-[0.5rem] md:pb-[1rem] absolute -bottom-12 ">
             {title}
           </h3>
           <p className="media-description text-base font-inter px-[1rem] pb-[0.5rem] md:pb-[1rem]">

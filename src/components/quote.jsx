@@ -19,7 +19,7 @@ const Quote = () => {
     },
   };
   return (
-    <section className="quote pt-[80px] md:py-[60px] flex flex-col justify-center items-start md:flex-row  md:justify-between md:items-center px-6 bg-fixed">
+    <section className="quote mt-[60px] pt-[80px] md:py-[60px] flex flex-col justify-center items-start md:flex-row  md:justify-between md:items-center px-6 bg-fixed">
     <motion.h3 
      variants={fadeup}
      initial="hidden"

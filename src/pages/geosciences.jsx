@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import Quote from "../components/quote";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/projectCard";
+import PortfolioCard from "../components/portfolioCard";
+import highway from '../../public/images/highway.webp'
+import structure from '../../public/images/ogudu-3.webp'
+import ndt from '../../public/images/testing.webp'
+import video from '../../public/images/qaqc-13.webp'
+
 
 const Geosciences = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -602,7 +608,7 @@ const Geosciences = () => {
         <h3 className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
           Explore Other Projects Portfolio
         </h3>
-        <div className="links flex flex-col justify-center items-center lg:flex-row gap-2 mx-auto">
+        {/* <div className="links flex flex-col justify-center items-center lg:flex-row gap-2 mx-auto">
           <Link
             to="/highway-bridges-design"
             className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-[3rem]  items-center gap-2"
@@ -691,7 +697,33 @@ const Geosciences = () => {
               className="w-4"
             />
           </Link>
-        </div>
+        </div> */}
+        <div className="links grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
+          <PortfolioCard
+          img={highway}
+          title="Highway and Bridges Projects"
+          description=""
+          link="/highway-bridges-design"
+          />
+          <PortfolioCard
+          img={structure}
+          title="Structural Design Projects"
+          description=""
+          link="/structural-design"
+          />
+          <PortfolioCard
+          img={ndt}
+          title="Non-Destructive Testing Projects"
+          description=""
+          link="/non-destructive-testing"
+          />
+          <PortfolioCard
+          img={video}
+          title="Projects Videos"
+          description=""
+          link="/youtube-videos"
+          />
+          </div>
       </section>
       <Quote />
     </main>
