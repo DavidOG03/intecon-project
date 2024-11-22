@@ -89,7 +89,6 @@
   background-size: cover;
   background-position: center;
   z-index: 99;
-
 }
 .slick-slide .third-image {
   background: linear-gradient(to bottom, #11121325, #11121336, #0b0b0c2d),
@@ -98,7 +97,6 @@
   background-size: cover;
   background-position: 60% 90%;
   z-index: 99;
-
 }
 .slick-slide .fourth-image {
   background: linear-gradient(to bottom, #11121349, #1112135d, #0b0b0c2d),
@@ -107,7 +105,6 @@
   background-size: cover;
   background-position: 40% 60%;
   z-index: 99;
-
 }
 
 .navbar ul li a,
@@ -282,7 +279,6 @@
   width: 100%;
 }
 .project-link.active:hover::after {
-  
   background: #fff;
 }
 .project-link.active::after {
@@ -306,68 +302,57 @@ h6:focus {
   outline: none;
 }
 
-.goto{
+.goto {
   width: 100%;
   justify-content: center;
 }
 
-.goto:hover{
+.goto:hover {
   cursor: pointer;
-  background: #1D35A189;
- 
+  background: #1d35a189;
 }
 
-.goto img{
+.goto img {
   transition: all 0.1s ease-in-out;
 }
 
-.goto:hover img{
+.goto:hover img {
   rotate: 45deg;
-  
 }
 
-.project-pic:hover img{
-  scale:0.95;
-  
+.project-pic:hover img {
+  scale: 0.95;
 }
 
-.project-pic:hover .media-content{
+.project-pic:hover .media-layer {
   height: 100%;
   opacity: 1;
   bottom: 0;
 }
-.project-pic .media-content .media-title, .project-pic .media-content .media-description{
- transition: all 0.3s ease;
+.project-pic .media-layer .media-content .media-title,
+.project-pic .media-layer .media-content .media-description {
+  transition: all 0.3s ease;
 }
 
-.project-pic:hover .media-content .media-title{
-  bottom: 4rem;
-}
-.project-pic:hover .media-content .media-description{
-
+.project-pic:hover .media-content {
   bottom: 1rem;
 }
 
-.service:hover svg{
+.service:hover svg {
   display: block;
 }
 
-.service:hover .image-box img{
+.service:hover .image-box img {
   scale: 0.95;
 }
 
-.portfolio-card .project-pic .media-content{
-  opacity: 0;
-  transition: all 0.25s ease;
-}
-
-.portfolio-card:hover .project-pic .media-content{
+.portfolio-card:hover .project-pic .media-content {
   opacity: 1;
 }
-.portfolio-card .project-pic .media-content .media-title{
+.portfolio-card .project-pic .media-content .media-title {
   transition: all 0.3s ease;
 }
-.portfolio-card:hover .project-pic .media-content .media-title{
+.portfolio-card:hover .project-pic .media-content .media-title {
   bottom: 2rem;
 }
 
@@ -443,6 +428,11 @@ h6:focus {
 @media screen and (min-width: 1024px) {
   .hamburger-react {
     display: none;
+  }
+
+  .portfolio-card .project-pic .media-content {
+    opacity: 1;
+    transition: all 0.25s ease;
   }
 }
 
