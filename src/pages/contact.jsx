@@ -26,15 +26,15 @@ export default function Contact() {
     }
   }, []);
 
-  useEffect(() => {
-    if (formStatus.success || formStatus.error) {
-      const timer = setTimeout(() => {
-        setFormStatus({ submitting: false, success: false, error: false });
-      }, 5000);
+  // useEffect(() => {
+  //   if (formStatus.success || formStatus.error) {
+  //     const timer = setTimeout(() => {
+  //       setFormStatus({ submitting: false, success: false, error: false });
+  //     }, 5000);
 
-      return () => clearTimeout(timer);
-    }
-  }, [formStatus.success, formStatus.error]);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [formStatus.success, formStatus.error]);
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -274,10 +274,10 @@ export default function Contact() {
           </button>
 
           {formStatus.success && (
-            <p className="text-green-500 mt-4 absolute bottom-[60px] left-0 md:bottom-4 md:right-4">Message sent successfully!</p>
+            <p className="text-green-500 mt-4 absolute bottom-[60px] left-0 md:bottom-4 md:left-[60%] md:-translate-x-[40%]">Message sent successfully!</p>
           )}
           {formStatus.error && (
-            <p className="text-red-500 mt-4 absolute bottom-4 right-4">
+            <p className="text-red-500 mt-4 absolute bottom-4 left-0 md:bottom-4 md:left-[60%] md:-translate-x-[40%]">
               Failed to send the message. Please try again.
             </p>
           )}
