@@ -26,15 +26,15 @@ export default function Contact() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   if (formStatus.success || formStatus.error) {
-  //     const timer = setTimeout(() => {
-  //       setFormStatus({ submitting: false, success: false, error: false });
-  //     }, 5000);
+  useEffect(() => {
+    if (formStatus.success || formStatus.error) {
+      const timer = setTimeout(() => {
+        setFormStatus({ submitting: false, success: false, error: false });
+      }, 5000);
 
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [formStatus.success, formStatus.error]);
+      return () => clearTimeout(timer);
+    }
+  }, [formStatus.success, formStatus.error]);
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
