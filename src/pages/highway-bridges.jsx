@@ -74,7 +74,7 @@ const HighwayBridges = () => {
         </motion.h1>
       </section>
 
-      <section className="intro px-3 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px] items-center">
+      <section className="intro px-3 lg:px-[48px] grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px] items-center">
         <motion.div
           variants={fadeup}
           initial="hidden"
@@ -123,7 +123,7 @@ const HighwayBridges = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery px-3 lg:px-8 py-[60px]">
+      <section className="gallery px-3 lg:px-[48px] py-[60px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -178,7 +178,7 @@ const HighwayBridges = () => {
 
       <ProjectVideos />
 
-      <section className="projects px-3 lg:px-8 py-[60px] ">
+      <section className="projects px-3 lg:px-[48px] py-[60px] ">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -603,101 +603,11 @@ const HighwayBridges = () => {
           )}
         </div>
       </section>
-      <section className="py-[20px] text-center px-3 lg:px-8">
+      <section className="py-[20px] text-center px-4 lg:px-[48px]">
         <h3 className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
           Explore Other Projects Portfolio
         </h3>
-        {/* <div className="links flex flex-col justify-center items-center lg:flex-row gap-2 mx-auto">
-          <Link
-            to="/structural-design"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-[3rem] items-center gap-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="#fff"
-                d="M6.25 3.5a.75.75 0 0 0-.75.75V20.5h2v-2.75c0-.69.56-1.25 1.25-1.25h6.5c.69 0 1.25.56 1.25 1.25v2.75h2v-8.75a.75.75 0 0 0-.75-.75h-2a.75.75 0 0 1-.75-.75v-6a.75.75 0 0 0-.75-.75zM9 18v2.5h2.25V18zm3.75 0v2.5H15V18zm6.5 4H4.75a.75.75 0 0 1-.75-.75v-17A2.25 2.25 0 0 1 6.25 2h8a2.25 2.25 0 0 1 2.25 2.25V9.5h1.25A2.25 2.25 0 0 1 20 11.75v9.5a.75.75 0 0 1-.75.75M7.5 6.5a1 1 0 1 1 2 0a1 1 0 0 1-2 0m1 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2m0-3.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M12 5.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2m0 7a1 1 0 1 0 0 2a1 1 0 0 0 0-2m3.5 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2M12 9a1 1 0 1 0 0 2a1 1 0 0 0 0-2"
-              ></path>
-            </svg>
-            Structural Design{" "}
-            <img
-              src="/images/arrow_outward.svg"
-              alt="arrow_outward.svg"
-              className="w-4"
-            />
-          </Link>
-          <Link
-            to="/geosciences"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-[3rem] items-center gap-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="#fff"
-                d="M8 2.75A.75.75 0 0 1 8.75 2h1.5a.75.75 0 0 1 .75.75V3h1.25a.75.75 0 0 1 .75.75v1.785q.013 0 .025.002A8.25 8.25 0 0 1 16.994 20.5h3.256a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5h8.527A6.75 6.75 0 0 0 13 7.042v5.208a.75.75 0 0 1-.75.75h-.75v1a2 2 0 1 1-4 0v-1h-.75a.75.75 0 0 1-.75-.75v-8.5A.75.75 0 0 1 6.75 3H8zM9 13v1a.5.5 0 0 0 1 0v-1zm-3.25 4.5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"
-              ></path>
-            </svg>
-            Geosciences{" "}
-            <img
-              src="/images/arrow_outward.svg"
-              alt="arrow_outward.svg"
-              className="w-4"
-            />
-          </Link>
-          <Link
-            to="/non-destructive-testing"
-            className="goto flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 rounded-[3rem] items-center gap-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 2048 2048"
-            >
-              <path
-                fill="#fff"
-                d="M1930 220q26 45 47 86t38 83t24 87t9 100q0 79-20 152t-58 138t-91 117t-117 90t-137 58t-153 21q-23 0-46-2t-47-6l-806 806q-48 48-109 73t-129 25q-69 0-130-26t-106-72t-72-107t-27-130q0-67 25-128t73-110l806-806q-4-23-6-46t-2-47q0-79 20-152t58-138t91-117t117-90t137-58t153-21q54 0 99 8t88 25t83 37t86 48l-394 394l102 102zm-458 804q93 0 174-35t142-96t96-142t36-175q0-73-24-141l-360 359l-282-282l359-360q-68-24-141-24q-93 0-174 35t-142 96t-96 142t-36 175q0 35 6 68t14 66l-855 856q-29 29-45 67t-16 80t16 80t45 66t66 44t80 17q42 0 80-16t67-45l856-855q33 8 66 14t68 6"
-              ></path>
-            </svg>
-            Non-destructive Testing{" "}
-            <img
-              src="/images/arrow_outward.svg"
-              alt="arrow_outward.svg"
-              className="w-4"
-            />
-          </Link>
-          <Link
-            to="/youtube-videos"
-            className="goto  rounded-[3rem] flex w-full md:max-w-[300px] bg-blue text-white mx-auto mb-6 py-3 px-2 items-center gap-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 2048 2048"
-            >
-              <path
-                fill="currentColor"
-                d="M0 1408V512h1408v896zm1536-640l512-256v896l-512-256z"
-              ></path>
-            </svg>
-            Project Videos{" "}
-            <img
-              src="/images/arrow_outward.svg"
-              alt="arrow_outward.svg"
-              className="w-4"
-            />
-          </Link>
-        </div> */}
-         <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6 place-items-end">
+         <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-end">
           <PortfolioCard
           img={structure}
           title="Structural Design Projects"

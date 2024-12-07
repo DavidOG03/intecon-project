@@ -29,7 +29,7 @@ const YouTubeVideos = () => {
   if (loading) {
     // Display the loading animation while videos are being fetched
     return (
-      <div className="h-full bg-gray-50 pt-[80px] text-center">
+      <div className="h-[100vh] bg-gray-50 py-[60px] text-center">
         {/* <div className="w-16 h-16 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div> */}
         <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-host tracking-tight leading-tight pl-4 md:pl-8 mb-4 text-center ">
           Our Videos
@@ -46,7 +46,7 @@ const YouTubeVideos = () => {
   }
 
   return (
-    <main className="videos pt-[80px] md:pt-[120px] bg-white w-full h-full text-center ">
+    <main className="videos py-[80px] bg-white w-full h-full text-center ">
       <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-host tracking-tight leading-tight pl-4 md:pl-8 mb-4">
         Our Videos
       </h3>

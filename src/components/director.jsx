@@ -23,12 +23,13 @@ const Director = ({ img, name, role, office, degree }) => {
       viewport={{ once: true }}
       className="director flex flex-col flex-grow w-full sm:max-w-[270px] justify-center items-start overflow-hidden"
     >
-      <div className="image-box w-full bg-[#f1f1f1] min-h-[300px] flex justify-end items-center flex-col">
+      <div className="image-box w-full bg-[#f0f0f0] min-h-[350px] flex justify-end items-center flex-col border-[5px] border-lightblue overflow-hidden">
         {img && (
-          <img src={img} alt={name} className="w-full h-full object-cover min-h-[300px]" />
+          <img src={img} alt={name} className="w-full h-full object-cover min-h-[300px] scale-105" />
         )}
+
       </div>
-      <h4 className=" text-base font-medium capitalize text-black font-jakarta tracking-tight leading-relaxed pt-4">
+      <h4 className=" text-base font-medium capitalize text-black font-jakarta tracking-tight leading-relaxed pt-2">
         {name}
       </h4>
       <p className="text-[14px] font-normal text-[#1c1c1ce5] capitalize font-jakarta">

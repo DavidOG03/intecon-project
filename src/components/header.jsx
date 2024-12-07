@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[999] bg-blue px-3 py-2 lg:px-8 lg:py-0">
+      <header className="flex flex-row justify-between items-center w-full fixed top-0 left-[50%] -translate-x-[50%] z-[999] bg-blue px-4 py-2 lg:px-[48px] lg:py-0">
       {/* border-b border-b-[#413F3E] */}
         <Link to="/" className="logo h-[44px] xl:h-[44px] object-cover">
           <img src="/images/intecon-logo.png" alt="intecon's logo" className="h-full " />

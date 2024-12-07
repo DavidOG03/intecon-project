@@ -81,7 +81,7 @@ export default function Contact() {
 
   return (
     <main className="contact-page py-[60px] bg-[#fff] ">
-      <section className="contact-body px-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-[60px] pb-[60px]">
+      <section className="contact-body px-4 lg:px-[48px] grid grid-cols-1 md:grid-cols-2 gap-12 pt-[60px] pb-[60px]">
         <div className="contact-text">
           <motion.h3
             variants={fadeup}

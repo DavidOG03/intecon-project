@@ -39,7 +39,7 @@ const HeroSlider = () => {
     <>
       <Slider {...settings}>
         <div className="hero-image first-image bg-cover bg-no-repeat bg-top w-full h-auto flex justify-start items-center flex-grow " >
-          <div className="absolute top-[50%] left-3 lg:left-8 -translate-y-[50%] max-h-[120px] ">
+          <div className="absolute top-[50%] left-3 lg:left-[48px] -translate-y-[50%] max-h-[120px] ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -56,7 +56,7 @@ const HeroSlider = () => {
         </div>
 
         <div className="hero-image second-image bg-heroImageTwo w-full h-auto flex-grow ">
-          <div className="absolute top-[50%] left-3 lg:left-8 -translate-y-[50%] max-h-[120px] ">
+          <div className="absolute top-[50%] left-3 lg:left-[48px] -translate-y-[50%] max-h-[120px] ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -73,7 +73,7 @@ const HeroSlider = () => {
         </div>
 
         <div className="hero-image third-image bg-heroImageThree w-full h-auto flex-grow ">
-          <div className="absolute top-[50%] left-3 lg:left-8 -translate-y-[50%] max-h-[120px] ">
+          <div className="absolute top-[50%] left-3 lg:left-[48px] -translate-y-[50%] max-h-[120px] ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
@@ -91,7 +91,7 @@ const HeroSlider = () => {
         </div>
 
         <div className="hero-image fourth-image bg-heroImageFour w-full h-auto flex-grow ">
-          <div className="absolute top-[50%] left-3 lg:left-8 -translate-y-[50%] max-h-[120px] ">
+          <div className="absolute top-[50%] left-3 lg:left-[48px] -translate-y-[50%] max-h-[120px] ">
           <motion.h3
             variants={fadeup}
             initial="hidden"
