@@ -16,6 +16,9 @@ const PortfolioCard = ({ img, title, description, link }) => {
       },
     },
   };
+
+  const MotionLink = motion(Link);
+
   return (
     <motion.div
       variants={fadeup}
@@ -24,7 +27,7 @@ const PortfolioCard = ({ img, title, description, link }) => {
       viewport={{ once: true }}
       className="portfolio-card shadow-sm w-full h-full"
     >
-      <Link
+      <MotionLink
         to={link}
         variants={fadeup}
         initial="hidden"
@@ -47,7 +50,7 @@ const PortfolioCard = ({ img, title, description, link }) => {
             {description}
           </p>
         </div>
-      </Link>
+      </MotionLink>
     </motion.div>
   );
 };

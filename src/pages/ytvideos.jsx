@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 import PortfolioCard from "../components/portfolioCard";
@@ -12,6 +12,14 @@ import Quote from "../components/quote";
 const YouTubeVideos = () => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true); // Track loading state
+
+  const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    if (mainContentRef.current) {
+      mainContentRef.current.focus();
+    }
+  }, []);
 
   useEffect(() => {
     const fetchVideos = async () => {
