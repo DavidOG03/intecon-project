@@ -83,7 +83,7 @@ const YouTubeVideos = () => {
               title={video.snippet.title}
               width="100%"
               height="auto"
-              src={`https://www.youtube.com/embed/${video.id.videoId}`}
+              src={`https://www.youtube.com/embed/${video.id.videoId}?autoplay=1&rel=0`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="min-h-[250px]"
