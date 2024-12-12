@@ -139,7 +139,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="overview px-4 lg:px-[48px] relative my-[40px] md:flex items-center gap-[60px] w-full">
+      <section className="overview px-4 lg:px-[48px] relative py-[40px] md:flex items-center gap-[60px] w-full">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -336,7 +336,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="team grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
+          className="team grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
         >
           <Director
             img="/images/engr-ajibola.webp"
@@ -378,7 +378,7 @@ const About = () => {
             name="Engr. Atilade Otunla"
             role="Chief Operating Officer"
             office="Intecon Partnership Group Ltd"
-            degree="b.sc,mnse"
+            degree="B.Tech, Msc, MNSE, MNIstruct.E"
           />
           <Director
             img="/images/engr-tomiwa.webp"
