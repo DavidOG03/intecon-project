@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../components/scrolltotopbtn";
 import PortfolioCard from "../components/portfolioCard";
-import highway from '../../public/images/highway.webp'
-import structure from '../../public/images/ogudu-3.webp'
-import geoscience from '../../public/images/geosciences.webp'
-import ndt from '../../public/images/testing.webp'
-import video from '../../public/images/qaqc-13.webp'
+import highway from "../../public/images/highway.webp";
+import structure from "../../public/images/ogudu-3.webp";
+import geoscience from "../../public/images/geosciences.webp";
+import ndt from "../../public/images/testing.webp";
+import video from "../../public/images/qaqc-13.webp";
 
 const fadeup = {
   hidden: { opacity: 0, y: 20 },
@@ -67,7 +67,7 @@ const About = () => {
         </motion.h1>
       </section>
 
-      <section className="mission px-4 lg:px-[48px] relative pt-[20px] md:pt-[100px] pb-[60px] md:flex items-center gap-[60px] w-full">
+      <section className="mission px-4 lg:px-[48px] relative mt-[20px] md:mt-[100px] pb-[60px] md:flex items-center gap-[60px] w-full">
         <div className="text pb-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
@@ -107,7 +107,7 @@ const About = () => {
         className="absolute z-1 translate-x-[50%]"
       />
 
-      <section className="vision justify-center items-center gap-[60px] relative px-4 lg:px-[48px] py-[40px] md:flex md:flex-row-reverse min-h-[100vh]">
+      <section className="vision justify-center items-center gap-[60px] relative px-4 lg:px-[48px] my-[40px] md:flex md:flex-row-reverse">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -139,7 +139,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="overview px-4 lg:px-[48px] relative py-[40px] md:flex items-center gap-[60px] w-full min-h-[100vh">
+      <section className="overview px-4 lg:px-[48px] relative my-[40px] md:flex items-center gap-[60px] w-full">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -182,7 +182,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-4 lg:px-[48px] py-[60px] lg:py-[80px] min-h-[100vh">
+      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-4 lg:px-[48px] my-[60px] lg:my-[80px]">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.p
             variants={fadeup}
@@ -227,7 +227,7 @@ const About = () => {
           className="image-box w-full basis-[50%] flex flex-col gap-4 h-[320px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[6px]  "
         ></motion.div>
       </section>
-      <section className="institutions py-[60px] px-4 lg:px-[48px] border-b border-t border-b-[#f1f1f1] border-t-[#c9c7c7] min-h-[100vh">
+      <section className="institutions my-[60px] px-4 lg:px-[48px] border-b border-t border-b-[#f1f1f1] border-t-[#c9c7c7] min-h-[100vh">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -320,7 +320,8 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-      <section className="directors py-[40px] px-4 lg:px-[48px] border-b border-b-[#f1f1f1]">
+
+      <section className="directors my-[40px] px-4 lg:px-[48px] border-b border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -380,15 +381,15 @@ const About = () => {
             degree="b.sc,mnse"
           />
           <Director
-            img=""
+            img="/images/engr-tomiwa.webp"
             name="Engr. Tomiwa"
             role="Chief Operating Officer"
             office="Interworks Engineering Ltd"
-            degree="--"
+            degree="B.sc, mnse, C.eng"
           />
         </motion.div>
       </section>
-      <section className="clients py-[69px] border border-transparent border-b-[#f1f1f1]">
+      <section className="clients my-[60px] border border-transparent border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -400,40 +401,46 @@ const About = () => {
         </motion.h3>
         <Clients position="relative" />
       </section>
-      <section className=" py-[60px] text-center px-4 lg:px-[48px]">
-        <h3 className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto">
+      <section className=" my-[60px] text-center px-4 lg:px-[48px]">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto"
+        >
           Explore Our Project Portfolio
-        </h3>
+        </motion.h3>
         <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 place-items-end">
           <PortfolioCard
-          img={highway}
-          title="Highway and Bridges Projects"
-          description=""
-          link="/highway-bridges-design"
+            img={highway}
+            title="Highway and Bridges Projects"
+            description=""
+            link="/highway-bridges-design"
           />
           <PortfolioCard
-          img={structure}
-          title="Structural Design Projects"
-          description=""
-          link="/structural-design"
+            img={structure}
+            title="Structural Design Projects"
+            description=""
+            link="/structural-design"
           />
           <PortfolioCard
-          img={geoscience}
-          title="Geosciences Projects"
-          description=""
-          link="/geosciences"
+            img={geoscience}
+            title="Geosciences Projects"
+            description=""
+            link="/geosciences"
           />
           <PortfolioCard
-          img={ndt}
-          title="Non-Destructive Testing Projects"
-          description=""
-          link="/non-destructive-testing"
+            img={ndt}
+            title="Non-Destructive Testing Projects"
+            description=""
+            link="/non-destructive-testing"
           />
           <PortfolioCard
-          img={video}
-          title="Projects Videos"
-          description=""
-          link="/youtube-videos"
+            img={video}
+            title="Projects Videos"
+            description=""
+            link="/youtube-videos"
           />
         </div>
       </section>

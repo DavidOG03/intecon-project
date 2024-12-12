@@ -605,9 +605,14 @@ const Geosciences = () => {
         </div>
       </section>
       <section className=" py-[20px] text-center px-4 lg:px-[48px]">
-        <h3 className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
           Explore Other Projects Portfolio
-        </h3>
+        </motion.h3>
          <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-end">
           <PortfolioCard
           img={highway}

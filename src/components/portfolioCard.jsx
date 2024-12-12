@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const PortfolioCard = ({ img, title, description, link }) => {
-  const fadein = {
+  const fadeup = {
     hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
@@ -15,13 +15,18 @@ const PortfolioCard = ({ img, title, description, link }) => {
         delay: 0.2,
       },
     },
-    exit: { opacity: 0, y: -20 },
   };
   return (
-    <div className="portfolio-card shadow-sm w-full h-full">
+    <motion.div
+      variants={fadeup}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="portfolio-card shadow-sm w-full h-full"
+    >
       <Link
         to={link}
-        variants={fadein}
+        variants={fadeup}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -43,7 +48,7 @@ const PortfolioCard = ({ img, title, description, link }) => {
           </p>
         </div>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

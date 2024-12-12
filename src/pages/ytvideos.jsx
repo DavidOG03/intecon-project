@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
+import PortfolioCard from "../components/portfolioCard";
+import highway from "../../public/images/highway.webp";
+import structure from "../../public/images/ogudu-3.webp";
+import geoscience from "../../public/images/geosciences.webp";
+import ndt from "../../public/images/testing.webp";
+import Quote from "../components/quote";
+
 
 const YouTubeVideos = () => {
   const [videos, setVideos] = useState([]);
@@ -45,16 +53,30 @@ const YouTubeVideos = () => {
     );
   }
 
+  const fadeup = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+        type: "tween",
+        delay: 0.2,
+      },
+    },
+  };
+
   return (
-    <main className="videos py-[80px] bg-white w-full h-full text-center ">
+    <main className="videos pt-[80px] bg-white w-full text-center ">
       <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-host tracking-tight leading-tight pl-4 md:pl-8 mb-4">
         Our Videos
       </h3>
-      <p className="text-base md:text-[18px] font-normal text-black font-jakarta leading-tight pl-4 md:pl-8 mb-6 max-w-[650px] mx-auto">
+      <p className="text-base md:text-[18px] font-normal text-black font-jakarta leading-tight px-4 lg:px-12 mb-6 max-w-[650px] mx-auto">
         See our completed and ongoing projects in action. Check out the videos
         to learn what we can accomplish together!
       </p>
-      <div className="videos-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4 px-3 md:px-6 pt-4 md:pt-4 h-auto">
+      <section className="videos-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4 px-3 md:px-6 pt-4 md:pt-4 h-auto">
         {videos.map((video) => (
           <div key={video.id.videoId} className="video-item text-left">
             <iframe
@@ -74,7 +96,46 @@ const YouTubeVideos = () => {
             </p>
           </div>
         ))}
-      </div>
+      </section>
+
+      <section className=" my-[60px] text-center px-4 lg:px-[48px]">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-[34px] mb-6 md:text-[54px] tracking-tight text-black font-host font-medium capitalize text-center pb-5 max-w-[400px] md:max-w-[600px] mx-auto leading-tight"
+        >
+          Explore Our Project Portfolio
+        </motion.h3>
+        <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 place-items-end">
+          <PortfolioCard
+            img={highway}
+            title="Highway and Bridges Projects"
+            description=""
+            link="/highway-bridges-design"
+          />
+          <PortfolioCard
+            img={structure}
+            title="Structural Design Projects"
+            description=""
+            link="/structural-design"
+          />
+          <PortfolioCard
+            img={geoscience}
+            title="Geosciences Projects"
+            description=""
+            link="/geosciences"
+          />
+          <PortfolioCard
+            img={ndt}
+            title="Non-Destructive Testing Projects"
+            description=""
+            link="/non-destructive-testing"
+          />
+        </div>
+      </section>
+      <Quote/>
     </main>
   );
 };

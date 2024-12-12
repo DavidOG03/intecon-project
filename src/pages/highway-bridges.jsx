@@ -83,15 +83,6 @@ const HighwayBridges = () => {
           className="image-box w-full h-full min-h-[320px] rounded-[12px] bg-[url('/images/road-project-4.webp')] bg-no-repeat bg-cover bg-center"
         ></motion.div>
         <div className="text">
-          {/* <motion.h3
-            variants={fadeup}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="capitalize font-host tracking-tighter text-black text-[36px] md:text-[60px] xl:text-[72px] text-left leading-tight font-semibold mb-6 w-full max-w-[768px] break-keep"
-          >
-            Highways and bridges design
-          </motion.h3> */}
           <motion.p
             variants={fadeup}
             initial="hidden"
@@ -164,15 +155,6 @@ const HighwayBridges = () => {
             title="Highway/Road Construction"
             description="Construction Supervision Of Iseyin Ogbomosho Road"
           />
-          {/* <motion.div
-            variants={fadein}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="project-pic"
-          >
-            <img src="/images/road3.png" alt="road-work" className="w-full" />
-          </motion.div> */}
         </div>
       </section>
 
@@ -604,9 +586,13 @@ const HighwayBridges = () => {
         </div>
       </section>
       <section className="py-[20px] text-center px-4 lg:px-[48px]">
-        <h3 className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }} className="text capitalize font-host font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]">
           Explore Other Projects Portfolio
-        </h3>
+        </motion.h3>
          <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-end">
           <PortfolioCard
           img={structure}

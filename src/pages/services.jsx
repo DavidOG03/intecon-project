@@ -123,9 +123,13 @@ const Services = () => {
         />
       </motion.div>
       <section className=" py-[20px] text-center px-4 lg:px-[48px]">
-        <h3 className="text-[34px] md:text-[54px] capitalize tracking-tight font-host font-medium pb-6 lg:pb-8 max-w-[400px] md:max-w-[600px] mx-auto text-textblack leading-[1]">
+        <motion.h3
+          variants={fadeup}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }} className="text-[34px] md:text-[54px] capitalize tracking-tight font-host font-medium pb-6 lg:pb-8 max-w-[400px] md:max-w-[600px] mx-auto text-textblack leading-[1]">
           Explore Our Project Portfolio
-        </h3>
+        </motion.h3>
         <div className="links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-3 place-items-end">
           <PortfolioCard
           img={highway}
