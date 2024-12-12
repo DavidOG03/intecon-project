@@ -67,7 +67,7 @@ const About = () => {
         </motion.h1>
       </section>
 
-      <section className="mission px-4 lg:px-[48px] relative mt-[20px] md:mt-[100px] pb-[60px] md:flex items-center gap-[60px] w-full">
+      <section className="mission px-4 lg:px-[48px] relative mt-[20px] md:mt-[100px] pb-[60px] md:flex items-center gap-[60px] w-full py-12">
         <div className="text pb-6 md:pt-0 basis-[50%] overflow-hidden ">
           <motion.h3
             variants={fadeup}
@@ -107,7 +107,7 @@ const About = () => {
         className="absolute z-1 translate-x-[50%]"
       />
 
-      <section className="vision justify-center items-center gap-[60px] relative px-4 lg:px-[48px] my-[40px] md:flex md:flex-row-reverse">
+      <section className="vision justify-center items-center gap-[60px] relative px-4 lg:px-[48px] py-12 md:flex md:flex-row-reverse">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -139,7 +139,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="overview px-4 lg:px-[48px] relative py-[40px] md:flex items-center gap-[60px] w-full">
+      <section className="overview px-4 lg:px-[48px] relative py-12 md:flex items-center gap-[60px] w-full">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.h3
             variants={fadeup}
@@ -168,7 +168,7 @@ const About = () => {
             clientele include operators in the Oil and Gas Industry, Federal and
             State Governments, Infrastructure Companies, Aviation and Private
             Institutions.
-            <span className="font-bold font-jakarta block my-3">
+            <span className="font-bold font-jakarta block py-3">
               INTECON is an ISO 9001 :2015 Certiﬁed Company
             </span>
           </motion.p>
@@ -182,7 +182,7 @@ const About = () => {
         ></motion.div>
       </section>
 
-      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-4 lg:px-[48px] my-[60px] lg:my-[80px]">
+      <section className="division md:flex md:flex-row-reverse justify-between items-center gap-[60px] relative px-4 lg:px-[48px] py-12 lg:py-[80px]">
         <div className="text pb-6 md:pt-0 basis-[50%]">
           <motion.p
             variants={fadeup}
@@ -227,7 +227,7 @@ const About = () => {
           className="image-box w-full basis-[50%] flex flex-col gap-4 h-[320px] md:h-[515px] bg-[url('/images/geosciences.webp')] bg-cover bg-center rounded-[6px]  "
         ></motion.div>
       </section>
-      <section className="institutions my-[60px] px-4 lg:px-[48px] border-b border-t border-b-[#f1f1f1] border-t-[#c9c7c7] min-h-[100vh">
+      <section className="institutions py-12 px-4 lg:px-[48px] border-b border-t border-b-[#f1f1f1] border-t-[#f1f1f1] min-h-[100vh">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -321,7 +321,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="directors my-[40px] px-4 lg:px-[48px] border-b border-b-[#f1f1f1]">
+      <section className="directors py-12 px-4 lg:px-[48px] border-b border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -343,35 +343,42 @@ const About = () => {
             name="Engr. O. Alade Ajibola"
             role="chairman/CEO"
             office="Intecon Partnership Group Ltd"
-            degree="FNSE,FAEng"
+            degree="FNSE, FAEng"
+          />
+          <Director
+            img="/images/dr-adefolaju.webp"
+            name="Late Engr. Dr. G.O. Adefolaju"
+            role="Co-founder"
+            office="Intecon Partnership Group Ltd"
+            degree="PhD, FNSE"
           />
           <Director
             img="/images/engr-wale.webp"
             name="Engr. Wale Lagunju"
             role="Group Executive Director"
             office="Intecon Partnership Group Ltd"
-            degree="b.sc,m.sc,mba,fnse, mni"
+            degree="b.sc, m.sc, mba, fnse, mni"
           />
           <Director
             img="/images/engr-aremu.webp"
             name="Engr. Kehinde Aremu"
             role="Managing Director"
             office="Interworks Engineering Ltd"
-            degree="b.sc, m.sc, mba, mnse"
+            degree="b.sc, m.sc, mba, MNSE"
           />
           <Director
             img="/images/jinmi.png"
             name="Engr. Jinmi Ajibola"
             role="Managing Director"
             office="Automated Geotechnical Ltd"
-            degree="b.sc, m.sc, dic,mnse"
+            degree="b.sc, m.sc, dic, MNSE"
           />
           <Director
             img="/images/engr-tunde.webp"
             name="Engr. Tunde Adefolaju"
             role="Director"
             office="Intecon Partnership Group Ltd "
-            degree="b.sc, m.sc,mnse"
+            degree="b.sc, m.sc, MNSE"
           />
           <Director
             img="/images/engr-atilade.webp"
@@ -382,14 +389,14 @@ const About = () => {
           />
           <Director
             img="/images/engr-tomiwa.webp"
-            name="Engr. Tomiwa"
+            name="Engr. Tomiwa Togonu-Bickersteth"
             role="Chief Operating Officer"
             office="Interworks Engineering Ltd"
-            degree="B.sc, mnse, C.eng"
+            degree="B.sc, MNSE, C.eng"
           />
         </motion.div>
       </section>
-      <section className="clients my-[60px] border border-transparent border-b-[#f1f1f1]">
+      <section className="clients py-[60px] border border-transparent border-b-[#f1f1f1]">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -401,7 +408,7 @@ const About = () => {
         </motion.h3>
         <Clients position="relative" />
       </section>
-      <section className=" my-[60px] text-center px-4 lg:px-[48px]">
+      <section className=" py-[60px] text-center px-4 lg:px-[48px]">
         <motion.h3
           variants={fadeup}
           initial="hidden"

@@ -120,22 +120,12 @@ const Ndt = () => {
           />
         </motion.div>
         <div className="text">
-          {/* <motion.h3
-            variants={fadeup}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="capitalize font-host
-             tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[72px] text-left leading-tight font-semibold mb-6 max-w-[768px]"
-          >
-            Non-Destructive Testing
-          </motion.h3> */}
           <motion.p
             variants={fadeup}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[14px] md:text-base text-textblack font-jakarta max-w-[768px] leading-8"
+            className="text-[14px] md:text-base text-textblack font-jakarta max-w-[768px]"
           >
             INTECON has state-of-the-art non-destructive testing equipment and a
             highly trained inspection team, capable of carrying out detailed and
@@ -149,7 +139,7 @@ const Ndt = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[14px] md:text-base text-textblack font-jakarta max-w-[768px] leading-8"
+            className="mt-4 text-[14px] md:text-base text-textblack font-jakarta max-w-[768px]"
           >
             INTECON is committed to the continuous improvement of its
             non-destructive testing services, aligning with global trends and

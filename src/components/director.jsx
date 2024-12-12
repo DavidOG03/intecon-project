@@ -35,7 +35,7 @@ const Director = ({ img, name, role, office, degree }) => {
       <p className="text-[14px] font-normal text-[#1c1c1ce5] capitalize font-jakarta">
         {role}
       </p>
-      <p className="text-[14px] font-light text-[#1c1c1ccb] uppercase mt-3 font-inter">
+      <p className="text-[14px] font-light text-[#1c1c1ccb] uppercase mt-2 font-inter">
         {office}
       </p>
       <p className=" text-[12px] font-light text-[#1c1c1ca8] capitalize font-inter">
