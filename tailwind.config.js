@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
       colors: {
         // "blue":"#0499CF",
         // "blue":"#1D35A1",
@@ -31,7 +37,19 @@ export default {
         "host":'"Host Grotesk", sans-serif',
         "inter": '"Inter", sans-serif',
         "electrolize": '"Electrolize", sans-serif'
-      }
+      },
+      spacing:{
+        "normal": "1rem",
+        "2xl":"2rem",
+        "3xl":"3rem",
+        "xxl":"60px",
+
+      },
+      fontSize:{
+        "small":"14px",
+        "normal": "1rem",
+      },
+
     },
   },
   plugins: [],

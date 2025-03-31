@@ -53,7 +53,7 @@ const Services = () => {
         viewport={{ once: true }}
         ref={mainContentRef}
         tabIndex="-1"
-        className="text-[54px] md:text-[64px] lg:text-[74px] font-medium text-textblack col-start-1 col-end-4 font-host tracking-tight leading-tight mb-2 px-4 lg:px-[48px]"
+        className="text-[54px] md:text-[64px] lg:text-[74px] font-medium text-textblack col-start-1 col-end-4 font-host tracking-tight leading-tight mb-2 px-4 lg:px-3xl"
       >
         Our Services
       </motion.h3>
@@ -62,7 +62,7 @@ const Services = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-base md:text-[18px] max-w-[520px] font-jakarta font-normal tracking-tight leading-tight mb-[40px] px-4 lg:px-[48px]"
+        className="text-base md:text-[18px] max-w-[520px] font-jakarta font-normal tracking-tight leading-tight mb-[40px] px-4 lg:px-3xl"
       >
         Take a look at the services we offer. We're here to help make your
         project a success.
@@ -72,7 +72,7 @@ const Services = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="services-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-4 mb-[120px] px-4 lg:px-[48px]"
+        className="services-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-4 mb-[120px] px-4 lg:px-3xl"
       >
         <ServiceCard
           link="/structural-design"
@@ -122,7 +122,7 @@ const Services = () => {
           alt="Non destructive testing"
         />
       </motion.div>
-      <section className=" py-[20px] text-center px-4 lg:px-[48px]">
+      <section className=" py-[20px] text-center px-4 lg:px-3xl">
         <motion.h3
           variants={fadeup}
           initial="hidden"

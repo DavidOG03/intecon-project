@@ -45,7 +45,7 @@ const YouTubeVideos = () => {
   if (loading) {
     // Display the loading animation while videos are being fetched
     return (
-      <div className="h-[100vh] bg-gray-50 py-[60px] text-center">
+      <div className="h-[100vh] bg-gray-50 py-xxl text-center">
         {/* <div className="w-16 h-16 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div> */}
         <h3 className="text-[54px] md:text-[64px] lg:text-[74px] font-[600] text-black font-host tracking-tight leading-tight pl-4 md:pl-8 mb-4 text-center ">
           Our Videos
@@ -106,7 +106,7 @@ const YouTubeVideos = () => {
         ))}
       </section>
 
-      <section className=" my-[60px] text-center px-4 lg:px-[48px]">
+      <section className=" my-xxl text-center px-4 lg:px-3xl">
         <motion.h3
           variants={fadeup}
           initial="hidden"

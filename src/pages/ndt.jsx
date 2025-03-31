@@ -79,7 +79,7 @@ const Ndt = () => {
   // }
 
   return (
-    <main className="ndt-page bg-white pt-[60px]">
+    <main className="ndt-page bg-white pt-xxl">
       <section className="heading bg-[url('/images/grid-pattern.webp')] bg-cover bg-center bg-no-repeat h-[100vh] grid place-content-center bg-fixed">
         <motion.h1
           variants={fadeup}
@@ -105,7 +105,7 @@ const Ndt = () => {
           </span>
         </motion.h1>
       </section>
-      <section className="intro px-3 lg:px-[48px] grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px] items-center">
+      <section className="intro px-3 lg:px-3xl grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-xxl pb-xxl items-center">
         <motion.div
           variants={fadeup}
           initial="hidden"
@@ -147,14 +147,14 @@ const Ndt = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery h-full px-4 lg:px-[48px] py-[60px]">
+      <section className="gallery h-full px-4 lg:px-3xl py-xxl">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           className="text capitalize font-host
-           font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-[60px]  mx-auto max-w-[768px]"
+           font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-xxl  mx-auto max-w-[768px]"
         >
           Projects gallery
         </motion.h3>
@@ -209,19 +209,19 @@ const Ndt = () => {
           />
         </div>
       </section>
-      <section className="ndt-projects px-4 py-[60px]">
+      <section className="ndt-projects px-4 py-xxl">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           className="text capitalize font-host
-           font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-[60px] mx-auto max-w-[768px]"
+           font-semibold tracking-tight text-[#1c1c1c] text-[36px] md:text-[45px] xl:text-[54px] text-center leading-tight mb-xxl mx-auto max-w-[768px]"
         >
           Past Non-Destructive Testing Projects
         </motion.h3>
         <div className="projects-container xl:max-w-[70%] mx-auto w-full flex flex-col justify-start items-stretch gap-8 lg:flex-row relative">
-          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-[60px] sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
+          <div className="project-tabs basis-[20%] h-full flex flex-row lg:flex-col justify-between items-stretch gap-4 lg:gap-xxl sticky top-[64px] lg:top-[90px] left-0 z-50 bg-white py-3">
             <button
               className={`project-tab w-full p-3 lg:p-10 text-[13px] text-base font-host
                  font-bold rounded-lg hover:bg-lightblue ${
@@ -665,14 +665,14 @@ const Ndt = () => {
           )}
         </div>
       </section>
-      <section className=" py-[20px] text-center px-4 lg:px-[48px]">
+      <section className=" py-[20px] text-center px-4 lg:px-3xl">
         <motion.h3
           variants={fadeup}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           className="text capitalize font-host
-         font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-[60px] mx-auto max-w-[400px] md:max-w-[600px]"
+         font-semibold tracking-tight text-black text-[36px] md:text-[45px] xl:text-[54px] text-center leading-[1] mb-xxl mx-auto max-w-[400px] md:max-w-[600px]"
         >
           Explore Other Projects Portfolio
         </motion.h3>

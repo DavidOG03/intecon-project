@@ -78,7 +78,7 @@ const StructuralDesign = () => {
         </motion.h1>
       </section>
 
-      <section className="intro px-3 lg:px-[48px] grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px] items-center">
+      <section className="intro px-3 lg:px-3xl grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-stretch lg:gap-12 pt-[60px] pb-[60px] items-center">
         <motion.div
           variants={fadeup}
           initial="hidden"
@@ -92,7 +92,7 @@ const StructuralDesign = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="capitalize font-host tracking-tight text-[#1c1c1c] text-[36px] md:text-[48px] xl:text-[72px] text-left leading-tight font-semibold mb-6 max-w-[768px]"
+            className="capitalize font-host tracking-tight text-[#1c1c1c] text-[36px] md:text-3xl xl:text-[72px] text-left leading-tight font-semibold mb-6 max-w-[768px]"
           >
             Structural Engineering design
           </motion.h3> */}
@@ -101,7 +101,7 @@ const StructuralDesign = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[14px] md:text-base text-textblack font-inter max-w-[768px] "
+            className="text-small md:text-base text-textblack font-inter max-w-[768px] "
           >
             INTECON has gained experience in design of many structural
             engineering projects including high rise buildings, factories,
@@ -116,7 +116,7 @@ const StructuralDesign = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-4 text-[14px] md:text-base text-textblack font-inter max-w-[768px]"
+            className="mt-4 text-small md:text-base text-textblack font-inter max-w-[768px]"
           >
             INTECON is well known as a top civil/structural engineering
             consulting firm providing sound technical solutions to engineering
@@ -129,7 +129,7 @@ const StructuralDesign = () => {
           </motion.p>
         </div>
       </section>
-      <section className="gallery py-[60px] px-4 lg:px-[48px]">
+      <section className="gallery py-xxl px-4 lg:px-3xl">
         <motion.h3
           variants={fadeup}
           initial="hidden"
@@ -255,95 +255,95 @@ const StructuralDesign = () => {
             >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Clients
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     1
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Construction of School Block at Ogbona Secondary School,
                     Ogbona, Edo State.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     On-going
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     ExxonMobil
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Structural Engineering Consultancy Services for Proposed
                     Development for Oodua Investment Company Ltd at Jericho
                     Area, Ibadan (ACE Project)
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     On-going
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Odua Investment Company
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     3
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Engineering Design of Proposed academic planning Complex for
                     Oshun State , Polytechnic, Iree
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     On-going
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Design Haven Consult
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     4
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Structural Engineering Design of Elevator Backup at Level
                     24.0m of F&HC Building
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2016
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Procter & Gamble
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     5
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Structural Engineering Consultancy Services for Design and
                     Construction Supervision of Distance learning Institute
                     Building, University of Lagos
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2015
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Unilag
                   </td>
                 </tr>
@@ -361,79 +361,79 @@ const StructuralDesign = () => {
             >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Clients
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     6
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Structural Engineering Design and Construction Supervision
                     Services for the Proposed Residential Development at Agodi,
                     Ibadan, Oyo State.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2016
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     UACN Property Dev. Company
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     7
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Design Phase and detailing of the Steel Roof Structure
                     covering the existing playground including the
                     electromechanical services for French School Lagos
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     April - Oct 2014
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Association Francaise de Nigeria
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     8
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Construction Supervision of Osun State Stadium
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2013- Date
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Osun State Govt.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     9
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Consultancy Services for the Proposed Lecture theatre for
                     the Faculty of Science, University of Ibadan
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2013 - Date
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     University of Ibadan
                   </td>
                 </tr>
@@ -451,168 +451,168 @@ const StructuralDesign = () => {
             >
               <thead>
                 <tr>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     S/N
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Project Description
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Year
                   </th>
-                  <th className=" py-2 border-[1px] border-gray-300 text-left text-[14px] md:text-base font-host px-1">
+                  <th className=" py-2 border-[1px] border-gray-300 text-left text-small md:text-base font-host px-1">
                     Clients
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     10
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     300 Bed hostel for Ajayi Crowther University, Oyo State.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2013
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Ajayi Crowther University
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     11
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Engineering Design and Supervision of Heritage Shopping Mall
                     for Odua Investment.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2013
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Odua Investment Group
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     12
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Bowen University Library Complex, Iwo.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2012
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Bowen University
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     13
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Detailed Engineering Design and Construction Supervision of
                     the Trauma Centre for the National Hospital, Abuja.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2012-2013
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     ab.dt. Partnership Project Managers
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     14
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Structural Engineering design and supervision of the Ilorin
                     Airport Cargo Terminal, Ilorin
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2008-2010
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     FAAN/Kwara State Govt
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     15
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Engineering Design and Construction Supervision of Faculty
                     of Natural Science Building, Ajayi Crowther University.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2009
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Ajayi Crowther University
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     16
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Engineering, Procurement and Construction of Eket Airstrip
                     Control Tower, Eket, Akwa Ibom State.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2007
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     ExxonMobil
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     17
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Detailed Engineering: Architectural, Structural, Mechanical
                     and Electrical Engineering Design Services for Geological
                     Warehouse and QIT Laboratory projects, Qua Iboe Terminal
                     Eket, Akwa Ibom State.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2006
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Exxonmobil
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     18
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     Detailed Engineering Design of BRT Access Road including 1x
                     20m span bridge deck on pile.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2003
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     ExxonMobil
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     19
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     MHE By-Pass Road/Right of Way reestablishment survey at
                     Eket.
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     2005
                   </td>
-                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-[14px] md:text-base font-inter">
+                  <td className="px-2 md:px-4 py-2 border border-gray-300 text-left text-small md:text-base font-inter">
                     ExxonMobil
                   </td>
                 </tr>
@@ -621,7 +621,7 @@ const StructuralDesign = () => {
           )}
         </div>
       </section>
-      <section className=" py-[20px] text-center px-4 lg:px-[48px]">
+      <section className=" py-[20px] text-center px-4 lg:px-3xl">
         <motion.h3
           variants={fadeup}
           initial="hidden"
